@@ -5,7 +5,6 @@ import { TestComponent } from './test/test.component';
 import {ProductService} from "../services/product.service";
 
 
-
 @NgModule({
   declarations: [
     TestComponent

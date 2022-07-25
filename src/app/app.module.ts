@@ -53,9 +53,10 @@ import {ProductModule} from "./product/product.module";
 import {HttpClientModule} from "@angular/common/http";
 import {ServicesModule} from "./services/services.module";
 import {TestModule} from "./test/test.module";
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, MyTableComponent],
+  declarations: [AppComponent, MyTableComponent, HomeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
