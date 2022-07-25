@@ -51,13 +51,20 @@ import {RouterModule} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import {ProductModule} from "./product/product.module";
 import {HttpClientModule} from "@angular/common/http";
+// THEM MODULE
 import {ServicesModule} from "./services/services.module";
 import {TestModule} from "./test/test.module";
-import { HomeComponent } from './components/home/home.component';
+// import { HomeComponents } from './home/test/home.component';
+import { HomeModule } from './home/home.module';
+import { HomeRoutingModule} from "./home/home-routing.module";
+
 
 @NgModule({
-  declarations: [AppComponent, MyTableComponent, HomeComponent],
+  // declarations: [AppComponent, MyTableComponent, HomeComponents],
+  declarations: [AppComponent, MyTableComponent],
   imports: [
+    // THEM CAC MODULE VOI COMPONENT
+    // HomeModule
     BrowserModule,
     BrowserAnimationsModule,
     MdbAccordionModule,
@@ -108,6 +115,8 @@ import { HomeComponent } from './components/home/home.component';
     HttpClientModule,
     ServicesModule,
     TestModule,
+    // HomeModule,
+    HomeRoutingModule,
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService],
   bootstrap: [AppComponent],
