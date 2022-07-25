@@ -13,7 +13,8 @@ import {ProductService} from "../services/product.service";
     CommonModule,
     TestRoutingModule
   ],
-  exports: [
+    exports: [
+        TestComponent
     ],
   providers: [
     ProductService
