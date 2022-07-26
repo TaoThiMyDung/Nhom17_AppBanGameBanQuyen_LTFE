@@ -3,7 +3,15 @@
 <section class="categories">
   <div class="container-fluid">
     <div class="row">
+
+      <ng-template  *ngFor="let img of banners">
+        <div class="slide">
+          <img src="{{img.link}}">
+        </div>
+      </ng-template>
+<!--      style="background-image: url(../../../assets/img/categories/category-1.jpg)">-->
       <div class="col-lg-6 p-0">
+<!--        <ng-template  *ngFor="let img of banners">-->
         <div class="categories__item categories__large__item set-bg"
          style="background-image: url(../../../assets/img/categories/category-1.jpg)">
 
@@ -14,7 +22,10 @@
             <a href="#">Shop now</a>
           </div>
         </div>
+<!--        </ng-template>-->
       </div>
+
+
       <div class="col-lg-6">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-6 p-0">

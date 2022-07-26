@@ -1,0 +1,60 @@
+{
+  "banner": [
+    {
+      "id": 1,
+      "link": "../../../assets/img/categories/category-1.jpg"
+    },
+    {
+      "id": 2,
+      "link": "../../../assets/img/categories/category-2.jpg"
+    },
+    {
+      "id": 3,
+      "link": "../../../assets/img/categories/category-3.jpg"
+    },
+    {
+      "id": 4,
+      "link": "../../../assets/img/categories/category-4.jpg"
+    },
+    {
+      "id": 5,
+      "link": "../../../assets/img/categories/category-5.jpg"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "Demp pro name 1",
+      "price": 5000,
+      "image": "../../../assets/img/categories/category-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Demp pro name 2",
+      "price": 7000,
+      "image": "../../../assets/img/categories/category-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Demp pro name 3",
+      "price": 10000,
+      "image": "../../../assets/img/categories/category-3.jpg"
+    }
+  ],
+  "category": [
+    {
+      "name": "Demp category name 01",
+      "id": 1
+    },
+    {
+      "id": 1,
+      "name": "Demp category name 2",
+      "price": 5000,
+      "image": "../../../assets/img/categories/category-1.jpg"
+    },
+    {
+      "name": "Demp category name 2",
+      "id": 2
+    }
+  ]
+}
