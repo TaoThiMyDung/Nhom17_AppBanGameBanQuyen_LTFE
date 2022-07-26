@@ -26,19 +26,19 @@
       "id": 1,
       "name": "Demp pro name 1",
       "price": 5000,
-      "image": "../../../assets/img/categories/category-1.jpg"
+      "image": "../../../assets/img/trend/ht-1.jpg"
     },
     {
       "id": 2,
       "name": "Demp pro name 2",
       "price": 7000,
-      "image": "../../../assets/img/categories/category-2.jpg"
+      "image": "../../../assets/img/trend/ht-2.jpg"
     },
     {
       "id": 3,
       "name": "Demp pro name 3",
       "price": 10000,
-      "image": "../../../assets/img/categories/category-3.jpg"
+      "image": "../../../assets/img/trend/ht-3.jpg"
     }
   ],
   "category": [

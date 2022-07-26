@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ProductService} from "../../services/product.service";
 import {BannerService} from "../../services/banner.service";
 import {Banner} from "../../models/banner";
+import {Product} from "../../models/product";
 
 @Component({
   selector: 'app-test',
@@ -20,13 +21,18 @@ export class HomeComponents implements OnInit {
   // }
 
   banners : Array<Banner> = new Array<Banner>();
+  products : Array<Product> = new Array<Product>();
 
-  constructor(private bannerService:BannerService) { }
+  constructor(private bannerService:BannerService , private productService:ProductService) { }
 
   ngOnInit(): void {
     this.bannerService.getBanners()
       .subscribe(res => {
         this.banners = res;
+      });
+    this.productService.getProduct()
+      .subscribe(res => {
+        this.products = res;
       });
   }
 }

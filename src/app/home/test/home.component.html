@@ -1,20 +1,18 @@
+
+
 <!--<img src="../../../assets/img/categories/category-1.jpg">-->
 <!-- Categories Section Begin -->
 <section class="categories">
   <div class="container-fluid">
     <div class="row">
 
-      <ng-template  *ngFor="let img of banners">
-        <div class="slide">
-          <img src="{{img.link}}">
-        </div>
-      </ng-template>
 <!--      style="background-image: url(../../../assets/img/categories/category-1.jpg)">-->
       <div class="col-lg-6 p-0">
-<!--        <ng-template  *ngFor="let img of banners">-->
+<!--        <ng-template  *ngFor="let bn of banners">-->
         <div class="categories__item categories__large__item set-bg"
-         style="background-image: url(../../../assets/img/categories/category-1.jpg)">
-
+             *ngFor="let bn of banners"
+             [style.background-image]="'url(' + bn.link + ')'">
+<!--          <img src="favicon.ico">-->
           <div class="categories__text">
             <h1>Women’s fashion</h1>
             <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore
@@ -324,6 +322,40 @@
 </section>
 <!-- Banner Section End -->
 
+
+<!-- Trend Section Begin -->
+<section class="trend spad" >
+  <div class="container">
+    <div class="row" >
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="trend__content" >
+          <div class="section-title">
+            <h4>Hot Trend</h4>
+          </div>
+
+          <div class="trend__item" *ngFor="let pr of products">
+            <div class="trend__item__pic">
+              <img src="{{pr.image}}" alt="">
+            </div>
+            <div class="trend__item__text">
+              <h6>{{pr.name}}</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="product__price">${{pr.price}}</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Trend Section Begin -->
 <section class="trend spad">
   <div class="container">
@@ -333,7 +365,7 @@
           <div class="section-title">
             <h4>Hot Trend</h4>
           </div>
-          <div class="trend__item">
+          <div class="trend__item" >
             <div class="trend__item__pic">
               <img src="../../../assets/img/trend/ht-1.jpg" alt="">
             </div>

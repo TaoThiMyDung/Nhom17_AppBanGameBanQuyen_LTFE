@@ -2,6 +2,9 @@ import {NgModule} from '@angular/core';
 import {Injectable} from '@angular/core';
 import {Observable, of} from "rxjs";
 import {HttpClient} from "@angular/common/http";
+import {Product} from "../models/product";
+
+const _api = 'http://localhost:3000/';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +12,10 @@ import {HttpClient} from "@angular/common/http";
 export class ProductService {
   data: any[];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient) {}
+
+  getProduct(): Observable<Array<Product>>{
+    return this.http.get<Array<Product>>(_api + 'product');
   }
 
   private getData(url: string, header: object = {}): Observable<any> {
