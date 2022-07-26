@@ -1048,11 +1048,13 @@ ol {
 	padding-left: 30px;
 	margin-bottom: 10px;
 	margin-right: 10px;
+  background-image: url(../img/categories/category-1.jpg);
 }
 
 .categories__item.categories__large__item {
 	height: 638px;
 	padding-left: 70px;
+  background-image: url(../img/categories/category-1.jpg);
 }
 
 .categories__item.categories__large__item .categories__text {

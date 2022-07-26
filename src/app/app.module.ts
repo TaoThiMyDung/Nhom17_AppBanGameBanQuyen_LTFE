@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -117,6 +118,7 @@ import { HomeRoutingModule} from "./home/home-routing.module";
     TestModule,
     // HomeModule,
     HomeRoutingModule,
+    CarouselModule,
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService],
   bootstrap: [AppComponent],
