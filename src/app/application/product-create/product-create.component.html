@@ -1,5 +1,8 @@
 
-<form action="" method="POST" [formGroup]="productFormCreate" >
+<div class="row">
+  <div class="col-md-4">
+
+<form action="" method="POST" role="fromGroup" [formGroup]="productFormCreate" (ngSubmit)="onCreate()" >
 
   <legend> Form Add Product </legend>
 
@@ -25,3 +28,6 @@
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+  </div>
+</div>

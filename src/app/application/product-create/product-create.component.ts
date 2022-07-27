@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-product-create',
@@ -10,7 +11,7 @@ export class ProductCreateComponent implements OnInit {
 
   constructor() { }
        productFormCreate: FormGroup = new FormGroup({
-         name : new FormControl(),
+         name : new FormControl('abc'),
          price : new FormControl(),
          sale_price : new FormControl(),
          image : new FormControl()
@@ -18,5 +19,7 @@ export class ProductCreateComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+onCreate(){
+    alert('HELLO');
+}
 }

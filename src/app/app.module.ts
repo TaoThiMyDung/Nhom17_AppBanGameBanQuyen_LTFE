@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-// import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -55,19 +54,14 @@ import {HttpClientModule} from "@angular/common/http";
 // THEM MODULE
 import {ServicesModule} from "./services/services.module";
 import {TestModule} from "./test/test.module";
-// import { HomeComponents } from './home/test/home.component';
-import { HomeModule } from './home/home.module';
 import { HomeRoutingModule} from "./home/home-routing.module";
-import { ProductListComponent } from './application/product-list/product-list.component';
-import { ProductCreateComponent } from './application/product-create/product-create.component';
-import { ProductEditComponent } from './application/product-edit/product-edit.component';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {ProductListRoutingModule} from "./application/product-list/product-list-routing.module";
 import {ProductCreateRoutingModule} from "./application/product-create/product-create-routing.module";
 import {ProductEditRoutingModule} from "./application/product-edit/product-edit-routing.module";
 import {ProductDetailRoutingModule} from "./components/product-detail/product-detail-routing.module";
-
+import {FormGroup} from "@angular/forms";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -134,6 +128,7 @@ import {ProductDetailRoutingModule} from "./components/product-detail/product-de
     ProductCreateRoutingModule,
     ProductEditRoutingModule,
     ProductDetailRoutingModule,
+    FormsModule,
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService],
   bootstrap: [AppComponent],

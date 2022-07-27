@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+// Import module
+import { ReactiveFormsModule } from '@angular/forms';
 import { ProductCreateComponent } from './product-create.component';
 
 describe('ProductCreateComponent', () => {
@@ -23,3 +24,4 @@ describe('ProductCreateComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
