@@ -58,6 +58,15 @@ import {TestModule} from "./test/test.module";
 // import { HomeComponents } from './home/test/home.component';
 import { HomeModule } from './home/home.module';
 import { HomeRoutingModule} from "./home/home-routing.module";
+import { ProductListComponent } from './application/product-list/product-list.component';
+import { ProductCreateComponent } from './application/product-create/product-create.component';
+import { ProductEditComponent } from './application/product-edit/product-edit.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {ProductListRoutingModule} from "./application/product-list/product-list-routing.module";
+import {ProductCreateRoutingModule} from "./application/product-create/product-create-routing.module";
+import {ProductEditRoutingModule} from "./application/product-edit/product-edit-routing.module";
+import {ProductDetailRoutingModule} from "./components/product-detail/product-detail-routing.module";
 
 
 @NgModule({
@@ -120,6 +129,11 @@ import { HomeRoutingModule} from "./home/home-routing.module";
     HomeRoutingModule,
     // CarouselModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    ProductListRoutingModule,
+    ProductCreateRoutingModule,
+    ProductEditRoutingModule,
+    ProductDetailRoutingModule,
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService],
   bootstrap: [AppComponent],

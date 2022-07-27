@@ -17,6 +17,23 @@ export class ProductService {
   getProduct(): Observable<Array<Product>>{
     return this.http.get<Array<Product>>(_api + 'product');
   }
+/*
+Danh sach
+GET : http://localhost:3000/product
+ */
+  getList(): Observable<any>{
+    return this.http.get<any> ('http://localhost:1000/product')
+  }
+  /*
+  Them moi
+  POST : http://localhost:3000/product
+   */
+  // GET/:id: http://localhost:3000/product/1
+
+  // PUT/:id: http://localhost:3000/product/1
+
+  // DELETE/:id: http://localhost:3000/product/1
+
 
   private getData(url: string, header: object = {}): Observable<any> {
     return this.http.get<any[]>(url, header);

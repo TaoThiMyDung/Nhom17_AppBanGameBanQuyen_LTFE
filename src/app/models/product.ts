@@ -3,4 +3,6 @@ export class Product {
   name: string = "";
   image: string = "";
   price: number = 0 ;
+  sale_price: number = 0 ;
+  category_id: string = "";
 }

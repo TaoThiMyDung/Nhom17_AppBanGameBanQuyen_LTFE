@@ -1,0 +1,27 @@
+
+<form action="" method="POST" [formGroup]="productFormCreate" >
+
+  <legend> Form Add Product </legend>
+
+  <div class="form-group">
+    <label >label</label>
+    <input type="text" class="form-control" formControlName="name" placeholder="Input field">
+  </div>
+
+  <div class="form-group">
+    <label >label</label>
+    <input type="text" class="form-control" formControlName="price"  placeholder="Input field">
+  </div>
+
+  <div class="form-group">
+    <label >label</label>
+    <input type="text" class="form-control" formControlName="sale_price" placeholder="Input field">
+  </div>
+
+  <div class="form-group">
+    <label >label</label>
+    <input type="text" class="form-control" formControlName="image"  placeholder="Input field">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

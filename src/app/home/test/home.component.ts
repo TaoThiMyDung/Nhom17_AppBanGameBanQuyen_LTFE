@@ -22,10 +22,14 @@ export class HomeComponents implements OnInit {
 
   banners : Array<Banner> = new Array<Banner>();
   products : Array<Product> = new Array<Product>();
+  productsList : Array<any> = [];
 
-  constructor(private bannerService:BannerService , private productService:ProductService) { }
+  constructor(private bannerService:BannerService ,
+              private productService:ProductService,
+              private prodSrv : ProductService) { }
 
   ngOnInit(): void {
+    // LAY DU LIEU VAO TRANG HOME
     this.bannerService.getBanners()
       .subscribe(res => {
         this.banners = res;
@@ -34,5 +38,10 @@ export class HomeComponents implements OnInit {
       .subscribe(res => {
         this.products = res;
       });
+
+    // PHU THUOC VAO TRANG SERVE
+    this.prodSrv.getList().subscribe(data =>{
+      this.productsList = data ;
+    })
   }
 }
