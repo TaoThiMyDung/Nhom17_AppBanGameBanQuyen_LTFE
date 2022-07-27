@@ -45,6 +45,13 @@
       "sale_price": 2000,
       "category_id": 3,
       "image": "../../../assets/img/trend/ht-3.jpg"
+    },
+    {
+      "name": "Demo Game 1",
+      "price": "10000",
+      "sale_price": "5000",
+      "image": "../../../assets/img/trend/ht-1.jpg",
+      "id": 4
     }
   ],
   "category": [

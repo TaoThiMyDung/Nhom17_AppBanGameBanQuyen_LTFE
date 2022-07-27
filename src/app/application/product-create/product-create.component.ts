@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {ProductService} from "../../services/product.service";
 
 @Component({
   selector: 'app-product-create',
@@ -9,9 +9,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 })
 export class ProductCreateComponent implements OnInit {
 
-  constructor() { }
-       productFormCreate: FormGroup = new FormGroup({
-         name : new FormControl('abc'),
+  constructor(private  prodSrv : ProductService) {
+  }
+     public productFormCreate = new FormGroup({
+         name : new FormControl(),
          price : new FormControl(),
          sale_price : new FormControl(),
          image : new FormControl()
@@ -19,7 +20,9 @@ export class ProductCreateComponent implements OnInit {
 
   ngOnInit(): void {
   }
-onCreate(){
-    alert('HELLO');
-}
+  public onCreate(): void {
+    this.prodSrv.create(this.productFormCreate.value).subscribe(data =>{
+      console.log(data);
+    });
+   }
 }

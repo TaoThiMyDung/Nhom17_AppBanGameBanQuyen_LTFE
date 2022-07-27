@@ -3,18 +3,21 @@ import { CommonModule } from '@angular/common';
 import {ProductService} from "../../services/product.service";
 import {ProductCreateRoutingModule} from "./product-create-routing.module";
 import {ProductCreateComponent} from "./product-create.component";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
-    ProductCreateComponent
+    ProductCreateComponent,
   ],
   imports: [
     CommonModule,
     ProductCreateRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
+    FormsModule,
+    ReactiveFormsModule,
     ],
   providers: [
     ProductService

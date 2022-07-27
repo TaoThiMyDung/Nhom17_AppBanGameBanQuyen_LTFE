@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -55,17 +56,23 @@ import {HttpClientModule} from "@angular/common/http";
 import {ServicesModule} from "./services/services.module";
 import {TestModule} from "./test/test.module";
 import { HomeRoutingModule} from "./home/home-routing.module";
-import {ReactiveFormsModule} from "@angular/forms";
 import {ProductListRoutingModule} from "./application/product-list/product-list-routing.module";
 import {ProductCreateRoutingModule} from "./application/product-create/product-create-routing.module";
 import {ProductEditRoutingModule} from "./application/product-edit/product-edit-routing.module";
 import {ProductDetailRoutingModule} from "./components/product-detail/product-detail-routing.module";
-import {FormGroup} from "@angular/forms";
-import {FormsModule} from "@angular/forms";
+import {CommonModule} from "@angular/common";
+import {ProductCreateComponent} from "./application/product-create/product-create.component";
+import {ProductCreateModule} from "./application/product-create/product-create.module";
+import {HomeModule} from "./home/home.module";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
   declarations: [AppComponent, MyTableComponent],
+  exports:[
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   imports: [
     // THEM CAC MODULE VOI COMPONENT
     // HomeModule
@@ -114,21 +121,21 @@ import {FormsModule} from "@angular/forms";
     MdbMentionModule,
     RouterModule,
     AppRoutingModule,
-    RouterModule,
     ProductModule,
-    HttpClientModule,
     ServicesModule,
     TestModule,
     // HomeModule,
     HomeRoutingModule,
     // CarouselModule,
     HttpClientModule,
-    ReactiveFormsModule,
     ProductListRoutingModule,
     ProductCreateRoutingModule,
     ProductEditRoutingModule,
     ProductDetailRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
+    ProductCreateModule,
+    HomeModule,
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService],
   bootstrap: [AppComponent],
