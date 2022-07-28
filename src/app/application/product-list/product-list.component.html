@@ -1,1 +1,41 @@
-<p>product-list works!</p>
+<h2>Danh sách sản phẩm</h2>
+<!--<form action="" method="POST" class="form-inline" role="form">-->
+<!--  <div class="form-group">-->
+<!--    <label class="sr-only" >Label</label>-->
+<!--    <input type="email" class="form-control" id="" placeholder="Input field">-->
+<!--  </div>-->
+
+  <button type="submit" class="btn btn-primary mr-2">Search</button>
+  <a routerLink="../product-create" type="submit" class="btn btn-primary">Add</a>
+<!--</form>-->
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Sale_price</th>
+      <th>Image</th>
+      <th>
+
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let pro of productList">
+    <td>{{pro.id}}</td>
+    <td>{{pro.name}}</td>
+    <td>{{pro.price}}</td>
+    <td>{{pro.sale_price}}</td>
+    <td>
+      <img src="{{pro.image}}" alt="">
+    </td>
+    <td>
+      <a [routerLink]="['../product-edit', pro.id]" class="btn btn-sm btn-primary mr-1">Edit</a>
+      <a href="../product-list" (click)="onDelete(pro.id)" class="btn btn-sm btn-danger">Delete</a>
+    </td>
+  </tr>
+  </tbody>
+</table>

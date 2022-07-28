@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {ProductService} from "../../services/product.service";
 import {ProductListComponent} from "./product-list.component";
 import {ProductListRoutingModule} from "./product-list-routing.module";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -11,9 +12,13 @@ import {ProductListRoutingModule} from "./product-list-routing.module";
   ],
   imports: [
     CommonModule,
-    ProductListRoutingModule
+    ProductListRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
+    ReactiveFormsModule,
+    FormsModule
     ],
   providers: [
     ProductService

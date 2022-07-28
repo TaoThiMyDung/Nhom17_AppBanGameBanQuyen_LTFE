@@ -22,7 +22,9 @@ export class ProductCreateComponent implements OnInit {
   }
   public onCreate(): void {
     this.prodSrv.create(this.productFormCreate.value).subscribe(data =>{
-      console.log(data);
+      if (confirm("Add Product Success")) {
+        console.log(data);
+      }
     });
    }
 }

@@ -1,1 +1,24 @@
-<p>product-detail works!</p>
+<div class="row">
+   <div class="col-md-5">
+     <img src="../../../assets/img_home/img_min.png">
+   </div>
+   <div class="col-md-7">
+     <h2>Tên Sản Phẩm</h2>
+     <h4>Price: 500,000đ - Sale price : 4000đ</h4>
+     <p>
+       Hình nền điện thoại
+       Hình nền điện thoại
+       Hình nền điện thoại
+
+     </p>
+     <form action="" method="POST" role="form" [formGroup]="cartForm" >
+
+       <div class="form-group">
+         <label class="sr-only">Name</label>
+         <input type="number" class="form-control" formControlName="name" placeholder="So Luong">
+       </div>
+
+       <button type="submit" class="btn btn-primary">Add To Cart</button>
+     </form>
+   </div>
+</div>

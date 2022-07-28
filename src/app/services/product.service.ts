@@ -29,15 +29,23 @@ GET : http://localhost:3000/product
   POST : http://localhost:3000/product
    */
   create(data: any): Observable<any>{
-    return this.http.post<any> ('http://localhost:3000/product' , data);
+    return this.http.post<any> ('http://localhost:3000/product/' , data);
   }
 
   // GET/:id: http://localhost:3000/product/1
+  getOne(id: number): Observable<any>{
+    return this.http.get<any> ('http://localhost:3000/product/' + id);
+  }
 
   // PUT/:id: http://localhost:3000/product/1
+  update(id: number, data: any): Observable<any>{
+    return this.http.put<any> ('http://localhost:3000/product/' + id , data);
+  }
 
   // DELETE/:id: http://localhost:3000/product/1
-
+  delete(id: number): Observable<any>{
+    return this.http.delete<any> ('http://localhost:3000/product/' + id);
+  }
 
   private getData(url: string, header: object = {}): Observable<any> {
     return this.http.get<any[]>(url, header);

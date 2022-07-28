@@ -64,6 +64,10 @@ import {CommonModule} from "@angular/common";
 import {ProductCreateComponent} from "./application/product-create/product-create.component";
 import {ProductCreateModule} from "./application/product-create/product-create.module";
 import {HomeModule} from "./home/home.module";
+import {ProductListModule} from "./application/product-list/product-list.module";
+import {ProductEditModule} from "./application/product-edit/product-edit.module";
+import {ProductEditComponent} from "./application/product-edit/product-edit.component";
+import {ProductDetailModule} from "./components/product-detail/product-detail.module";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -119,6 +123,9 @@ import {HomeModule} from "./home/home.module";
     MdbTreeviewModule,
     MdbTransferModule,
     MdbMentionModule,
+
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule,
     AppRoutingModule,
     ProductModule,
@@ -132,10 +139,12 @@ import {HomeModule} from "./home/home.module";
     ProductCreateRoutingModule,
     ProductEditRoutingModule,
     ProductDetailRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    ProductCreateModule,
     HomeModule,
+    ProductCreateModule,
+    ProductListModule,
+    ProductEditModule,
+    ProductDetailModule,
+
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService],
   bootstrap: [AppComponent],
