@@ -3,8 +3,14 @@
      <img src="{{pro.image}}">
    </div>
    <div class="col-md-7">
-     <h2>{{pro.name}}</h2>
-     <h4>Price: {{pro.price}}đ - Sale price : <s>{{pro.sale_price}}đ</s></h4>
+<!--     HIỂN THỊ TẤT CẢ CÁC THUỘC TÍNH CỦA PRODUCT  -->
+     <h2>{{pro | json}}</h2>
+<!--     HIỂN THỊ NGÀY VD : 3/4/2022-->
+     <h2>{{today | date:"dd/MM/yyyy"}}</h2>
+
+<!--     HIỂN THỊ NAME VIẾT CHỨ HOA-->
+     <h2>{{pro.name | uppercase}} </h2>
+     <h4>Price: {{pro.price | currency:"":""}}đ - Sale price : <s>{{pro.sale_price | currency:"":""}}đ</s></h4>
      <p>
       {{pro.description}}
      </p>

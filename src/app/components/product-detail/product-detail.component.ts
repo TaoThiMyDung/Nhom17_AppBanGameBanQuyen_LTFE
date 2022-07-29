@@ -15,7 +15,7 @@ export class ProductDetailComponent implements OnInit {
   pro : Product = new Product(); // any ( Nhan Tat Ca Cac Du Lieu )
 
   constructor(private  prodSrv : ProductService , private _route :ActivatedRoute) { }
-
+  today = new Date();
   cartForm : FormGroup = new FormGroup({
     quantity : new FormControl()
   });

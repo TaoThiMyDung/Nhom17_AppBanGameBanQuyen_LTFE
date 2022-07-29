@@ -57,12 +57,11 @@
       "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
     },
     {
-      "id": 7,
       "name": "Demo App Game 08",
       "price": "7500",
-      "sale_price": null,
+      "sale_price": "5000",
       "image": "../../../assets/img/trend/f-2.jpg",
-      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
+      "id": 7
     },
     {
       "name": "Demo APP GAME 09",
@@ -70,6 +69,13 @@
       "sale_price": "33534",
       "image": "../../../assets/img/trend/f-1.jpg",
       "id": 8
+    },
+    {
+      "name": "jj",
+      "price": "hhh",
+      "sale_price": "jjj",
+      "image": "jj",
+      "id": 9
     }
   ],
   "category": [
