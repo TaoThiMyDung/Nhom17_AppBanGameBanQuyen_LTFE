@@ -23,11 +23,12 @@
   ],
   "product": [
     {
+      "id": 1,
       "name": "Demp pro name 01",
       "price": "5500",
       "sale_price": "4200",
       "image": "../../../assets/img/trend/ht-1.jpg",
-      "id": 1
+      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
     },
     {
       "id": 2,
@@ -35,7 +36,8 @@
       "price": 7000,
       "sale_price": 5000,
       "category_id": 2,
-      "image": "../../../assets/img/trend/ht-2.jpg"
+      "image": "../../../assets/img/trend/ht-2.jpg",
+      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
     },
     {
       "id": 3,
@@ -43,21 +45,31 @@
       "price": 10000,
       "sale_price": 2000,
       "category_id": 3,
-      "image": "../../../assets/img/trend/ht-3.jpg"
+      "image": "../../../assets/img/trend/ht-3.jpg",
+      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
     },
     {
+      "id": 4,
       "name": "Demo Game 1",
       "price": "10000",
       "sale_price": "5000",
       "image": "../../../assets/img/trend/ht-1.jpg",
-      "id": 4
+      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
     },
     {
+      "id": 7,
       "name": "Demo App Game 08",
       "price": "7500",
       "sale_price": null,
-      "image": "../../../assets/img_home/img_min.png",
-      "id": 7
+      "image": "../../../assets/img/trend/f-2.jpg",
+      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
+    },
+    {
+      "name": "Demo APP GAME 09",
+      "price": "454539",
+      "sale_price": "33534",
+      "image": "../../../assets/img/trend/f-1.jpg",
+      "id": 8
     }
   ],
   "category": [

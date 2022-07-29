@@ -22,7 +22,7 @@ export class HomeComponents implements OnInit {
 
   banners : Array<Banner> = new Array<Banner>();
   products : Array<Product> = new Array<Product>();
-  productsList : Array<any> = [];
+  productsList : Array<Product> = [];
 
   constructor(private bannerService:BannerService ,
               private productService:ProductService,

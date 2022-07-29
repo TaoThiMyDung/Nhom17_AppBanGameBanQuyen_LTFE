@@ -21,9 +21,25 @@ export class ProductService {
 Danh sach
 GET : http://localhost:3000/product
  */
-  getList(): Observable<any>{
-    return this.http.get<any> ('http://localhost:3000/product');
+  // getList(_limit : number = 4): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm
+  //   return this.http.get<Array<Product>> ('http://localhost:3000/product/?_limit='+ _limit + '&_sort=id&_order=desc');
+  // => Hiển thị 2 sản phẩm trong danh sách sản phẩm ( ?_limit=2 )
+  // => Sắp xếp theo id ( _sort=id )
+  // => Theo thứ tự giảm dần của id ( _order=desc )
+  // return this.http.get<Array<Product>> ('http://localhost:3000/product');
+  // }
+/*
+   http://localhost:3000/product/?_limit=3&_page=1 => 1 2 3 ( Hiển thị 3 sản phẩm đầu tiên ) => PHÂN TRANG TÌM KIẾM ( CHUYỂN XEM CÁC KHUNG SẢN PHẨM KHÁC )
+   http://localhost:3000/product/?_limit=3&_page=2 => 4 5 6 ( Hiển thị 3 sản phẩm tiếp theo )
+ */
+  getList (_limit : number = 4, search_key:any = null): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
+    let url = 'http://localhost:3000/product/?_limit='+ _limit + '&_sort=id&_order=desc';
+    if ( search_key != null ){
+      url += '&name_like=' + search_key; // Tìm kiếm theo tên có xuất hiện trong tên sản phẩm
+    }
+    return this.http.get<Array<Product>> (url);
   }
+
   /*
   Them moi
   POST : http://localhost:3000/product
@@ -33,8 +49,8 @@ GET : http://localhost:3000/product
   }
 
   // GET/:id: http://localhost:3000/product/1
-  getOne(id: number): Observable<any>{
-    return this.http.get<any> ('http://localhost:3000/product/' + id);
+  getOne(id: number): Observable<Product>{
+    return this.http.get<Product> ('http://localhost:3000/product/' + id);
   }
 
   // PUT/:id: http://localhost:3000/product/1

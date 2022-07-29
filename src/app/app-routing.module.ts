@@ -8,8 +8,7 @@ const routers: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/test' },
   {path: '', pathMatch: 'full', redirectTo: '/home'},
   {path: '', pathMatch: 'full', redirectTo: '/product-list'},
-  // {path: '', pathMatch: 'full', redirectTo: '/product-detail/:id'},
-  {path: '', pathMatch: 'full', redirectTo: '/product-detail'},
+  {path: '', pathMatch: 'full', redirectTo: '/productDetail/:id'},
   {path: '', pathMatch: 'full', redirectTo: '/product-create' },
   {path: '', pathMatch: 'full', redirectTo: '/product-edit/:id'},
 ];

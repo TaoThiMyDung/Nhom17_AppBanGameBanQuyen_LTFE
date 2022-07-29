@@ -4,8 +4,7 @@ import {ProductDetailComponent} from "./product-detail.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
-  // {path: 'product-detail/:id', component: ProductDetailComponent},
-  {path: 'product-detail', component: ProductDetailComponent},
+  { path: 'productDetail/:id', component: ProductDetailComponent },
 ];
 
 @NgModule({

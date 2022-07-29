@@ -1,15 +1,12 @@
-<div class="row">
+<div class="row py-5" >
    <div class="col-md-5">
-     <img src="../../../assets/img_home/img_min.png">
+     <img src="{{pro.image}}">
    </div>
    <div class="col-md-7">
-     <h2>Tên Sản Phẩm</h2>
-     <h4>Price: 500,000đ - Sale price : 4000đ</h4>
+     <h2>{{pro.name}}</h2>
+     <h4>Price: {{pro.price}}đ - Sale price : <s>{{pro.sale_price}}đ</s></h4>
      <p>
-       Hình nền điện thoại
-       Hình nền điện thoại
-       Hình nền điện thoại
-
+      {{pro.description}}
      </p>
      <form action="" method="POST" role="form" [formGroup]="cartForm" >
 
