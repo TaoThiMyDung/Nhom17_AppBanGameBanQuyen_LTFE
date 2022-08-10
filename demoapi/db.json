@@ -78,20 +78,49 @@
       "id": 9
     }
   ],
+
   "category": [
     {
-      "name": "Demp category name 01",
-      "id": 1
-    },
-    {
       "id": 1,
-      "name": "Demp category name 2",
+      "name": "STEAM - Super saving card recharge",
       "price": 5000,
-      "image": "../../../assets/img/categories/category-1.jpg"
+      "image": "../../../assets/img_home/imgCategory/steam.png"
     },
     {
-      "name": "Demp category name 2",
-      "id": 2
+      "id": 2,
+      "name": "CANVA PRO",
+      "price": 5000,
+      "image": "../../../assets/img_home/imgCategory/canva.png"
+    },
+    {
+      "id": 3,
+      "name": "PREMIUM",
+      "price": 5000,
+      "image": "../../../assets/img_home/imgCategory/premium.png"
+    },
+    {
+      "id": 4,
+      "name": "DISCORD",
+      "price": 5000,
+      "image":"../../../assets/img_home/imgCategory/discord.png"
+    },
+    {
+      "id": 5,
+      "name": "GAME XOXO 1",
+      "price": 5000,
+      "image": "../../../assets/img_home/imgCategory/img.png"
+    },
+    {
+      "id": 6,
+      "name": "GAME XOXO 2",
+      "price": 5000,
+      "image": "../../../assets/img_home/imgCategory/img_1.png"
+    },
+    {
+      "id": 7,
+      "name": "GAME XOXO 3",
+      "price": 5000,
+      "image": "../../../assets/img_home/imgCategory/img_2.png"
     }
   ]
 }

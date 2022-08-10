@@ -1,0 +1,24 @@
+.categories .container-fluid .row .col-lg-6  {
+  .categories__item .categories__text{
+    margin-top: 8%;
+    .nameGame{
+      color: white;
+      font-size: 450%;
+    }
+    .shopGame{
+      color: white;
+    }
+   }
+  .row .col-lg-6 .categories__item .categories__text{
+    margin-top: -20%;
+    .categories__text_name{
+      color: black;
+    }
+    .categories__text_des{
+      color: black;
+    }
+    .categories__text_shop{
+      color: black;
+    }
+  }
+}

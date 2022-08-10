@@ -12,12 +12,23 @@ const routers: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/product-create' },
   {path: '', pathMatch: 'full', redirectTo: '/product-edit/:id'},
 ];
+const child: Routes = [
+  // Them duong dan link toi trang ts
+  {path: '', pathMatch: 'full', redirectTo: '/products'},
+  {path: '', pathMatch: 'full', redirectTo: '/test' },
+  {path: '', pathMatch: 'full', redirectTo: '/home'},
+  {path: '', pathMatch: 'full', redirectTo: '/product-list'},
+  {path: '', pathMatch: 'full', redirectTo: '/productDetail/:id'},
+  {path: '', pathMatch: 'full', redirectTo: '/product-create' },
+  {path: '', pathMatch: 'full', redirectTo: '/product-edit/:id'},
+];
 
 // THAY LAM
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule, RouterModule.forRoot(routers)
+    CommonModule, RouterModule.forRoot(routers),
+    // RouterModule.forRoot(child)
   ]
 })
 

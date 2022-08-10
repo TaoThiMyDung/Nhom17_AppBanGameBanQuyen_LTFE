@@ -3,6 +3,8 @@ import {ProductService} from "../../services/product.service";
 import {BannerService} from "../../services/banner.service";
 import {Banner} from "../../models/banner";
 import {Product} from "../../models/product";
+import {Category} from "../../models/category";
+import {CategoryService} from "../../services/category.service";
 
 @Component({
   selector: 'app-test',
@@ -22,10 +24,13 @@ export class HomeComponents implements OnInit {
 
   banners : Array<Banner> = new Array<Banner>();
   products : Array<Product> = new Array<Product>();
+  category : Array<Category> = new Array<Category>();
+
   productsList : Array<Product> = [];
 
   constructor(private bannerService:BannerService ,
               private productService:ProductService,
+              private categoryService:CategoryService,
               private prodSrv : ProductService) { }
 
   ngOnInit(): void {
@@ -37,6 +42,10 @@ export class HomeComponents implements OnInit {
     this.productService.getProduct()
       .subscribe(res => {
         this.products = res;
+      });
+    this.categoryService.getCategory()
+      .subscribe(res => {
+        this.category = res;
       });
 
     // PHU THUOC VAO TRANG SERVE

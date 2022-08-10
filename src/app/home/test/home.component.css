@@ -1,0 +1,24 @@
+.categories .container-fluid .row .col-lg-6 .categories__item .categories__text {
+  margin-top: 8%;
+}
+.categories .container-fluid .row .col-lg-6 .categories__item .categories__text .nameGame {
+  color: white;
+  font-size: 450%;
+}
+.categories .container-fluid .row .col-lg-6 .categories__item .categories__text .shopGame {
+  color: white;
+}
+.categories .container-fluid .row .col-lg-6 .row .col-lg-6 .categories__item .categories__text {
+  margin-top: -20%;
+}
+.categories .container-fluid .row .col-lg-6 .row .col-lg-6 .categories__item .categories__text .categories__text_name {
+  color: black;
+}
+.categories .container-fluid .row .col-lg-6 .row .col-lg-6 .categories__item .categories__text .categories__text_des {
+  color: black;
+}
+.categories .container-fluid .row .col-lg-6 .row .col-lg-6 .categories__item .categories__text .categories__text_shop {
+  color: black;
+}
+
+/*# sourceMappingURL=home.component.css.map */
