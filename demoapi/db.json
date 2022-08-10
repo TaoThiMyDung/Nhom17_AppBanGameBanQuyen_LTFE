@@ -24,58 +24,66 @@
   "product": [
     {
       "id": 1,
-      "name": "Demp pro name 01",
-      "price": "5500",
-      "sale_price": "4200",
-      "image": "../../../assets/img/trend/ht-1.jpg",
-      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
+      "name": "Plants vs zombies garden warfare 2",
+      "price": 300000,
+      "sale_price": 470000,
+      "image": "../../../assets/img/product/product-1.png",
+      "description": "Featured game"
     },
     {
       "id": 2,
-      "name": "Demp pro name 2",
-      "price": 7000,
-      "sale_price": 5000,
-      "category_id": 2,
-      "image": "../../../assets/img/trend/ht-2.jpg",
-      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
+      "name": "The Sim 4",
+      "price": 350000,
+      "sale_price": 470000,
+      "image": "../../../assets/img/product/product-2.png",
+      "description": "Featured game"
     },
     {
       "id": 3,
-      "name": "Demp pro name 3",
-      "price": 10000,
-      "sale_price": 2000,
-      "category_id": 3,
-      "image": "../../../assets/img/trend/ht-3.jpg",
-      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
+      "name": "Dark Angels: Masquequerade of Shadows",
+      "price": 97000 ,
+      "sale_price": 48000 ,
+      "image": "../../../assets/img/product/product-3.png",
+      "description": "Featured game"
     },
     {
       "id": 4,
-      "name": "Demo Game 1",
-      "price": "10000",
-      "sale_price": "5000",
-      "image": "../../../assets/img/trend/ht-1.jpg",
-      "description": "kkkkkkkkkkkkkkkkkkkkkkkkk"
+      "name": "Warlocks vs Shadows",
+      "price": 340000 ,
+      "sale_price": 165000 ,
+      "image": "../../../assets/img/product/product-4.png",
+      "description": "Featured game"
     },
     {
-      "name": "Demo App Game 08",
-      "price": "7500",
-      "sale_price": "5000",
-      "image": "../../../assets/img/trend/f-2.jpg",
-      "id": 7
+      "id": 5,
+      "name": "Planet Coaster",
+      "price": 1025000,
+      "sale_price": 350000,
+      "image": "../../../assets/img/product/product-5.png",
+      "description": "Featured game"
     },
     {
-      "name": "Demo APP GAME 09",
-      "price": "454539",
-      "sale_price": "33534",
-      "image": "../../../assets/img/trend/f-1.jpg",
-      "id": 8
+      "id": 6,
+      "name": "Cities: Skylines",
+      "price": 683000,
+      "sale_price": 220000,
+      "image": "../../../assets/img/product/product-6.png",
+      "description": "Featured game"
+    }, {
+      "id": 7,
+      "name": "Zombie Boom - Beast Blaster - Cyborg Detonator",
+      "price": 56000 ,
+      "sale_price": 44000,
+      "image": "../../../assets/img/product/product-7.png",
+      "description": "Featured game"
     },
     {
-      "name": "jj",
-      "price": "hhh",
-      "sale_price": "jjj",
-      "image": "jj",
-      "id": 9
+      "id": 8,
+      "name": "Iron Sea Defenders",
+      "price": 119000 ,
+      "sale_price": 119000  ,
+      "image": "../../../assets/img/product/product-8.png",
+      "description": "Featured game"
     }
   ],
 
