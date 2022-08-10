@@ -42,7 +42,7 @@
       "id": 3,
       "name": "Dark Angels: Masquequerade of Shadows",
       "price": 97000 ,
-      "sale_price": 48000 ,
+      "sale_price": 148000 ,
       "image": "../../../assets/img/product/product-3.png",
       "description": "Featured game"
     },
@@ -50,7 +50,7 @@
       "id": 4,
       "name": "Warlocks vs Shadows",
       "price": 340000 ,
-      "sale_price": 165000 ,
+      "sale_price": 565000 ,
       "image": "../../../assets/img/product/product-4.png",
       "description": "Featured game"
     },
@@ -66,14 +66,14 @@
       "id": 6,
       "name": "Cities: Skylines",
       "price": 683000,
-      "sale_price": 220000,
+      "sale_price": 720000,
       "image": "../../../assets/img/product/product-6.png",
       "description": "Featured game"
     }, {
       "id": 7,
       "name": "Zombie Boom - Beast Blaster - Cyborg Detonator",
       "price": 56000 ,
-      "sale_price": 44000,
+      "sale_price": 64000,
       "image": "../../../assets/img/product/product-7.png",
       "description": "Featured game"
     },
@@ -81,10 +81,189 @@
       "id": 8,
       "name": "Iron Sea Defenders",
       "price": 119000 ,
-      "sale_price": 119000  ,
+      "sale_price": 219000  ,
       "image": "../../../assets/img/product/product-8.png",
       "description": "Featured game"
+    },
+
+
+
+    {
+      "id": 9,
+      "name": "No Man's Sky",
+      "price": 170740 ,
+      "sale_price": 250000  ,
+      "image": "../../../assets/img/trend/action_1.png",
+      "description": "Action games"
+    },
+    {
+      "id": 10,
+      "name": "Monster Hunter Rise",
+      "price": 134000 ,
+      "sale_price": 222000  ,
+      "image": "../../../assets/img/trend/action_2.png",
+      "description": "Action games"
+    },
+    {
+      "id": 11,
+      "name": "Hell Let Loose",
+      "price": 119000 ,
+      "sale_price": 219000  ,
+      "image": "../../../assets/img/trend/action_3.png",
+      "description": "Action games"
+    },
+    {
+      "id": 12,
+      "name": "Risk of Rain",
+      "price": 230000 ,
+      "sale_price": 320000  ,
+      "image": "../../../assets/img/trend/action_4.png",
+      "description": "Action games"
+    },
+    {
+      "id": 13,
+      "name": "Terraia",
+      "price": 450000 ,
+      "sale_price": 545000  ,
+      "image": "../../../assets/img/trend/action_5.png",
+      "description": "Action games"
+    },
+
+
+    {
+      "id": 14,
+      "name": "Deset Child",
+      "price": 156000 ,
+      "sale_price": 199000  ,
+      "image": "../../../assets/img/trend/outstan_1.png",
+      "description": "New game"
+    },
+    {
+      "id": 15,
+      "name": "Horizon Zero Dawn",
+      "price": 178000 ,
+      "sale_price": 234000  ,
+      "image": "../../../assets/img/trend/outstan_2.png",
+      "description": "New game"
+    },
+    {
+      "id": 16,
+      "name": "The Scapists",
+      "price": 350000 ,
+      "sale_price": 500000  ,
+      "image": "../../../assets/img/trend/outstan_3.png",
+      "description": "New game"
+    },
+    {
+      "id": 17,
+      "name": "BATTLEPASS Glory Scroll",
+      "price": 134000 ,
+      "sale_price": 450000  ,
+      "image": "../../../assets/img/trend/outstan_4.png",
+      "description": "New game"
+    },
+    {
+      "id": 18,
+      "name": "Iron Sea Defenders",
+      "price": 450000 ,
+      "sale_price": 500000  ,
+      "image": "../../../assets/img/trend/outstan_5.png",
+      "description": "New game"
+    } ,
+
+
+
+    {
+      "id": 19,
+      "name": "Planet Coaster",
+      "price": 1025000,
+      "sale_price": 350000,
+      "image": "../../../assets/img/trend/steam_1.png",
+      "description": "Steam game"
+    },
+    {
+      "id": 20,
+      "name": "Cities: Skylines",
+      "price": 683000,
+      "sale_price": 720000,
+      "image": "../../../assets/img/trend/steam_2.png",
+      "description": "Steam game"
+    }, {
+      "id": 21,
+      "name": "Zombie Boom - Beast Blaster - Cyborg Detonator",
+      "price": 56000 ,
+      "sale_price": 64000,
+      "image": "../../../assets/img/trend/steam_3.png",
+      "description": "Steam game"
+    },
+    {
+      "id": 22,
+      "name": "Iron Sea Defenders",
+      "price": 119000 ,
+      "sale_price": 219000  ,
+      "image": "../../../assets/img/trend/steam_4.png",
+      "description": "Steam game"
+    },
+    {
+      "id": 23,
+      "name": "No Man's Sky",
+      "price": 170740 ,
+      "sale_price": 250000  ,
+      "image": "../../../assets/img/trend/steam_5.png",
+      "description": "Steam games"
+    },
+
+
+
+    {
+      "id": 24,
+      "name": "Jurassic World Evolution",
+      "price": 1025000,
+      "sale_price": 350000,
+      "image": "../../../assets/img/account/account_1.png",
+      "description": "Game Account"
+    },
+    {
+      "id": 25,
+      "name": "Sunless Sea",
+      "price": 683000,
+      "sale_price": 720000,
+      "image": "../../../assets/img/account/account_2.png",
+      "description": "Game Account"
+    }, {
+      "id": 26,
+      "name": "Galactic Civilizations III",
+      "price": 56000 ,
+      "sale_price": 64000,
+      "image": "../../../assets/img/account/account_3.png",
+      "description": "Game Account"
+    },
+    {
+      "id": 27,
+      "name": "Crying Suns",
+      "price": 119000 ,
+      "sale_price": 219000  ,
+      "image": "../../../assets/img/account/account_4.png",
+      "description": "Game Account"
+    },
+    {
+      "id": 28,
+      "name": "Dandara",
+      "price": 170740 ,
+      "sale_price": 250000  ,
+      "image": "../../../assets/img/account/account_5.png",
+      "description": "Game Account"
+    },
+    {
+      "id": 29,
+      "name": "Wargame : Red Dragon",
+      "price": 170740 ,
+      "sale_price": 250000  ,
+      "image": "../../../assets/img/account/account_6.png",
+      "description": "Game Account"
     }
+
+
   ],
 
   "category": [

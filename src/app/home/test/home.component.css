@@ -25,4 +25,9 @@
   color: red;
 }
 
+.discount .container .row .col-lg-6 .discount__pic .discount__pic_image {
+  width: 25%;
+  height: 50%;
+}
+
 /*# sourceMappingURL=home.component.css.map */
