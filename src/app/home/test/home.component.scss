@@ -1,3 +1,17 @@
+
+.spad .container .property__gallery .women .product__item .product__item__text {
+  .rating{
+    text-align: center;
+    margin-left: 36%;
+  }
+}
+.property__gallery .women .product__item .product__item__text {
+  .rating{
+    text-align: center;
+    margin-left: 25%;
+  }
+}
+
 .categories .container-fluid .row .col-lg-6  {
   .categories__item .categories__text{
     margin-top: 8%;
@@ -38,4 +52,7 @@
     //height: 50%;
   }
 }
-
+.spad .container .row .col-lg-3 .services__item .services_image {
+   width: 20%;
+   height: 20%;
+}

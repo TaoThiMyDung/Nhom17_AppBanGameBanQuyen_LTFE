@@ -217,6 +217,14 @@
 
     {
       "id": 24,
+      "name": "Last Light Redux",
+      "price": 1025000,
+      "sale_price": 350000,
+      "image": "../../../assets/img/account/account.png",
+      "description": "Game Account"
+    },
+    {
+      "id": 25,
       "name": "Jurassic World Evolution",
       "price": 1025000,
       "sale_price": 350000,
@@ -224,14 +232,14 @@
       "description": "Game Account"
     },
     {
-      "id": 25,
+      "id": 26,
       "name": "Sunless Sea",
       "price": 683000,
       "sale_price": 720000,
       "image": "../../../assets/img/account/account_2.png",
       "description": "Game Account"
     }, {
-      "id": 26,
+      "id": 27,
       "name": "Galactic Civilizations III",
       "price": 56000 ,
       "sale_price": 64000,
@@ -239,7 +247,7 @@
       "description": "Game Account"
     },
     {
-      "id": 27,
+      "id": 28,
       "name": "Crying Suns",
       "price": 119000 ,
       "sale_price": 219000  ,
@@ -247,7 +255,7 @@
       "description": "Game Account"
     },
     {
-      "id": 28,
+      "id": 29,
       "name": "Dandara",
       "price": 170740 ,
       "sale_price": 250000  ,
@@ -255,7 +263,7 @@
       "description": "Game Account"
     },
     {
-      "id": 29,
+      "id": 30,
       "name": "Wargame : Red Dragon",
       "price": 170740 ,
       "sale_price": 250000  ,

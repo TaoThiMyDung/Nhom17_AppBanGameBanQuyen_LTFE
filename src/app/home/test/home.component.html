@@ -100,8 +100,8 @@
     </div>
     <div class="row property__gallery"  >
       <div class="col-lg-3 col-md-4 col-sm-6 mix women" *ngFor="let pro of products" >
-        <div class="product__item" *ngIf="pro.id == 1 || pro.id == 2 || pro.id == 3 || pro.id == 4 || pro.id == 5 || pro.id == 6
-                                          || pro.id == 7 || pro.id == 8 ">
+        <div class="product__item" *ngIf="pro.id == 1 || pro.id == 2 || pro.id == 3 || pro.id == 4 ||
+                                          pro.id == 5 || pro.id == 6 || pro.id == 7 || pro.id == 8 ">
           <div class="product__item__pic set-bg"
                [style.background-image]="'url(' + pro.image + ')'">
             <div *ngIf="pro.id == 1 || pro.id == 5" class="label new">New</div>
@@ -257,14 +257,15 @@
         </ul>
       </div>
     </div>
-    <div class="row property__gallery "  >
-      <div class="col-lg-2 col-md-2 col-sm-3 mix women" *ngFor="let pro of products" >
-        <div class="product__item" *ngIf="pro.id == 24 || pro.id == 25 || pro.id == 26 || pro.id == 27 || pro.id == 28 || pro.id == 29" >
+
+    <div class="row property__gallery " >
+      <div class="col-lg-2 col-md-1 col-sm-1 mix women" *ngFor="let pro of products" >
+        <div class="product__item"  *ngIf="pro.id == 25 || pro.id == 26 || pro.id == 27 || pro.id == 28 || pro.id == 29  || pro.id == 30" >
           <div class="product__item__pic set-bg product__item__pic_image"
                [style.background-image]="'url(' + pro.image + ')'">
             <div *ngIf="pro.id == 25 || pro.id == 27" class="label new">New</div>
-            <div *ngIf="pro.id == 28 " class="label stockout">Out of stock</div>
-            <div *ngIf="pro.id == 24 || pro.id == 26" class="label sale">Sale</div>
+            <div *ngIf="pro.id == 28" class="label stockout">Out of stock</div>
+            <div *ngIf="pro.id == 26" class="label sale">Sale</div>
             <ul class="product__hover">
               <!--              LINK DEN PRODUCT-DETAILS-->
               <!--              <li><a href="../../../assets/img/product/product-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>-->
@@ -272,7 +273,7 @@
               <li><a [routerLink]="['/home']"><span class="icon_bag_alt"></span></a></li>
             </ul>
           </div>
-          <div class="product__item__text">
+          <div class="product__item__text" >
             <h6><a [routerLink]="['/home']">{{pro.name}}</a></h6>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -287,51 +288,11 @@
         </div>
       </div>
     </div>
+
+
   </div>
 </section>
 <!-- Product Section End -->
-
-<!-- Discount Section Begin -->
-<section class="discount">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 p-0">
-        <div class="discount__pic">
-          <img src="../../../assets/img/discount.jpg" alt="">
-        </div>
-      </div>
-      <div class="col-lg-6 p-0">
-        <div class="discount__text">
-          <div class="discount__text__title">
-            <span>Discount</span>
-            <h2>Summer 2019</h2>
-            <h5><span>Sale</span> 50%</h5>
-          </div>
-          <div class="discount__countdown" id="countdown-time">
-            <div class="countdown__item">
-              <span>22</span>
-              <p>Days</p>
-            </div>
-            <div class="countdown__item">
-              <span>18</span>
-              <p>Hour</p>
-            </div>
-            <div class="countdown__item">
-              <span>46</span>
-              <p>Min</p>
-            </div>
-            <div class="countdown__item">
-              <span>05</span>
-              <p>Sec</p>
-            </div>
-          </div>
-          <a [routerLink]="['/home']">Shop now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Discount Section End -->
 
 <!-- Services Section Begin -->
 <section class="services spad">
@@ -339,28 +300,32 @@
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="services__item">
-          <i class="fa fa-car"></i>
+<!--          <i class="fa fa-car"></i>-->
+          <img class="services_image" src="../../../assets/img/account/free.png">
           <h6>Free Shipping</h6>
           <p>For all oder over $99</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="services__item">
-          <i class="fa fa-money"></i>
+<!--          <i class="fa fa-money"></i>-->
+          <img class="services_image" src="../../../assets/img/account/money.png">
           <h6>Money Back Guarantee</h6>
           <p>If good have Problems</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="services__item">
-          <i class="fa fa-support"></i>
+<!--          <i class="fa fa-support"></i>-->
+          <img class="services_image" src="../../../assets/img/account/online.png">
           <h6>Online Support 24/7</h6>
           <p>Dedicated support</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="services__item">
-          <i class="fa fa-headphones"></i>
+<!--          <i class="fa fa-headphones"></i> -->
+          <img class="services_image" src="../../../assets/img/account/payment.png">
           <h6>Payment Secure</h6>
           <p>100% secure payment</p>
         </div>
