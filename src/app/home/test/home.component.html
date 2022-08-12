@@ -150,9 +150,9 @@
             <ul class="product__hover">
 
 <!--              LINK DEN PRODUCT-DETAILS-->
-<!--              <li><a href="../../../assets/img/product/product-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>-->
-              <li><a [routerLink]="['/home']"><span class="icon_heart_alt"></span></a></li>
-              <li><a [routerLink]="['/home']"><span class="icon_bag_alt"></span></a></li>
+              <li> <a routerLink="../productDetail/{{pro.id}}"><span class="arrow_expand"></span></a></li>
+<!--              LINK DEN PRODUCT-CART-->
+              <li><a [routerLink]="['/home']"><span class="icon_cart"></span></a></li>
             </ul>
           </div>
           <div class="product__item__text">
@@ -215,10 +215,10 @@
             <div *ngIf="pro.id == 25 || pro.id == 27" class="label new">New</div>
             <div *ngIf="pro.id == 26" class="label sale">Sale</div>
             <ul class="product__hover">
-              <!--              LINK DEN PRODUCT-DETAILS-->
-              <!--              <li><a href="../../../assets/img/product/product-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>-->
-              <li><a [routerLink]="['/home']"><span class="icon_heart_alt"></span></a></li>
-              <li><a [routerLink]="['/home']"><span class="icon_bag_alt"></span></a></li>
+                <!--              LINK DEN PRODUCT-DETAILS-->
+                <li><a routerLink="../productDetail/{{pro.id}}"><span class="arrow_expand"></span></a></li>
+              <!--              LINK DEN PRODUCT-CART-->
+                <li><a [routerLink]="['/home']"><span class="icon_cart"></span></a></li>
             </ul>
           </div>
           <div class="product__item__text" >
@@ -253,7 +253,7 @@
           </div>
           <div class="trend__item" *ngIf="pro.id == 9 || pro.id == 10 || pro.id == 11 || pro.id == 12 || pro.id == 13" >
             <div class="trend__item__pic">
-              <img src="{{pro.image}}" alt="">
+              <a routerLink="../productDetail/{{pro.id}}"><img src="{{pro.image}}" alt=""></a>
             </div>
             <div class="trend__item__text">
               <h6>{{pro.name}}</h6>
@@ -268,7 +268,7 @@
               <div *ngIf="pro.id == 10 || pro.id == 12" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
             </div>
             <p class="card-text">
-              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Product Details</a>
+              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Add to cart</a>
             </p>
           </div>
         </div>
@@ -280,7 +280,7 @@
           </div>
           <div class="trend__item" *ngIf="pro.id == 14 || pro.id == 15 || pro.id == 16 || pro.id == 17 || pro.id == 18" >
             <div class="trend__item__pic">
-              <img src="{{pro.image}}" alt="">
+              <a routerLink="../productDetail/{{pro.id}}"><img src="{{pro.image}}" alt=""></a>
             </div>
             <div class="trend__item__text">
               <h6>{{pro.name}}</h6>
@@ -295,7 +295,7 @@
               <div *ngIf="pro.id == 14 || pro.id == 17" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
             </div>
             <p class="card-text">
-              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Product Details</a>
+              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Add to cart</a>
             </p>
           </div>
         </div>
@@ -307,7 +307,7 @@
           </div>
           <div class="trend__item" *ngIf="pro.id == 19 || pro.id == 20 || pro.id == 21 || pro.id == 22 || pro.id == 23" >
             <div class="trend__item__pic">
-              <img src="{{pro.image}}" alt="">
+              <a routerLink="../productDetail/{{pro.id}}"><img src="{{pro.image}}" alt=""></a>
             </div>
             <div class="trend__item__text">
               <h6>{{pro.name}}</h6>
@@ -322,7 +322,7 @@
               <div *ngIf="pro.id == 21 || pro.id == 23" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
             </div>
             <p class="card-text">
-              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Product Details</a>
+              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Add to cart</a>
             </p>
           </div>
         </div>
@@ -332,3 +332,66 @@
   </div>
 </section>
 <!-- Trend Section End -->
+
+<!-- Instagram Begin -->
+<div class="instagram">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+        <div class="instagram__item set-bg"
+             style="background-image: url(assets/img/instagram/insta_1.png)">
+          <div class="instagram__text">
+            <i class="fa fa-instagram"></i>
+            <a [routerLink]="['/home']">@ xoxo_shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+        <div class="instagram__item set-bg"
+             style="background-image: url(assets/img/instagram/insta_2.png)">
+          <div class="instagram__text">
+            <i class="fa fa-instagram"></i>
+            <a [routerLink]="['/home']">@ xoxo_shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+        <div class="instagram__item set-bg"
+             style="background-image: url(assets/img/instagram/insta_3.png)">
+          <div class="instagram__text">
+            <i class="fa fa-instagram"></i>
+            <a [routerLink]="['/home']">@ XoXo_shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+        <div class="instagram__item set-bg"
+             style="background-image: url(assets/img/instagram/insta_4.png)">
+          <div class="instagram__text">
+            <i class="fa fa-instagram"></i>
+            <a [routerLink]="['/home']">@ XoXo_shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+        <div class="instagram__item set-bg"
+             style="background-image: url(assets/img/instagram/insta_5.png)">
+          <div class="instagram__text">
+            <i class="fa fa-instagram"></i>
+            <a [routerLink]="['/home']">@ XoXo_shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+        <div class="instagram__item set-bg"
+             style="background-image: url(assets/img/instagram/insta_6.png)">
+          <div class="instagram__text">
+            <i class="fa fa-instagram"></i>
+            <a [routerLink]="['/home']">@ XoXo_shop</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Instagram End -->
