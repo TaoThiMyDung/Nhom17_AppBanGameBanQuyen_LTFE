@@ -39,7 +39,10 @@ GET : http://localhost:3000/product
     }
     return this.http.get<Array<Product>> (url);
   }
-
+  getRelatedProduct  (_limit : number = 4): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
+    let url = 'http://localhost:3000/product/?_limit='+ _limit;
+    return this.http.get<Array<Product>> (url);
+  }
   /*
   Them moi
   POST : http://localhost:3000/product

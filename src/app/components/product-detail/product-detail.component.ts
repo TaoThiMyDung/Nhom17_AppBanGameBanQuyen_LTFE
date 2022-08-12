@@ -13,8 +13,11 @@ export class ProductDetailComponent implements OnInit {
   id: number = 0 ;
   // Doi Tuong Product Duoc Bam Vao
   pro : Product = new Product(); // any ( Nhan Tat Ca Cac Du Lieu )
+  relatedProduct : Array<Product> = new Array<Product>();
 
-  constructor(private  prodSrv : ProductService , private _route :ActivatedRoute) { }
+  constructor(private  prodSrv : ProductService ,
+              private _route :ActivatedRoute,
+              private productService:ProductService) { }
   today = new Date();
   cartForm : FormGroup = new FormGroup({
     quantity : new FormControl()
@@ -28,5 +31,9 @@ export class ProductDetailComponent implements OnInit {
     this.prodSrv.getOne(this.id).subscribe(data =>{
       this.pro = data ;
     })
+    this.productService.getRelatedProduct()
+      .subscribe(res => {
+        this.relatedProduct = res;
+      });
   }
 }

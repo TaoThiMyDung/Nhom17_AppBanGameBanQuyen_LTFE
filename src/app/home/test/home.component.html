@@ -78,6 +78,47 @@
 </section>
 <!-- Categories Section End -->
 
+<!-- Services Section Begin -->
+<section class="services spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="services__item">
+          <!--          <i class="fa fa-car"></i>-->
+          <img class="services_image" src="../../../assets/img/account/free.png">
+          <h6>Free Shipping</h6>
+          <p>For all oder over $99</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="services__item">
+          <!--          <i class="fa fa-money"></i>-->
+          <img class="services_image" src="../../../assets/img/account/money.png">
+          <h6>Money Back Guarantee</h6>
+          <p>If good have Problems</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="services__item">
+          <!--          <i class="fa fa-support"></i>-->
+          <img class="services_image" src="../../../assets/img/account/online.png">
+          <h6>Online Support 24/7</h6>
+          <p>Dedicated support</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="services__item">
+          <!--          <i class="fa fa-headphones"></i> -->
+          <img class="services_image" src="../../../assets/img/account/payment.png">
+          <h6>Payment Secure</h6>
+          <p>100% secure payment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Section End -->
+
 <!-- Product Section Begin -->
 <section class="product spad" >
   <div class="container">
@@ -105,7 +146,6 @@
           <div class="product__item__pic set-bg"
                [style.background-image]="'url(' + pro.image + ')'">
             <div *ngIf="pro.id == 1 || pro.id == 5" class="label new">New</div>
-            <div *ngIf="pro.id == 3 " class="label stockout">Out of stock</div>
             <div *ngIf="pro.id == 6 || pro.id == 8" class="label sale">Sale</div>
             <ul class="product__hover">
 
@@ -151,97 +191,6 @@
   </div>
 </section>
 
-<!-- Trend Section Begin -->
-<section class="trend spad">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-6" >
-        <div class="trend__content" *ngFor="let pro of products">
-          <div class="section-title"  *ngIf="pro.id == 9">
-            <h4>{{pro.description}}</h4>
-          </div>
-          <div class="trend__item" *ngIf="pro.id == 9 || pro.id == 10 || pro.id == 11 || pro.id == 12 || pro.id == 13" >
-            <div class="trend__item__pic">
-              <img src="{{pro.image}}" alt="">
-            </div>
-            <div class="trend__item__text">
-              <h6>{{pro.name}}</h6>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <div *ngIf="pro.id != 10 && pro.id != 12" class="product__price">$ {{pro.price}}</div>
-              <div *ngIf="pro.id == 10 || pro.id == 12" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
-            </div>
-            <p class="card-text">
-              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Product Details</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6" >
-        <div class="trend__content" *ngFor="let pro of products">
-          <div class="section-title"  *ngIf="pro.id == 14">
-            <h4>{{pro.description}}</h4>
-          </div>
-          <div class="trend__item" *ngIf="pro.id == 14 || pro.id == 15 || pro.id == 16 || pro.id == 17 || pro.id == 18" >
-            <div class="trend__item__pic">
-              <img src="{{pro.image}}" alt="">
-            </div>
-            <div class="trend__item__text">
-              <h6>{{pro.name}}</h6>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <div *ngIf="pro.id != 14 && pro.id != 17" class="product__price">$ {{pro.price}}</div>
-              <div *ngIf="pro.id == 14 || pro.id == 17" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
-            </div>
-            <p class="card-text">
-              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Product Details</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6" >
-        <div class="trend__content" *ngFor="let pro of products">
-          <div class="section-title"  *ngIf="pro.id == 19">
-            <h4>{{pro.description}}</h4>
-          </div>
-          <div class="trend__item" *ngIf="pro.id == 19 || pro.id == 20 || pro.id == 21 || pro.id == 22 || pro.id == 23" >
-            <div class="trend__item__pic">
-              <img src="{{pro.image}}" alt="">
-            </div>
-            <div class="trend__item__text">
-              <h6>{{pro.name}}</h6>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <div *ngIf="pro.id != 21 && pro.id != 23" class="product__price">$ {{pro.price}}</div>
-              <div *ngIf="pro.id == 21 || pro.id == 23" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
-            </div>
-            <p class="card-text">
-              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Product Details</a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- Trend Section End -->
-
 <!-- Product Section Begin -->
 <section class="product spad" >
   <div class="container">
@@ -264,7 +213,6 @@
           <div class="product__item__pic set-bg product__item__pic_image"
                [style.background-image]="'url(' + pro.image + ')'">
             <div *ngIf="pro.id == 25 || pro.id == 27" class="label new">New</div>
-            <div *ngIf="pro.id == 28" class="label stockout">Out of stock</div>
             <div *ngIf="pro.id == 26" class="label sale">Sale</div>
             <ul class="product__hover">
               <!--              LINK DEN PRODUCT-DETAILS-->
@@ -294,106 +242,93 @@
 </section>
 <!-- Product Section End -->
 
-<!-- Services Section Begin -->
-<section class="services spad">
+<!-- Trend Section Begin -->
+<section class="trend spad">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="services__item">
-<!--          <i class="fa fa-car"></i>-->
-          <img class="services_image" src="../../../assets/img/account/free.png">
-          <h6>Free Shipping</h6>
-          <p>For all oder over $99</p>
+      <div class="col-lg-4 col-md-4 col-sm-6" >
+        <div class="trend__content" *ngFor="let pro of products">
+          <div class="section-title"  *ngIf="pro.id == 9">
+            <h4>{{pro.category}}</h4>
+          </div>
+          <div class="trend__item" *ngIf="pro.id == 9 || pro.id == 10 || pro.id == 11 || pro.id == 12 || pro.id == 13" >
+            <div class="trend__item__pic">
+              <img src="{{pro.image}}" alt="">
+            </div>
+            <div class="trend__item__text">
+              <h6>{{pro.name}}</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div *ngIf="pro.id != 10 && pro.id != 12" class="product__price">$ {{pro.price}}</div>
+              <div *ngIf="pro.id == 10 || pro.id == 12" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
+            </div>
+            <p class="card-text">
+              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Product Details</a>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="services__item">
-<!--          <i class="fa fa-money"></i>-->
-          <img class="services_image" src="../../../assets/img/account/money.png">
-          <h6>Money Back Guarantee</h6>
-          <p>If good have Problems</p>
+      <div class="col-lg-4 col-md-4 col-sm-6" >
+        <div class="trend__content" *ngFor="let pro of products">
+          <div class="section-title"  *ngIf="pro.id == 14">
+            <h4>{{pro.category}}</h4>
+          </div>
+          <div class="trend__item" *ngIf="pro.id == 14 || pro.id == 15 || pro.id == 16 || pro.id == 17 || pro.id == 18" >
+            <div class="trend__item__pic">
+              <img src="{{pro.image}}" alt="">
+            </div>
+            <div class="trend__item__text">
+              <h6>{{pro.name}}</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div *ngIf="pro.id != 14 && pro.id != 17" class="product__price">$ {{pro.price}}</div>
+              <div *ngIf="pro.id == 14 || pro.id == 17" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
+            </div>
+            <p class="card-text">
+              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Product Details</a>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="services__item">
-<!--          <i class="fa fa-support"></i>-->
-          <img class="services_image" src="../../../assets/img/account/online.png">
-          <h6>Online Support 24/7</h6>
-          <p>Dedicated support</p>
+      <div class="col-lg-4 col-md-4 col-sm-6" >
+        <div class="trend__content" *ngFor="let pro of products">
+          <div class="section-title"  *ngIf="pro.id == 19">
+            <h4>{{pro.category}}</h4>
+          </div>
+          <div class="trend__item" *ngIf="pro.id == 19 || pro.id == 20 || pro.id == 21 || pro.id == 22 || pro.id == 23" >
+            <div class="trend__item__pic">
+              <img src="{{pro.image}}" alt="">
+            </div>
+            <div class="trend__item__text">
+              <h6>{{pro.name}}</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div *ngIf="pro.id != 21 && pro.id != 23" class="product__price">$ {{pro.price}}</div>
+              <div *ngIf="pro.id == 21 || pro.id == 23" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
+            </div>
+            <p class="card-text">
+              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Product Details</a>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="services__item">
-<!--          <i class="fa fa-headphones"></i> -->
-          <img class="services_image" src="../../../assets/img/account/payment.png">
-          <h6>Payment Secure</h6>
-          <p>100% secure payment</p>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
-<!-- Services Section End -->
-
-<!-- Instagram Begin -->
-<div class="instagram">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-        <div class="instagram__item set-bg"
-             style="background-image: url(../../../assets/img/instagram/insta-1.jpg)">
-          <div class="instagram__text">
-            <i class="fa fa-instagram"></i>
-            <a [routerLink]="['/home']">@ xoxo_shop</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-        <div class="instagram__item set-bg"
-             style="background-image: url(../../../assets/img/instagram/insta-2.jpg)">
-          <div class="instagram__text">
-            <i class="fa fa-instagram"></i>
-            <a [routerLink]="['/home']">@ xoxo_shop</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-        <div class="instagram__item set-bg"
-             style="background-image: url(../../../assets/img/instagram/insta-3.jpg)">
-          <div class="instagram__text">
-            <i class="fa fa-instagram"></i>
-            <a [routerLink]="['/home']">@ xoxo_shop</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-        <div class="instagram__item set-bg"
-             style="background-image: url(../../../assets/img/instagram/insta-4.jpg)">
-          <div class="instagram__text">
-            <i class="fa fa-instagram"></i>
-            <a [routerLink]="['/home']">@ xoxo_shop</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-        <div class="instagram__item set-bg"
-             style="background-image: url(../../../assets/img/instagram/insta-5.jpg)">
-          <div class="instagram__text">
-            <i class="fa fa-instagram"></i>
-            <a [routerLink]="['/home']">@ xoxo_shop</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-        <div class="instagram__item set-bg"
-             style="background-image: url(../../../assets/img/instagram/insta-6.jpg)">
-          <div class="instagram__text">
-            <i class="fa fa-instagram"></i>
-            <a [routerLink]="['/home']">@ xoxo_shop</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Instagram End -->
+<!-- Trend Section End -->

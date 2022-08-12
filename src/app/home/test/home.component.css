@@ -45,4 +45,17 @@
   height: 20%;
 }
 
+.services {
+  margin-top: -5%;
+  margin-bottom: -5%;
+}
+.services .container .row .col-lg-3 .services__item .services_image {
+  margin-left: 20%;
+}
+
+.trend {
+  margin-left: 7%;
+  margin-top: -5%;
+}
+
 /*# sourceMappingURL=home.component.css.map */
