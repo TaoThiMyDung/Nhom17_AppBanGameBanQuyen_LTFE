@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {ProductService} from "../../services/product.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Product} from "../../models/product";
 import {CartService} from "../../services/cart.service";
+import {Cart} from "../../models/cart";
 
 @Component({
   selector: 'app-product-detail',
@@ -20,8 +21,10 @@ export class ProductDetailComponent implements OnInit {
   relatedProduct: Array<Product> = new Array<Product>();
   related: Array<Product> = new Array<Product>();
 
+  quantity : number ;
+
   constructor(private prodSrv: ProductService,
-              private cartdSrv: CartService,
+              private cartSrv: CartService,
               private _route: ActivatedRoute,
               private productService: ProductService,
               private route: Router) {
@@ -29,10 +32,23 @@ export class ProductDetailComponent implements OnInit {
 
   today = new Date();
 
-  cartForm: FormGroup = new FormGroup({
+  // cartForm: FormGroup = new FormGroup({
+  //       id: new FormControl('' ),
+  //       name: new FormControl( ''),
+  //       image: new FormControl('' ),
+  //       price: new FormControl( ''),
+  //       quantitySold: new FormControl('' )
+  //   });
+  cartForm = new FormGroup({
+    id: new FormControl( ),
+    name : new FormControl(),
+    image : new FormControl(),
+    price : new FormControl(),
+    quantitySold : new FormControl(),
   });
+
   cartFormOneQuantity: FormGroup = new FormGroup({
-  });
+       });
 
   ngOnInit(): void {
     // LAY DU LIEU TREN THANH TIM KIEM
@@ -44,21 +60,12 @@ export class ProductDetailComponent implements OnInit {
       this.pro = data ;
 
       this.cartForm = new FormGroup({
-        id: new FormControl(),
-        name: new FormControl(this.pro.name),
-        image: new FormControl(this.pro.image),
-        price: new FormControl(this.pro.price),
-        quantitySold: new FormControl(),
+        id: new FormControl(data.id ),
+        name : new FormControl(data.name),
+        image : new FormControl(data.image),
+        price : new FormControl(data.price),
+        quantitySold : new FormControl(),
       });
-      this.cartFormOneQuantity = new FormGroup({
-        id: new FormControl(),
-        name: new FormControl(this.pro.name),
-        image: new FormControl(this.pro.image),
-        price: new FormControl(this.pro.price),
-        quantitySold: new FormControl(1),
-      });
-
-
     })
 
     this.prodSrv.getOne(this.id).subscribe(data =>{
@@ -68,6 +75,7 @@ export class ProductDetailComponent implements OnInit {
         this.relatedProduct = res;
        })
       });
+
         this.prodSrv.getOne(this.id).subscribe(data =>{
           this.category = data.category;
           this.productService.getRelated(this.category)
@@ -76,32 +84,93 @@ export class ProductDetailComponent implements OnInit {
               // alert(this.category)
         })
       });
+
   }
 
-  public onCreate(): void {
+  public onCreate(id: number ): void {
+      this.submited = true;
 
-    this.submited = true;
-    if (this.cartForm.invalid) {
-      return;
-    } else {
-      this.cartdSrv.create(this.cartForm.value).subscribe(data => {
-        if (confirm("Add To Cart Success")) {
-          this.route.navigate(['/product-list']);
+      if (this.cartForm.invalid) {
+        return;
+      } else {
+        this.cartSrv.create(this.cartForm.value).subscribe(data => {
+          if (confirm("Add To Cart Success")) {
+            this.route.navigate(['/product-list']);
+          }
+        });
+      }
+
+      this.cartSrv.getOne(id).subscribe(data1 => {
+        if (data1.id != null) {
+          this.cartForm = new FormGroup({
+            id: new FormControl(id),
+            name: new FormControl(data1.name),
+            image: new FormControl(data1.image),
+            price: new FormControl(data1.price),
+            quantitySold: new FormControl(data1.quantitySold + this.cartForm.controls.quantitySold.value),
+          });
+          this.cartSrv.update(id, this.cartForm.value).subscribe(data => {
+            if (confirm("Add To Cart Success")) {
+              this.route.navigate(['/product-list']);
+            }
+          });
+        }else {
+          return;
         }
-      });
-    }
+      })
   }
-  public onCreateOneQuantity (): void {
 
-    this.submited = true;
-    if (this.cartFormOneQuantity.invalid) {
-      return;
-    } else {
-      this.cartdSrv.create(this.cartFormOneQuantity.value).subscribe(data => {
-        if (confirm("Add To Cart Success")) {
-          this.route.navigate(['/product-list']);
-        }
-      });
-    }
+  public onClickProduct (id :number): void {
+        // if (confirm(id+ 'h')) {
+          this.route.navigate(['/productDetail/' + id]);
+        // }
+
   }
+  public onClickQuantity (): void {
+     alert(1);
+  }
+  public onCreateOneQuantity (id :number): void {
+    this.prodSrv.getOne(id).subscribe(data => {
+
+      // alert(id)
+      this.cartFormOneQuantity = new FormGroup({
+        id: new FormControl(id),
+        name: new FormControl(data.name),
+        image: new FormControl(data.image),
+        price: new FormControl(data.price),
+        quantitySold: new FormControl(1),
+      });
+      this.cartSrv.getOne(id).subscribe(data1 => {
+        if (data1.id != null) {
+          this.cartFormOneQuantity = new FormGroup({
+            id: new FormControl(id),
+            name: new FormControl(data.name),
+            image: new FormControl(data.image),
+            price: new FormControl(data.price),
+            quantitySold: new FormControl(data1.quantitySold + 1),
+          });
+          this.cartSrv.update(id , this.cartFormOneQuantity.value).subscribe(data => {
+            if (confirm("Add To Cart Success")) {
+              this.route.navigate(['/product-list']);
+            }
+          });
+        }else {
+          return;
+        }
+      })
+      this.submited = true;
+
+      if (this.cartFormOneQuantity.invalid) {
+        return;
+      } else {
+        this.cartSrv.create(this.cartFormOneQuantity.value).subscribe(data => {
+          if (confirm("Add To Cart Success")) {
+            this.route.navigate(['/product-list']);
+          }
+        });
+      }
+    })
+  }
+
+
 }

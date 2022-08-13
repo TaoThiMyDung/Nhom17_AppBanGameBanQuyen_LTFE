@@ -327,22 +327,10 @@
       "price": 134000,
       "image": "../../../assets/img/trend/action_2.png",
       "quantitySold": 5
-    },
-    {
-      "id": 11,
-      "name": "Zombie Boom - Beast Blaster - Cyborg Detonator",
-      "image": "../../../assets/img/product/product-7.png",
-      "price": 56000,
-      "quantitySold": 1
-    },
-    {
-      "id": 12,
-      "name": "Zombie Boom - Beast Blaster - Cyborg Detonator",
-      "image": "../../../assets/img/product/product-7.png",
-      "price": 56000,
-      "quantitySold": 1
     }
   ],
+
+
   "category": [
     {
       "id": 1,

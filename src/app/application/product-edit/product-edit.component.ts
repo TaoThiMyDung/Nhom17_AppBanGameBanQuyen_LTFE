@@ -10,7 +10,8 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ProductEditComponent implements OnInit {
   id: number = 0 ;
-  constructor(private  prodSrv : ProductService , private _route :ActivatedRoute) { }
+  constructor(private  prodSrv : ProductService ,
+              private _route :ActivatedRoute) { }
 
   public productFormEdit = new FormGroup({
     name : new FormControl(),

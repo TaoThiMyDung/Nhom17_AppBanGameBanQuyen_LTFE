@@ -124,12 +124,17 @@
 <!--                <span class="inc qtybtn">+</span>-->
 <!--              </div>-->
 
-              <form action="" method="POST" role="form" [formGroup]="cartForm" (ngSubmit)="onCreate()">
+              <form action="" method="POST" role="form" [formGroup]="cartForm" (ngSubmit)="onCreate(pro.id)">
                 <div class="form-group">
-                  <input min="1" type="number" class="form-control" value="1" formControlName="quantitySold" placeholder="Quantity">
+<!--                  (click)="onClickQuantity()"-->
+                  <input min="1" type="number" class="form-control" formControlName="quantitySold" placeholder="quantity">
+                  <button type="submit" class="btn btn-primary">Add To Cart</button>
                 </div>
-                <button type="submit" class="btn btn-primary">Add To Cart</button>
               </form>
+
+<!--              <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity" (ngSubmit)="onCreateOneQuantity(p.id)">-->
+<!--                <a type="submit" (click)="onCreateOneQuantity(p.id)" ><span class="icon_cart"></span></a>-->
+<!--              </form>-->
 
             </div>
 <!--            <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>-->
@@ -210,37 +215,28 @@
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6" *ngFor="let p of relatedProduct">
         <div class="product__item">
-          <a routerLink="../productDetail/{{p.id}}">
+
           <div class="product__item__pic set-bg"
                [style.background-image]="'url(' + p.image + ')'" >
 
-<!--            <div class="label new">New</div>-->
-<!--            <ul class="product__hover">-->
-<!--              <li><a href="img/product/related/rp-1.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>-->
-<!--              <li><a href="#"><span class="icon_heart_alt"></span></a></li>-->
-<!--              <li><a href="#"><span class="icon_bag_alt"></span></a></li>-->
-<!--            </ul>-->
+
 
             <ul class="product__hover">
               <!--              LINK DEN PRODUCT-DETAILS-->
-<!--             <li><a routerLink="../productDetail/{{p.id}}"><span class="arrow_expand"></span></a></li>-->
+              <li><a routerLink="../{{p.id}}" (click)=onClickProduct(p.id) class="image-popup"><span class="arrow_expand"></span></a></li>
               <!--              LINK DEN PRODUCT-CART-->
-<!--              <li><a type="submit" [routerLink]="['/home']"><span class="icon_cart"></span></a></li>-->
               <li>
-              <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity" (ngSubmit)="onCreateOneQuantity()">
-                <div class="form-group">
-                  <input style="display: none" min="1" type="number" class="form-control-none" value="{{p.id}}" formControlName="id" placeholder="id">
-                </div>
-                <button type="submit" class="btn btn-primary">Add To Cart</button>
-<!--                <button class="btn btn-primary" type="submit">-->
-<!--                  <a><span class="icon_cart"></span></a>-->
-<!--                </button>-->
-              </form>
+                 <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity" (ngSubmit)="onCreateOneQuantity(p.id)">
+                      <a type="submit" (click)="onCreateOneQuantity(p.id)" ><span class="icon_cart"></span></a>
+                 </form>
               </li>
 
             </ul>
+
+
+
           </div>
-          </a>
+
           <div class="product__item__text">
             <h6><a href="#">{{p.name}}</a></h6>
             <div class="rating">

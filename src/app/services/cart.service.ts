@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Product} from "../models/product";
 import {Cart} from "../models/cart";
+import {FormControl, FormGroup} from "@angular/forms";
 
 const _api = 'http://localhost:3000/';
 
@@ -72,6 +73,14 @@ export class CartService {
     return this.http.put<any> ('http://localhost:3000/cart/' + id , data);
   }
 
+  checkId (id: number){
+    alert(this.http.get<Cart>('http://localhost:3000/cart/' + id).subscribe(data1 =>{}))
+    if (this.http.get<Cart>('http://localhost:3000/cart/' + id).subscribe(data1 =>{}) == null){
+      return false;
+    }else {
+      return true;
+    }
+  }
   // DELETE/:id: http://localhost:3000/product/1
   delete(id: number): Observable<any>{
     return this.http.delete<any> ('http://localhost:3000/cart/' + id);

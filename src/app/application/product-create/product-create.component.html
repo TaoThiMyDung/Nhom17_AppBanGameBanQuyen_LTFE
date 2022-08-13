@@ -18,7 +18,7 @@
 
   <div class="form-group">
     <label >Price</label>
-    <input type="text" class="form-control" formControlName="price"  placeholder="Input field">
+    <input type="number" class="form-control" formControlName="price"  placeholder="Input field">
   </div>
   <div *ngIf="submited && f.price.errors">
     <span *ngIf="f.price.errors.required">Product price cannot be blank</span>
@@ -27,7 +27,7 @@
 
   <div class="form-group">
     <label >Sale Price</label>
-    <input type="text" class="form-control" formControlName="sale_price" placeholder="Input field">
+    <input type="number" class="form-control" formControlName="sale_price" placeholder="Input field">
   </div>
   <div *ngIf="submited && f.sale_price.errors">
     <span *ngIf="f.sale_price.errors.required">Product sale price cannot be blank</span>
