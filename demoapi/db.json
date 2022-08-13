@@ -56,11 +56,11 @@
       "id": 4,
       "name": "Warlocks vs Shadows",
       "price": 340000,
-      "sale_price": 565000,
+      "sale_price": 440000,
       "image": "../../../assets/img/product/product-4.png",
       "category": "Featured game",
-      "description": "Warlocks vs Shadows belongs to the Indie genre, which is well appreciated by many critics in many aspects such as attractive gameplay, vivid sound, and unforgiving visuals. Not only that, but there are many cool things waiting for you to experience.",
-      "briefDescription": "Warlocks vs Shadows belongs to the Indie genre, which is well appreciated by many critics in many aspects such as attractive gameplay, vivid sound, and unforgiving visuals."
+      "description": "Dark Angels: Masquerade of Shadows belongs to the Adventure genre, which is highly appreciated by players from many angles such as attractive game elements, realistic sound, and impeccable graphics. In addition, there are many very cool things waiting for you to experience.",
+      "briefDescription": "Dark Angels: Masquerade of Shadows belongs to the Adventure genre, which is highly appreciated by players from many angles such as attractive game elements, realistic sound, and impeccable graphics. In addition, there are many very cool things waiting for you to experience."
     },
     {
       "id": 5,
@@ -327,10 +327,15 @@
       "price": 134000,
       "image": "../../../assets/img/trend/action_2.png",
       "quantitySold": 5
+    },
+    {
+      "id": 1,
+      "name": "Plants vs zombies garden warfare 2",
+      "image": "../../../assets/img/product/product-1.png",
+      "price": 300000,
+      "quantitySold": 10
     }
   ],
-
-
   "category": [
     {
       "id": 1,

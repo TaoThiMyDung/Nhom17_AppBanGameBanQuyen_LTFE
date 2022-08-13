@@ -18,5 +18,8 @@
   text-align: center;
   margin-left: 4%;
 }
+.product__details__button .quantity .form-group .btn_AddToCart {
+  margin-bottom: 5%;
+}
 
 /*# sourceMappingURL=product-detail.component.css.map */

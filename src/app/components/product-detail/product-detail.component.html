@@ -117,7 +117,7 @@
           <p>{{pro.briefDescription}}</p>
           <div class="product__details__button">
             <div class="quantity">
-              <h6 class="quantitySold" >Quantity</h6>
+<!--              <h6 class="quantitySold" >Quantity</h6>-->
 <!--              <div class="pro-qty">-->
 <!--                <span class="dec qtybtn">-</span>-->
 <!--                <input min="1" type="text" value="1">-->
@@ -127,8 +127,9 @@
               <form action="" method="POST" role="form" [formGroup]="cartForm" (ngSubmit)="onCreate(pro.id)">
                 <div class="form-group">
 <!--                  (click)="onClickQuantity()"-->
-                  <input min="1" type="number" class="form-control" formControlName="quantitySold" placeholder="quantity">
-                  <button type="submit" class="btn btn-primary">Add To Cart</button>
+                  <input min="1" type="number" class="form-control " formControlName="quantitySold" placeholder="quantity">
+                  <br>
+                  <button type="submit" class="btn btn-primary btn_AddToCart">Add To Cart</button>
                 </div>
               </form>
 

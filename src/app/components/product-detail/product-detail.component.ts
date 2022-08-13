@@ -32,13 +32,6 @@ export class ProductDetailComponent implements OnInit {
 
   today = new Date();
 
-  // cartForm: FormGroup = new FormGroup({
-  //       id: new FormControl('' ),
-  //       name: new FormControl( ''),
-  //       image: new FormControl('' ),
-  //       price: new FormControl( ''),
-  //       quantitySold: new FormControl('' )
-  //   });
   cartForm = new FormGroup({
     id: new FormControl( ),
     name : new FormControl(),

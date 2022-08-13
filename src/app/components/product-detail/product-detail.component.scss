@@ -11,10 +11,15 @@
   .quantitySold{
     margin-left: 8%;
   }
-  .form-group .form-control {
-    width: 50% ;
-    text-align: center;
-    margin-left: 4%;
+  .form-group {
+    .form-control {
+      width: 50%;
+      text-align: center;
+      margin-left: 4%;
+    }
+    .btn_AddToCart {
+      margin-bottom: 5%;
+    }
   }
 }
 
