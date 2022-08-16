@@ -5,5 +5,6 @@ export class Product {
   price: number ;
   sale_price: number  ;
   description : string ;
-  category_id: string ;
+  category: string ;
+  briefDescription : string ;
 }
