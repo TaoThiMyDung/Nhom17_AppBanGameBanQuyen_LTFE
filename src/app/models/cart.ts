@@ -4,7 +4,7 @@ export class Cart {
   private _image: string ;
   private _price: number ;
   private _quantitySold: number  ;
-
+  private _total : number;
 
   get id(): number {
     return this._id;
@@ -47,4 +47,11 @@ export class Cart {
   }
 
 
+  get total(): number {
+    return this._total;
+  }
+
+  set total(value: number) {
+    this._total = value;
+  }
 }

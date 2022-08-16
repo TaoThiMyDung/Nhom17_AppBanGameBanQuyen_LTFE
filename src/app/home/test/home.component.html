@@ -147,13 +147,21 @@
                [style.background-image]="'url(' + pro.image + ')'">
             <div *ngIf="pro.id == 1 || pro.id == 5" class="label new">New</div>
             <div *ngIf="pro.id == 6 || pro.id == 8" class="label sale">Sale</div>
+
             <ul class="product__hover">
 
 <!--              LINK DEN PRODUCT-DETAILS-->
               <li> <a routerLink="../productDetail/{{pro.id}}"><span class="arrow_expand"></span></a></li>
 <!--              LINK DEN PRODUCT-CART-->
-              <li><a [routerLink]="['/home']"><span class="icon_cart"></span></a></li>
+<!--              <li><a [routerLink]="['/home']"><span class="icon_cart"></span></a></li>-->
+              <li>
+              <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity" >
+                   <a type="submit" (click) ="onCreateOneQuantity(pro.id)"><span class="icon_cart"></span></a>
+              </form>
+              </li>
+
             </ul>
+
           </div>
           <div class="product__item__text">
             <h6><a [routerLink]="['/home']">{{pro.name}}</a></h6>
@@ -218,7 +226,13 @@
                 <!--              LINK DEN PRODUCT-DETAILS-->
                 <li><a routerLink="../productDetail/{{pro.id}}"><span class="arrow_expand"></span></a></li>
               <!--              LINK DEN PRODUCT-CART-->
-                <li><a [routerLink]="['/home']"><span class="icon_cart"></span></a></li>
+<!--                <li><a [routerLink]="['/home']"><span class="icon_cart"></span></a></li>-->
+              <li>
+                <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity">
+                  <a type="submit" (click) ="onCreateOneQuantity(pro.id)"><span class="icon_cart"></span></a>
+                </form>
+              </li>
+
             </ul>
           </div>
           <div class="product__item__text" >
@@ -267,12 +281,15 @@
               <div *ngIf="pro.id != 10 && pro.id != 12" class="product__price">$ {{pro.price}}</div>
               <div *ngIf="pro.id == 10 || pro.id == 12" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
             </div>
-            <p class="card-text">
-              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Add to cart</a>
-            </p>
+
+            <form class="card-text" action="" method="POST" role="form" [formGroup]="cartFormOneQuantity">
+               <button type="submit" class="btn btn-primary btn-sm" (click) ="onCreateOneQuantity(pro.id)">Add to cart</button>
+            </form>
+
           </div>
         </div>
       </div>
+
       <div class="col-lg-4 col-md-4 col-sm-6" >
         <div class="trend__content" *ngFor="let pro of products">
           <div class="section-title"  *ngIf="pro.id == 14">
@@ -294,9 +311,13 @@
               <div *ngIf="pro.id != 14 && pro.id != 17" class="product__price">$ {{pro.price}}</div>
               <div *ngIf="pro.id == 14 || pro.id == 17" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
             </div>
-            <p class="card-text">
-              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Add to cart</a>
-            </p>
+<!--            <p class="card-text">-->
+<!--              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Add to cart</a>-->
+<!--            </p>-->
+            <form class="card-text" action="" method="POST" role="form" [formGroup]="cartFormOneQuantity" >
+              <button type="submit" class="btn btn-primary btn-sm" (click) ="onCreateOneQuantity(pro.id)">Add to cart</button>
+            </form>
+
           </div>
         </div>
       </div>
@@ -321,9 +342,13 @@
               <div *ngIf="pro.id != 21 && pro.id != 23" class="product__price">$ {{pro.price}}</div>
               <div *ngIf="pro.id == 21 || pro.id == 23" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
             </div>
-            <p class="card-text">
-              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Add to cart</a>
-            </p>
+<!--            <p class="card-text">-->
+<!--              <a routerLink="../productDetail/{{pro.id}}" class="btn btn-primary btn-sm">Add to cart</a>-->
+<!--            </p>-->
+            <form class="card-text" action="" method="POST" role="form" [formGroup]="cartFormOneQuantity" >
+              <button type="submit" class="btn btn-primary btn-sm" (click) ="onCreateOneQuantity(pro.id)">Add to cart</button>
+            </form>
+
           </div>
         </div>
       </div>

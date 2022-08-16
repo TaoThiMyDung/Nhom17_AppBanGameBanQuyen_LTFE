@@ -41,6 +41,7 @@ export class HomeComponents implements OnInit {
               private prodSrv : ProductService,
               private route: Router) { }
 
+
   ngOnInit(): void {
     // LAY DU LIEU VAO TRANG HOME
     this.bannerService.getBanners()
@@ -78,25 +79,9 @@ export class HomeComponents implements OnInit {
         image: new FormControl(data.image),
         price: new FormControl(data.price),
         quantitySold: new FormControl(1),
+        total : new FormControl(data.price * 1)
       });
-      this.cartSrv.getOne(id).subscribe(data1 => {
-        if (data1.id != null) {
-          this.cartFormOneQuantity = new FormGroup({
-            id: new FormControl(id),
-            name: new FormControl(data.name),
-            image: new FormControl(data.image),
-            price: new FormControl(data.price),
-            quantitySold: new FormControl(data1.quantitySold + 1),
-          });
-          this.cartSrv.update(id , this.cartFormOneQuantity.value).subscribe(data => {
-            if (confirm("Add To Cart Success")) {
-              this.route.navigate(['/product-list']);
-            }
-          });
-        }else {
-          return;
-        }
-      })
+
       this.submited = true;
 
       if (this.cartFormOneQuantity.invalid) {
@@ -107,6 +92,26 @@ export class HomeComponents implements OnInit {
             this.route.navigate(['/product-list']);
           }
         });
+      }
+    })
+
+    this.cartSrv.getOne(id).subscribe(data1 => {
+      if (data1.id != null) {
+        this.cartFormOneQuantity = new FormGroup({
+          id: new FormControl(id),
+          name: new FormControl(data1.name),
+          image: new FormControl(data1.image),
+          price: new FormControl(data1.price),
+          quantitySold: new FormControl(data1.quantitySold + 1),
+          total : new FormControl(data1.price * ( data1.quantitySold + 1 ))
+        });
+        this.cartSrv.update(id , this.cartFormOneQuantity.value).subscribe(data => {
+          if (confirm("Add To Cart Success")) {
+            this.route.navigate(['/product-list']);
+          }
+        });
+      }else {
+        return;
       }
     })
   }

@@ -21,7 +21,8 @@ export class ProductDetailComponent implements OnInit {
   relatedProduct: Array<Product> = new Array<Product>();
   related: Array<Product> = new Array<Product>();
 
-  quantity : number ;
+  quantity : number = 0 ;
+  quantitySold : number = 0 ;
 
   constructor(private prodSrv: ProductService,
               private cartSrv: CartService,
@@ -38,6 +39,7 @@ export class ProductDetailComponent implements OnInit {
     image : new FormControl(),
     price : new FormControl(),
     quantitySold : new FormControl(),
+    total : new FormControl()
   });
 
   cartFormOneQuantity: FormGroup = new FormGroup({
@@ -51,6 +53,7 @@ export class ProductDetailComponent implements OnInit {
 
     this.prodSrv.getOne(this.id).subscribe(data =>{
       this.pro = data ;
+      this.quantity = this.cartForm.controls.quantitySold.value;
 
       this.cartForm = new FormGroup({
         id: new FormControl(data.id ),
@@ -58,6 +61,7 @@ export class ProductDetailComponent implements OnInit {
         image : new FormControl(data.image),
         price : new FormControl(data.price),
         quantitySold : new FormControl(),
+        total : new FormControl(data.price * this.quantity)
       });
     })
 
@@ -83,6 +87,23 @@ export class ProductDetailComponent implements OnInit {
   public onCreate(id: number ): void {
       this.submited = true;
 
+    this.prodSrv.getOne(this.id).subscribe(data =>{
+      this.pro = data ;
+      this.quantity = this.cartForm.controls.quantitySold.value;
+
+      this.quantitySold = this.quantity;
+
+      this.cartForm = new FormGroup({
+        id: new FormControl(data.id ),
+        name : new FormControl(data.name),
+        image : new FormControl(data.image),
+        price : new FormControl(data.price),
+        quantitySold : new FormControl(),
+        total : new FormControl(data.price * this.quantity)
+      });
+
+    })
+
       if (this.cartForm.invalid) {
         return;
       } else {
@@ -95,12 +116,15 @@ export class ProductDetailComponent implements OnInit {
 
       this.cartSrv.getOne(id).subscribe(data1 => {
         if (data1.id != null) {
+          this.quantity = this.cartForm.controls.quantitySold.value;
+
           this.cartForm = new FormGroup({
             id: new FormControl(id),
             name: new FormControl(data1.name),
             image: new FormControl(data1.image),
             price: new FormControl(data1.price),
-            quantitySold: new FormControl(data1.quantitySold + this.cartForm.controls.quantitySold.value),
+            quantitySold: new FormControl(data1.quantitySold + this.quantitySold),
+            total : new FormControl(data1.price * ( data1.quantitySold + this.quantitySold))
           });
           this.cartSrv.update(id, this.cartForm.value).subscribe(data => {
             if (confirm("Add To Cart Success")) {
@@ -114,14 +138,60 @@ export class ProductDetailComponent implements OnInit {
   }
 
   public onClickProduct (id :number): void {
-        // if (confirm(id+ 'h')) {
-          this.route.navigate(['/productDetail/' + id]);
-        // }
-
+          // this.route.navigate(['/productDetail/' + id]);
+          // location.reload();
+          location.replace('/productDetail/' + id);
   }
   public onClickQuantity (): void {
      alert(1);
   }
+
+  // public onCreateOneQuantity (id :number): void {
+  //   this.prodSrv.getOne(id).subscribe(data => {
+  //
+  //     // alert(id)
+  //     this.cartFormOneQuantity = new FormGroup({
+  //       id: new FormControl(id),
+  //       name: new FormControl(data.name),
+  //       image: new FormControl(data.image),
+  //       price: new FormControl(data.price),
+  //       quantitySold: new FormControl(1),
+  //       total : new FormControl(data.price * 1 )
+  //     });
+  //
+  //     this.cartSrv.getOne(id).subscribe(data1 => {
+  //       if (data1.id != null) {
+  //         this.cartFormOneQuantity = new FormGroup({
+  //           id: new FormControl(id),
+  //           name: new FormControl(data.name),
+  //           image: new FormControl(data.image),
+  //           price: new FormControl(data.price),
+  //           quantitySold: new FormControl(data1.quantitySold + 1),
+  //           total : new FormControl(data1.price * ( data1.quantitySold + 1 ))
+  //         });
+  //         this.cartSrv.update(id , this.cartFormOneQuantity.value).subscribe(data => {
+  //           if (confirm("Add To Cart Success")) {
+  //             this.route.navigate(['/product-list']);
+  //           }
+  //         });
+  //       }else {
+  //         return;
+  //       }
+  //     })
+  //     this.submited = true;
+  //
+  //     if (this.cartFormOneQuantity.invalid) {
+  //       return;
+  //     } else {
+  //       this.cartSrv.create(this.cartFormOneQuantity.value).subscribe(data => {
+  //         if (confirm("Add To Cart Success")) {
+  //           this.route.navigate(['/product-list']);
+  //         }
+  //       });
+  //     }
+  //   })
+  // }
+
   public onCreateOneQuantity (id :number): void {
     this.prodSrv.getOne(id).subscribe(data => {
 
@@ -132,25 +202,9 @@ export class ProductDetailComponent implements OnInit {
         image: new FormControl(data.image),
         price: new FormControl(data.price),
         quantitySold: new FormControl(1),
+        total : new FormControl(data.price * 1)
       });
-      this.cartSrv.getOne(id).subscribe(data1 => {
-        if (data1.id != null) {
-          this.cartFormOneQuantity = new FormGroup({
-            id: new FormControl(id),
-            name: new FormControl(data.name),
-            image: new FormControl(data.image),
-            price: new FormControl(data.price),
-            quantitySold: new FormControl(data1.quantitySold + 1),
-          });
-          this.cartSrv.update(id , this.cartFormOneQuantity.value).subscribe(data => {
-            if (confirm("Add To Cart Success")) {
-              this.route.navigate(['/product-list']);
-            }
-          });
-        }else {
-          return;
-        }
-      })
+
       this.submited = true;
 
       if (this.cartFormOneQuantity.invalid) {
@@ -163,7 +217,25 @@ export class ProductDetailComponent implements OnInit {
         });
       }
     })
+
+    this.cartSrv.getOne(id).subscribe(data1 => {
+      if (data1.id != null) {
+        this.cartFormOneQuantity = new FormGroup({
+          id: new FormControl(id),
+          name: new FormControl(data1.name),
+          image: new FormControl(data1.image),
+          price: new FormControl(data1.price),
+          quantitySold: new FormControl(data1.quantitySold + 1),
+          total : new FormControl(data1.price * ( data1.quantitySold + 1 ))
+        });
+        this.cartSrv.update(id , this.cartFormOneQuantity.value).subscribe(data => {
+          if (confirm("Add To Cart Success")) {
+            this.route.navigate(['/product-list']);
+          }
+        });
+      }else {
+        return;
+      }
+    })
   }
-
-
 }

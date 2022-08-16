@@ -111,30 +111,24 @@
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
-            <span>( 138 reviews )</span>
+<!--            <span>( 138 reviews )</span>-->
           </div>
           <div class="product__details__price">$ {{pro.price | currency:"":""}} <span>$ {{pro.sale_price | currency:"":""}}</span></div>
           <p>{{pro.briefDescription}}</p>
           <div class="product__details__button">
             <div class="quantity">
-<!--              <h6 class="quantitySold" >Quantity</h6>-->
-<!--              <div class="pro-qty">-->
-<!--                <span class="dec qtybtn">-</span>-->
-<!--                <input min="1" type="text" value="1">-->
-<!--                <span class="inc qtybtn">+</span>-->
-<!--              </div>-->
 
               <form action="" method="POST" role="form" [formGroup]="cartForm" (ngSubmit)="onCreate(pro.id)">
                 <div class="form-group">
 <!--                  (click)="onClickQuantity()"-->
-                  <input min="1" type="number" class="form-control " formControlName="quantitySold" placeholder="quantity">
+                  <input min="1" type="number" class="form-control " formControlName="quantitySold" placeholder="Quantity">
                   <br>
                   <button type="submit" class="btn btn-primary btn_AddToCart">Add To Cart</button>
                 </div>
               </form>
 
-<!--              <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity" (ngSubmit)="onCreateOneQuantity(p.id)">-->
-<!--                <a type="submit" (click)="onCreateOneQuantity(p.id)" ><span class="icon_cart"></span></a>-->
+<!--              <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity">-->
+<!--                <a type="submit" (click) ="onCreateOneQuantity(pro.id)"><span class="icon_cart"></span></a>-->
 <!--              </form>-->
 
             </div>
@@ -146,44 +140,7 @@
           </div>
           <div class="product__details__widget">
             <ul>
-              <li>
-                <span>Available color:</span>
-                <div class="color__checkbox">
-                  <label for="red">
-                    <input type="radio" name="color__radio" id="red" checked>
-                    <span class="checkmark"></span>
-                  </label>
-                  <label for="black">
-                    <input type="radio" name="color__radio" id="black">
-                    <span class="checkmark black-bg"></span>
-                  </label>
-                  <label for="grey">
-                    <input type="radio" name="color__radio" id="grey">
-                    <span class="checkmark grey-bg"></span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <span>Available size:</span>
-                <div class="size__btn">
-                  <label for="xs-btn" class="active">
-                    <input type="radio" id="xs-btn">
-                    xs
-                  </label>
-                  <label for="s-btn">
-                    <input type="radio" id="s-btn">
-                    s
-                  </label>
-                  <label for="m-btn">
-                    <input type="radio" id="m-btn">
-                    m
-                  </label>
-                  <label for="l-btn">
-                    <input type="radio" id="l-btn">
-                    l
-                  </label>
-                </div>
-              </li>
+
               <li>
                 <span>Promotions:</span>
                 <p>Free shipping</p>
@@ -227,8 +184,8 @@
               <li><a routerLink="../{{p.id}}" (click)=onClickProduct(p.id) class="image-popup"><span class="arrow_expand"></span></a></li>
               <!--              LINK DEN PRODUCT-CART-->
               <li>
-                 <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity" (ngSubmit)="onCreateOneQuantity(p.id)">
-                      <a type="submit" (click)="onCreateOneQuantity(p.id)" ><span class="icon_cart"></span></a>
+                 <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity">
+                      <a type="submit" (click) ="onCreateOneQuantity(p.id)"><span class="icon_cart"></span></a>
                  </form>
               </li>
 

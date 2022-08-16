@@ -320,22 +320,7 @@
       "briefDescription": " Wargame: Red Dragon account you get after purchase is 100% new and never used account\nProvide the original email you can change all information\nLifetime warranty"
     }
   ],
-  "cart": [
-    {
-      "id": 10,
-      "name": "Monster Hunter Rise",
-      "price": 134000,
-      "image": "../../../assets/img/trend/action_2.png",
-      "quantitySold": 5
-    },
-    {
-      "id": 1,
-      "name": "Plants vs zombies garden warfare 2",
-      "image": "../../../assets/img/product/product-1.png",
-      "price": 300000,
-      "quantitySold": 10
-    }
-  ],
+  "cart": [],
   "category": [
     {
       "id": 1,
