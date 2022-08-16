@@ -66,6 +66,7 @@ import {HomeModule} from "./home/home.module";
 import {ProductListModule} from "./application/product-list/product-list.module";
 import {ProductEditModule} from "./application/product-edit/product-edit.module";
 import {ProductDetailModule} from "./components/product-detail/product-detail.module";
+import {CheckoutModule} from "./home/checkOut/checkout.module";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -142,6 +143,7 @@ import {ProductDetailModule} from "./components/product-detail/product-detail.mo
     ProductListModule,
     ProductEditModule,
     ProductDetailModule,
+    CheckoutModule,
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService],
   bootstrap: [AppComponent],
