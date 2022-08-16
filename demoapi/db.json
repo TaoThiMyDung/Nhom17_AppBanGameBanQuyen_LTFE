@@ -320,7 +320,25 @@
       "briefDescription": " Wargame: Red Dragon account you get after purchase is 100% new and never used account\nProvide the original email you can change all information\nLifetime warranty"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 29,
+      "name": "Dandara",
+      "image": "../../../assets/img/account/account_5.png",
+      "price": 170740,
+      "quantitySold": 1,
+      "total": 170740
+    },
+    {
+      "id": 28,
+      "name": "Crying Suns",
+      "image": "../../../assets/img/account/account_4.png",
+      "price": 119000,
+      "quantitySold": 6,
+      "total": 714000
+    }
+  ],
+  "billing": [],
   "category": [
     {
       "id": 1,
