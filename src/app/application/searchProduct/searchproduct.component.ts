@@ -7,12 +7,12 @@ import {CartService} from "../../services/cart.service";
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.scss']
+  selector: 'app-searchproduct',
+  templateUrl: './searchproduct.component.html',
+  styleUrls: ['./searchproduct.component.scss']
 })
 
-export class ProductListComponent implements OnInit {
+export class SearchProductComponent implements OnInit {
 
   productList: Array<Product> = [];
   cartList: Array<Cart> = [];

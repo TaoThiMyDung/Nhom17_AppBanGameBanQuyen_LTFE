@@ -40,8 +40,12 @@ GET : http://localhost:3000/product
     return this.http.get<Array<Product>> (url);
   }
 
-  getRelatedProduct  (_limit : number = 4 , like_key: string): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
+  getSearchName (search_key: string ): Observable<Array<Product>>{ // ( _limit = 4 , search_key có hoặc không )
+    let url = 'http://localhost:3000/product/?name_like=' + search_key; // Tìm kiếm theo tên có xuất hiện trong tên sản phẩm
+    return this.http.get<Array<Product>> (url);
+  }
 
+  getRelatedProduct  (_limit : number = 4 , like_key: string): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
     // http://localhost:3000/product?category_like=game
 
     let url = 'http://localhost:3000/product/?_limit='+ _limit + '&category_like=' + like_key;

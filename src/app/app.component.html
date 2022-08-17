@@ -32,12 +32,12 @@
 <header class="header">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xl-3 col-lg-2">
+      <div class="col-xl-2 col-lg-2">
         <div class="header__logo">
           <a [routerLink]="['/home']" ><img src="../assets/img/logo.png" alt=""></a>
         </div>
       </div>
-      <div class="col-xl-6 col-lg-7">
+      <div class="col-xl-7 col-lg-7">
         <nav class="header__menu">
           <ul>
             <li class="active"><a [routerLink]="['/home']" >Home</a></li>
@@ -51,6 +51,18 @@
             </li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact.html">Contact</a></li>
+
+            <li>
+            <form action="" >
+              <ul>
+              <li><div class="form-group mr-3">
+                <input type="email" class="form-control" formControlName="name" placeholder="Input field">
+              </div></li>
+                <li><button type="submit" class="btn btn-primary mr-2">Search</button></li>
+              </ul>
+            </form>
+            </li>
+
           </ul>
         </nav>
       </div>
@@ -74,6 +86,7 @@
           </ul>
         </div>
       </div>
+
     </div>
     <div class="canvas__open">
       <i class="fa fa-bars"></i>
@@ -82,7 +95,9 @@
 </header>
 <!-- Header Section End -->
 <!--<div class="container">-->
-  <router-outlet></router-outlet>
+  <router-outlet>
+
+  </router-outlet>
 <!--</div>-->
 <!---->
 <!--<app-student-list > hello </app-student-list>-->
