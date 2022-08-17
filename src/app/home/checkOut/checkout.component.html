@@ -6,8 +6,8 @@
       <div class="col-lg-12">
         <div class="breadcrumb__links">
           <a [routerLink]="['/home']"><i class="fa fa-home"></i> Home </a>
-          <span href="../product-list" style="font-weight: bold">Shopping cart > </span>
-          <span [routerLink]="['/checkout']"> Billing detail</span>
+          <a [routerLink]="['/product-list']"><span style="font-weight: bold">Shopping cart > </span></a>
+          <a [routerLink]="['/checkout']"><span> Billing detail</span></a>
         </div>
       </div>
     </div>
@@ -28,48 +28,48 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="checkout__form__input">
                 <p>First Name <span>*</span></p>
-                <input class="form-control" formControlName="firstName" required type="text">
+                <input required class="form-control" formControlName="firstName" type="text">
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="checkout__form__input">
                 <p>Last Name <span>*</span></p>
-                <input class="form-control" formControlName="lastName" required type="text">
+                <input required class="form-control" formControlName="lastName" type="text">
               </div>
             </div>
             <div class="col-lg-12">
               <div class="checkout__form__input">
                 <p>Address <span>*</span></p>
-                <input class="form-control" formControlName="address" required type="address" placeholder="">
+                <input required class="form-control" formControlName="address" type="address" placeholder="">
               </div>
               <div class="checkout__form__input">
                 <p>Postcode <span>*</span></p>
-                <input class="form-control" formControlName="postCode" required type="text">
+                <input required class="form-control" formControlName="postCode" type="text">
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="checkout__form__input">
                 <p>Phone <span>*</span></p>
-                <input class="form-control" formControlName="phone" required type="phone">
+                <input required class="form-control" formControlName="phone" type="phone">
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="checkout__form__input">
                 <p>Email <span>*</span></p>
-                <input class="form-control" formControlName="email" required type="email">
+                <input required class="form-control" formControlName="email" type="email">
               </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-6 form-group">
               <div class="checkout__form__input">
                 <p>Payment methods <span>*</span></p>
-                <input class="form-control" formControlName="paymentMethods" value="kkkk" required type="text">
+                <input required class="form-control" formControlName="paymentMethods" value=" " type="text">
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 form-group">
               <div class="checkout__form__input form-group">
                 <p>Account number</p>
-                <input class="form-control" formControlName="accountNumber" value="123" placeholder="123" type="text">
+                <input class="form-control" formControlName="accountNumber" value=" " placeholder=" " type="text">
               </div>
             </div>
 
@@ -110,12 +110,13 @@
 
           </div>
         </div>
-             <button (click)="onCreate()" type="submit" class="site-btn">Place oder</button>
 
       </div>
-<!--                 <span>{{Date.now() | date:'yyyy-MM-dd'}}</span>-->
 <!--                 <button type="submit" class="site-btn">Place oder</button>-->
+
     </form>
+
   </div>
 </section>
-<!-- Checkout Section End -->
+
+

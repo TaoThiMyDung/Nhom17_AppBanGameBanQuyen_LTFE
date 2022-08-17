@@ -19,7 +19,7 @@ export class CheckOutComponent implements OnInit {
   productList: Array<Product> = [];
   cartList: Array<Cart> = [];
   totalMoney : number = 0 ;
-
+  id : number = 0 ;
   submited: boolean = false;
 
   constructor(private proSrv : ProductService,
@@ -34,17 +34,24 @@ export class CheckOutComponent implements OnInit {
 
   billingCreate = new FormGroup({
 
-    firstName: new FormControl(),
-    lastName: new FormControl(),
-    address: new FormControl(),
-    postCode: new FormControl(),
-    phone: new FormControl(),
-    email : new FormControl(),
-    paymentMethods: new FormControl(),
-    accountNumber : new FormControl(),
-    orderDate: new FormControl(),
-    receiptDate : new FormControl(),
-    totalMoney : new FormControl(),
+    firstName: new FormControl(''),
+    lastName: new FormControl(''),
+    address: new FormControl(''),
+    postCode: new FormControl(''),
+    phone: new FormControl(''),
+    email : new FormControl(''),
+    paymentMethods: new FormControl(''),
+    accountNumber : new FormControl(''),
+    orderDate: new FormControl(this.date),
+    receiptDate : new FormControl(this.dateReceipt),
+    totalMoney : new FormControl(this.totalMoney),
+  });
+
+  productFormCreate = new FormGroup({
+    name : new FormControl(''),
+    price : new FormControl(''),
+    sale_price : new FormControl(''),
+    image : new FormControl(''),
   });
 
   ngOnInit(): void {
@@ -63,13 +70,12 @@ export class CheckOutComponent implements OnInit {
       }
     })
   }
-
+  get f (){
+    return this.productFormCreate.controls;
+  }
   public onCreate(): void {
     this.submited = true ;
     if ( this.billingCreate.invalid){
-
-      alert("hahhaha" + this.billingCreate.controls.firstName.value + this.billingCreate.controls.lastName.value )
-      alert(this.totalMoney)
       alert("Please continue to travel with information")
       return;
 
@@ -77,29 +83,45 @@ export class CheckOutComponent implements OnInit {
 
         this.billingCreate = new FormGroup({
 
-          firstName: new FormControl(),
-          lastName: new FormControl(),
-          address: new FormControl(),
-          postCode: new FormControl(),
-          phone: new FormControl(),
-          email : new FormControl(),
-          paymentMethods: new FormControl(),
-          accountNumber : new FormControl(),
+          firstName: new FormControl(this.billingCreate.controls.firstName.value),
+          lastName: new FormControl(this.billingCreate.controls.lastName.value),
+          address: new FormControl(this.billingCreate.controls.address.value),
+          postCode: new FormControl(this.billingCreate.controls.postCode.value),
+          phone: new FormControl(this.billingCreate.controls.phone.value),
+          email : new FormControl(this.billingCreate.controls.email.value),
+          paymentMethods: new FormControl(this.billingCreate.controls.paymentMethods.value),
+          accountNumber : new FormControl(this.billingCreate.controls.accountNumber.value),
           orderDate: new FormControl(this.date),
           receiptDate : new FormControl(this.dateReceipt),
           totalMoney : new FormControl(this.totalMoney),
 
         });
 
-        alert("billingCreate " + this.billingCreate.controls.firstName.value + this.billingCreate.controls.lastName.value )
-
         this.billSrv.create(this.billingCreate.value).subscribe(data =>{
           if (confirm("Add Order Success")) {
+
+            this.cartSrv.getCart().subscribe(data1 =>  {
+              for (const datum of data1) {
+                this.cartSrv.delete(datum.id).subscribe(data2 =>  {
+                })
+              }
+            })
             this.route.navigate(['/home']);
           }
         });
 
     }
   }
-
+  public onCreateProduct(): void {
+    this.submited = true ;
+    if ( this.productFormCreate.invalid){
+      return;
+    }else {
+      this.proSrv.create(this.productFormCreate.value).subscribe(data =>{
+        if (confirm("Add Product Success")) {
+          this.route.navigate(['/product-list']);
+        }
+      });
+    }
+  }
 }

@@ -38,6 +38,6 @@ export class ProductCreateComponent implements OnInit {
            this.route.navigate(['/product-list']);
         }
       });
-    }
+     }
    }
 }

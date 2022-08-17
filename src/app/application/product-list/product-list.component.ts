@@ -92,7 +92,6 @@ export class ProductListComponent implements OnInit {
           // this.totalMoney = this.totalMoney - (data1.price * this.cartForm.controls.quantitySold.value);
         })
       }
-      // alert(this.totalMoney + " jjjjjjjj");
       // this.route.navigate(['/product-list']);
       location.reload();
     })
@@ -104,6 +103,9 @@ export class ProductListComponent implements OnInit {
     this.proSrv.getList(10 , this.searchForm.value.name).subscribe(data =>  {
       this.productList = data;
     })
+  }
+  updateCart(){
+    location.reload();
   }
 
 }
