@@ -19,21 +19,6 @@ export class CartService {
     return this.http.get<Array<Cart>>(_api + 'cart');
   }
 
-  /*
-  Danh sach
-  GET : http://localhost:3000/product
-   */
-  // getList(_limit : number = 4): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm
-  //   return this.http.get<Array<Product>> ('http://localhost:3000/product/?_limit='+ _limit + '&_sort=id&_order=desc');
-  // => Hiển thị 2 sản phẩm trong danh sách sản phẩm ( ?_limit=2 )
-  // => Sắp xếp theo id ( _sort=id )
-  // => Theo thứ tự giảm dần của id ( _order=desc )
-  // return this.http.get<Array<Product>> ('http://localhost:3000/product');
-  // }
-  /*
-     http://localhost:3000/product/?_limit=3&_page=1 => 1 2 3 ( Hiển thị 3 sản phẩm đầu tiên ) => PHÂN TRANG TÌM KIẾM ( CHUYỂN XEM CÁC KHUNG SẢN PHẨM KHÁC )
-     http://localhost:3000/product/?_limit=3&_page=2 => 4 5 6 ( Hiển thị 3 sản phẩm tiếp theo )
-   */
   getList (_limit : number = 4, search_key:any = null): Observable<Array<Cart>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
     let url = 'http://localhost:3000/cart/?_limit='+ _limit + '&_sort=id&_order=desc';
     if ( search_key != null ){
@@ -84,6 +69,10 @@ export class CartService {
   // DELETE/:id: http://localhost:3000/product/1
   delete(id: number): Observable<any>{
     return this.http.delete<any> ('http://localhost:3000/cart/' + id);
+  }
+  // DELETE/:id: http://localhost:3000/product/1
+  deleteCart(): void {
+    this.http.delete ('http://localhost:3000/cart/').subscribe();
   }
 
   private getData(url: string, header: object = {}): Observable<any> {

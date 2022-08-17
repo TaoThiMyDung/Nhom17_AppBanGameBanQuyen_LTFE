@@ -41,14 +41,11 @@
         <nav class="header__menu">
           <ul>
             <li class="active"><a [routerLink]="['/home']" >Home</a></li>
-            <li><a href="#">Women’s</a></li>
-            <li><a href="#">Men’s</a></li>
-            <li><a href="./shop.html">Shop</a></li>
             <li><a href="#">Pages</a>
               <ul class="dropdown">
-                <li><a href="./product-details.html">Product Details</a></li>
-                <li><a href="./shop-cart.html">Shop Cart</a></li>
-                <li><a href="./checkout.html">Checkout</a></li>
+                <li><a routerLink="../productDetail/1">Product Details</a></li>
+                <li><a [routerLink]="['/product-list']">Shop Cart</a></li>
+                <li><a [routerLink]="['/checkout']">Checkout</a></li>
                 <li><a href="./blog-details.html">Blog Details</a></li>
               </ul>
             </li>
@@ -65,12 +62,15 @@
           </div>
           <ul class="header__right__widget">
             <li><span class="icon_search search-switch"></span></li>
-            <li><a href="#"><span class="icon_heart_alt"></span>
-              <div class="tip">2</div>
+
+<!--            <li><a href="#"><span class="icon_heart_alt"></span>-->
+<!--              <div class="tip">2</div>-->
+<!--            </a></li>-->
+
+            <li><a [routerLink]="['/product-list']" ><span class="icon_cart_alt"></span>
+              <div class="tip">{{totalCart}}</div>
             </a></li>
-            <li><a href="#"><span class="icon_bag_alt"></span>
-              <div class="tip">2</div>
-            </a></li>
+
           </ul>
         </div>
       </div>

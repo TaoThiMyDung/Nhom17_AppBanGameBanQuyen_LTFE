@@ -322,20 +322,28 @@
   ],
   "cart": [
     {
-      "id": 29,
-      "name": "Dandara",
-      "image": "../../../assets/img/account/account_5.png",
-      "price": 170740,
+      "id": 4,
+      "name": "Warlocks vs Shadows",
+      "image": "../../../assets/img/product/product-4.png",
+      "price": 340000,
       "quantitySold": 1,
-      "total": 170740
+      "total": 340000
     },
     {
-      "id": 28,
-      "name": "Crying Suns",
-      "image": "../../../assets/img/account/account_4.png",
-      "price": 119000,
-      "quantitySold": 6,
-      "total": 714000
+      "id": 2,
+      "name": "The Sim 4",
+      "image": "../../../assets/img/product/product-2.png",
+      "price": 350000,
+      "quantitySold": 1,
+      "total": 350000
+    },
+    {
+      "id": 3,
+      "name": "Dark Angels: Masquequerade of Shadows",
+      "image": "../../../assets/img/product/product-3.png",
+      "price": 97000,
+      "quantitySold": 1,
+      "total": 97000
     }
   ],
   "billing": [],
