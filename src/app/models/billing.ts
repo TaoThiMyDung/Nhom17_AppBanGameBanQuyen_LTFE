@@ -7,6 +7,7 @@ export class Billing {
   phone: string  ;
   email : string ;
   paymentMethods: string ;
+  accountNumber: string;
   orderDate: string;
   receiptDate :string;
   totalMoney : number ;

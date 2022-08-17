@@ -338,7 +338,8 @@
       "total": 714000
     }
   ],
-  "billing": [],
+  "billing": [
+  ],
   "category": [
     {
       "id": 1,

@@ -13,7 +13,7 @@ export class ProductCreateComponent implements OnInit {
   submited : boolean = false ;
 
   constructor(private  prodSrv : ProductService ,
-              private route: Router) {
+              private  route: Router) {
   }
     productFormCreate = new FormGroup({
          name : new FormControl('',[ Validators.required , Validators.minLength(6)]),
