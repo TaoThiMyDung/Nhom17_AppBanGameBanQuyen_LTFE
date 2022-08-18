@@ -19,7 +19,8 @@
     <div class="row">
 <!--      large__item-->
       <div class="col-lg-4 col-md-4 col-sm-6" *ngFor="let blog of blogList">
-        <div class="blog__item" >
+
+        <div class="blog__item" routerLink="../blogDetails/{{blog.id}}" >
           <div class="blog__item__pic set-bg"
                [style.background-image]="'url(' + blog.image + ')'" ></div>
           <div class="blog__item__text">
