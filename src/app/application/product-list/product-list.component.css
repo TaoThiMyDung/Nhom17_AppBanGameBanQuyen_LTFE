@@ -12,4 +12,15 @@
   margin-left: 3%;
 }
 
-/*# sourceMappingURL=checkout.component.css.map */
+.update__btn:hover {
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  cursor: pointer;
+  background: white;
+  border: solid 1px red;
+  color: red;
+}
+
+/*# sourceMappingURL=product-list.component.css.map */

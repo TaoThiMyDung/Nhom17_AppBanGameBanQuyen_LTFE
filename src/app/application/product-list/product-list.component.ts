@@ -25,9 +25,9 @@ export class ProductListComponent implements OnInit {
               private route: Router) { }
 
   public searchForm = new FormGroup({
-    name : new FormControl(),
-    price : new FormControl(),
-    sale_price : new FormControl(),
+    name : new FormControl(''),
+    price : new FormControl(''),
+    sale_price : new FormControl(''),
   });
 
   cartForm = new FormGroup({
@@ -99,10 +99,13 @@ export class ProductListComponent implements OnInit {
   }
 
   onSearch(){
-    // alert(this.searchForm.value.name);
-    this.proSrv.getList(10 , this.searchForm.value.name).subscribe(data =>  {
+    alert(this.searchForm.value.name);
+
+    this.proSrv.getSearchName( this.searchForm.value.name).subscribe(data =>  {
       this.productList = data;
+      alert(data)
     })
+
   }
   updateCart(){
     location.reload();
