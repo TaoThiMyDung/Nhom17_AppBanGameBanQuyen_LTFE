@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {SearchProductComponent} from "./searchproduct.component";
+import {ContactComponent} from "./contact.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
-  {path: 'searchProduct', component: SearchProductComponent},
+  {path: 'contact', component: ContactComponent},
 ];
 
 @NgModule({
@@ -19,5 +19,5 @@ const routes: Routes = [
     FormsModule,
   ]
 })
-export class SearchProductRoutingModule { }
+export class ContactRoutingModule { }
 

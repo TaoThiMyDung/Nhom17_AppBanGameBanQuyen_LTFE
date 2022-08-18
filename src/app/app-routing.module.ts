@@ -12,6 +12,7 @@ const routers: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/product-create' },
   {path: '', pathMatch: 'full', redirectTo: '/product-edit/:id'},
   {path: '', pathMatch: 'full', redirectTo: '/checkout'},
+  {path: '', pathMatch: 'full', redirectTo: '/contact'},
 ];
 const child: Routes = [
   // Them duong dan link toi trang ts

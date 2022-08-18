@@ -6,7 +6,7 @@
       <div class="col-lg-12">
         <div class="breadcrumb__links">
           <a [routerLink]="['/home']"><i class="fa fa-home"></i> Home </a>
-          <a [routerLink]="['/product-list']"><span style="font-weight: bold">Shopping cart > </span></a>
+          <a [routerLink]="['/product-list']"><span style="font-weight: bold">Shopping cart</span></a>
           <a [routerLink]="['/checkout']"><span> Billing detail</span></a>
         </div>
       </div>
@@ -83,20 +83,20 @@
 
               <table style="width: 100%">
                 <tr style="width: 100%">
-                  <th style="width: 50%">Product</th>
-                  <th style="width: 15% ; text-align: center">Quantity</th>
-                  <th style="width: 35% ; text-align: center">Total</th>
+                  <th style="width: 25% ; "> Product</th>
+                  <th style="width: 25% ; text-align: center"></th>
+                  <th style="width: 10% ; text-align: center">Quantity</th>
+                  <th style="width: 40% ; text-align: center">Total</th>
                 </tr>
-                <tr *ngFor="let cart of cartList">
-                  <td style="">
-                    <img style="width: 50%; height: 50%" src="{{cart.image}}">
-                    <h6>{{cart.name}}</h6>
+                <tr *ngFor="let cart of cartList" style="">
+                  <td class="" style="">
+                    <img style="width: 80%; height: 50% ; margin-left: 10%; margin-top: 10%" src="{{cart.image}}">
                   </td>
+                  <td style=""><p>{{cart.name}}</p></td>
                   <td style="text-align: center;">{{cart.quantitySold}}</td>
-                  <td style="text-align: center">$ {{cart.total}}</td>
+                  <td style="text-align: center; ">$ {{cart.total}}</td>
 
                 </tr>
-                <br>
               </table>
             </div>
             <div class="checkout__order__total">

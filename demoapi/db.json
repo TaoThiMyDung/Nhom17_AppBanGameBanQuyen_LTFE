@@ -344,9 +344,28 @@
       "price": 97000,
       "quantitySold": 1,
       "total": 97000
+    },
+    {
+      "id": 20,
+      "name": "SkyRim",
+      "image": "../../../assets/img/trend/steam_2.png",
+      "price": 683000,
+      "quantitySold": 2,
+      "total": 1366000
     }
   ],
   "billing": [],
+  "contact": [
+    {
+      "name": "ggg",
+      "email": "ggg",
+      "topic": "gg",
+      "message": "ggg",
+      "phone": "ggg",
+      "date": "18/8/2022",
+      "id": 1
+    }
+  ],
   "category": [
     {
       "id": 1,

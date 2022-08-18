@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ProductService} from "../../services/product.service";
-import {SearchProductComponent} from "./searchproduct.component";
-import {SearchProductRoutingModule} from "./searchproduct-routing.module";
+import {ContactComponent} from "./contact.component";
+import {ContactRoutingModule} from "./contact-routing.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-
 
 @NgModule({
   declarations: [
-    SearchProductComponent
+    ContactComponent
   ],
   imports: [
     CommonModule,
-    SearchProductRoutingModule,
+    ContactRoutingModule,
     ReactiveFormsModule,
     FormsModule
   ],
@@ -25,4 +24,4 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
   ],
 
 })
-export class SearchProductModule { }
+export class ContactModule { }
