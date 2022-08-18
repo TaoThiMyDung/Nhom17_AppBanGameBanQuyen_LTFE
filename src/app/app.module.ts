@@ -69,6 +69,7 @@ import {ProductDetailModule} from "./components/product-detail/product-detail.mo
 import {CheckoutModule} from "./home/checkOut/checkout.module";
 import {ContactRoutingModule} from "./home/contact/contact-routing.module";
 import {ContactModule} from "./home/contact/contact.module";
+import {BlogModule} from "./home/blog/blog.module";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -147,6 +148,7 @@ import {ContactModule} from "./home/contact/contact.module";
     ProductDetailModule,
     CheckoutModule,
     ContactModule,
+    BlogModule,
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService],
   bootstrap: [AppComponent],
