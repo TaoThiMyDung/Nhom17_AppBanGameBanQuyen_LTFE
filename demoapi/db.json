@@ -320,50 +320,93 @@
       "briefDescription": " Wargame: Red Dragon account you get after purchase is 100% new and never used account\nProvide the original email you can change all information\nLifetime warranty"
     }
   ],
-  "cart": [
+  "cart": [],
+  "billing": [
+  ],
+  "contact": [
+
+  ],
+
+  "blog": [
     {
-      "id": 4,
-      "name": "Warlocks vs Shadows",
-      "image": "../../../assets/img/product/product-4.png",
-      "price": 340000,
-      "quantitySold": 1,
-      "total": 340000
+      "id": 1,
+      "nameBlog": "The 25 best games on Xbox Game Pass",
+      "image": "../../../assets/img/blog/blog_1.png",
+      "description": "Here's what you should play on Xbox and PC\nWith Microsoft's acquisition of Bethesda early last year, the service added a host of beloved games like Skyrim and Fallout 3. And with Microsoft's recent announcement that it's acquiring Activision Blizzard, Xbox Game Pass's reputation as the best deal in video games is likely to expand even further. It's likely - though unconfirmed - that we could see games like Overwatch, Diablo 3, and possibly even World of Warcraft join the Game Pass line in the next few years.\n\nBut the service already has a massive, colorful library of indie and AAA games from across industries. More games launch on Game Pass on release day than ever, and most are also available on Windows PC with PC Game Pass, which is included with Xbox Game Pass Ultimate.\n\nWith such a large number and variety, it is difficult to separate the wheat from the husk. But we are here to help. Here are the 25 best PC and Xbox Game Pass games that are worth your time.",
+      "name": "Andrew Shouldice",
+      "date": "18/08/2022"
     },
     {
       "id": 2,
-      "name": "The Sim 4",
-      "image": "../../../assets/img/product/product-2.png",
-      "price": 350000,
-      "quantitySold": 1,
-      "total": 350000
+      "nameBlog": "How to download Tidal and install Tidal on Android/iOS phones",
+      "image": "../../../assets/img/blog/blog_2.png",
+      "description": "Although there is no shortage of music streaming services. Examples: YouTube Music, Spotify, Apple Music, Tidal – they all work on any smartphone or desktop computer, have millions of songs, support smart speakers, and often come with premium plans lets you play music on demand, without ads. However, most of these music streaming services lack one big aspect – sound quality. And that's where Tidal comes in. Tidal is one of the few music streaming services that allows you to stream “lossless” high-quality uncompressed music.\nHow to download and install Tidal on Android\nBefore we start, we need to install the Tidal app on the smartphone. It is possible that you cannot find the 'Tidal' Google Play app. Don't worry, you can easily get the APK to bypass the country restrictions. Just search for “TIDAL APK” on Google or click this link to download APKMirror.",
+      "name": "InnerSloth",
+      "date": "18/08/2022"
     },
     {
       "id": 3,
-      "name": "Dark Angels: Masquequerade of Shadows",
-      "image": "../../../assets/img/product/product-3.png",
-      "price": 97000,
-      "quantitySold": 1,
-      "total": 97000
+      "nameBlog": "Shop MuaGa.me scam or reputable?",
+      "image": "../../../assets/img/blog/blog_3.png",
+      "description": "1. Shop MuaGa.me scam or reputable?\nMuaGa.me is a copyrighted game shop, copyrighted software operating for more than 3 years with hundreds of good feedback from customers and constantly increasing.\n2. After payment, how long will it take to receive the product?\nMuaGa.me always tries to send the products you have purchased as soon as possible, usually the products after the payment has been received by the Shop will be sent to your email within a few minutes. Sometimes it's a bit slower on overloaded timeframes or the products you buy take longer to complete.\n\n3. What payment methods does the shop support?\nCurrently MuaGa.me supports the following payment methods:\n\nScan code MoMo\nScan Zalo Pay code\nScan Shopee Pay code\nBank transfer\nPayment via scratch card: For this method, you need to create a MuaGa.me account and deposit money first to add money to your Wallet and pay.\nAfter ordering and paying, the product you purchased will be sent to the delivery email you entered during checkout.",
+      "name": "Shouldice",
+      "date": "18/08/2022"
     },
     {
-      "id": 20,
-      "name": "SkyRim",
-      "image": "../../../assets/img/trend/steam_2.png",
-      "price": 683000,
-      "quantitySold": 2,
-      "total": 1366000
-    }
-  ],
-  "billing": [],
-  "contact": [
+      "id": 4,
+      "nameBlog": "Instructions to play gta 5 online with FiveM are very simple",
+      "image": "../../../assets/img/blog/blog_4.png",
+      "description": "GTA V Online on the computer has been played by a lot of people in recent times. With an open world game mode and many very realistic simulation features, GTA V Online is chosen by many of you to play with friends. To play GTA V Online, you need the game on Steam or the Epic Store. Besides, you need FiveM to find the right Server. In this article, I will show you how to play GTA V Online with FiveM.\n\nHow to play GTA V Online with FiveM\nFirst, you open and log in to Steam to download the FiveM application at: https://fivem.net/ as an exe file. Then you install the app as usual. In addition, you can quickly access it using the link below. To download the FiveM application to play GTA V online quickly.\nInstall and update FiveM\nStep 1: After successful installation, log in to your Cfx.re account. If you do not have an account, select the Register line or if you forget your password, select Send password reset email so that the password is recovered from the email.\nStep 2: To register for a Cfx.re account, you need to prepare your email, account name and password in advance.\nStep 3: Then, you check your registered email, there will be an email from Cfx.re sent. Click on the link to confirm your account.\nStep 4: Then you go back to FiveM app and select Check Verification.Step 4: Then you go back to FiveM app and select Check Verification.\nStep 5: Then, the application will report Account Linked that your account has been confirmed. On the main screen to use, select Play to start choosing Sever to play.\nStep 6: You can search Sever by country with the national flag image in front, you can play in Vietnam Server for the fastest speed.\nStep 7: Once you have selected which server, select Connect to connect to and play.",
+      "name": "Andrew",
+      "date": "18/08/2022"
+    },
     {
-      "name": "ggg",
-      "email": "ggg",
-      "topic": "gg",
-      "message": "ggg",
-      "phone": "ggg",
-      "date": "18/8/2022",
-      "id": 1
+      "id": 5,
+      "nameBlog": "Download gta 5 for free",
+      "image": "../../../assets/img/blog/blog_5.png",
+      "description": "GTA 5, also known as Grand Theft Auto V is one of the games that stick with many gamers. Download and install GTA 5 on your computer or laptop to experience the dramatic and captivating action. If you do not know how to install GTA 5, you can refer to the instructions in the article below and follow.\n\nDownload GTA 5 helps you:\n\n– Get GTA 5 download link\n– Capture configuration settings\n- Install and play the game easily\n1. GTA 5 download link\nFree GTA 5 download link Vietnameseized: https://www.fshare.vn/file/RZI78AHBRNRJ5R7 (Pass to extract: Gametiengviet) – Source: khiphach.vn\n\nIf possible, you should buy gta 5 license to support game developers.\nAlthough how to install GTA 5, Grand Theft Auto V on computers and laptops is quite simple, but with the \"huge\" capacity of the game and having to install some accompanying small programs, it will make a lot of people difficult. to be able to play this popular game. So this article will help you understand the basic installation of this game.",
+      "name": "Grand Theft Auto",
+      "date": "18/08/2022"
+    },
+    {
+      "id": 6,
+      "nameBlog": "Good offline game for PC",
+      "image": "../../../assets/img/blog/blog_6.png",
+      "description": "Online games are very popular, but there are still many good offline games for PC to choose from.\n\nIn terms of gaming flexibility, no other platform can match the PC. It's a platform that has a lot of advantages for those who can get past the often daunting price point. As a bonus, while consoles require a monthly subscription fee to play games online, the majority of PC games are free. Despite that, many people enjoy playing games offline.\n\nOne can spend hundreds of hours playing an offline PC game and have no regrets. Here are the best offline PC games to play right now.",
+      "name": "Grand Shouldice",
+      "date": "18/08/2022"
+    },
+    {
+      "id": 7,
+      "nameBlog": "Blockbuster Battlefield 1 and Battlefield 5 are free on PC through Prime Gaming",
+      "image": "../../../assets/img/blog/blog_7.png",
+      "description": "Starting from July 21 to August 4, gamers who subscribe to the Amazon Prime Gaming service will receive a free version of Battlefield 1 for PC. And yet, in 2 months from August 2, 2021 to October 1, 2021, they will also receive Battlefield 5 PC version. Prime Gaming is a subscription service under Amazon Prime that provides subscribers to Twitch, exclusive game content, and especially free game titles on a regular basis.\n\nHow to get Battlefield 1 and Battlefield 5 for free\nVisit the Amazon Prime Gaming homepage at: https://gaming.amazon.com/intro\nClick the Try Prime button and log in to an existing account or sign up for a new account.\nAfter logging in, you will be asked to confirm details including email, payment method, etc.\nClick the “Start your free trial – pay later” button\nOnce you are an Amazon Prime Gaming member, visit the following link to receive Battlefield 1 https://gaming.amazon.com/loot/battlefield1\nFree Battlefield 5: https://gaming.amazon.com/loot/battlefieldv",
+      "name": "Andrew Theft",
+      "date": "18/08/2022"
+    },
+    {
+      "id": 8,
+      "nameBlog": "8 Best DLCs for The Sims 4",
+      "image": "../../../assets/img/blog/blog_8.png",
+      "description": "Purchasing DLC (Expansion Packs) for The Sims 4 is essential to fully play the game. We have selected 8 DLC for you to refer and install for your The Sims 4\nBuying DLC for your The Sims 4 is essential to gameplay in its best depth: New towns, new aspirations, new traits, new outfits, food, plants – you name it.\n\nIt's hard to say exactly which DLC is the best, and they all have their differences. We're not saying that DLCs not listed on this list are not worth buying, but we would recommend purchasing these first. They bring a lot of fun to your The Sims 4 game.",
+      "name": "Andrew Purchasing",
+      "date": "18/08/2022"
+    },
+    {
+      "id": 9,
+      "nameBlog": "The best copyrighted games",
+      "image": "../../../assets/img/blog/blog_9.png",
+      "description": "They are also not limited to one genre. When it comes to the best games, you've got quite a selection of titles, from the best MMOs or MOBAs and beautiful open world games in which you can do just about anything, even games. Best Co-Op game to play with friends.\nDeath Stranding is attracting a lot of attention not only to the big names associated with it, but incidentally including Mads Mikkelsen and Léa Seydoux. As porter Sam Bridges, you bravely cross an apocalyptic America to deliver valuable goods, navigating these lands plagued by terrorists, bandits, and invisible creatures called Beached Things. This award-winning action game is also a treat for all the senses, thanks to its wonderful storyline, possibly reminiscent of the current pandemic, good gameplay, exciting missions and sounds. and impressive images.\nThe Witcher 3: Wild Hunt is aging like fine wine. Even a few years after its release, it's still one of the most impressive open-world games to ever exist - blending the scale of Skyrim with the incredible depth of Grand Theft Auto V. It's a game that controls fun, that's why it's nominated for the top spot on the list of the best games of 2020. It's amazing, beautiful, and it will immerse you - in a good way - The Witcher 3: Wild Hunt is not only the best PC game of 2020, it is also one of the best open world games on PC, one of the best games of all time.",
+      "name": "Genre Shouldice",
+      "date": "18/08/2022"
+    },
+    {
+      "id": 10,
+      "nameBlog": "Guide to buy cheap copyrighted games",
+      "image": "../../../assets/img/blog/blog_10.png",
+      "description": "Are you in need of buying cheap copyrighted games? Muaga.me is currently the cheapest copyrighted game shop in Vietnam, with a full range of distribution platforms, major platforms such as Steam, Xbox, Origin, Uplay, PlayStation, Nintendo...\n\nYou can absolutely buy goods on the Website without having an account. However, you should register an account to use the full functionality of the website.\nFor the Game you can't find because many products have not been uploaded, you can message the shop to check the status of the goods here https://www.facebook.com/muaga.meshop\n\nYou can pre-load your Wallet for faster purchases. If you want to buy goods with a scratch card, you must pre-load it into your Wallet.",
+      "name": "Andrew Shouldice",
+      "date": "18/08/2022"
     }
   ],
   "category": [
