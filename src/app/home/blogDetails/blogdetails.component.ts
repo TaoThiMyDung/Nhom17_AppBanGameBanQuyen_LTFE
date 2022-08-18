@@ -7,6 +7,7 @@ import {Blog} from "../../models/blog";
 import {BlogService} from "../../services/blog.service";
 import {Product} from "../../models/product";
 import {CommentService} from "../../services/comment.service";
+import {Comment} from "../../models/comment";
 
 @Component({
   selector: 'app-blogdetails',
@@ -24,6 +25,7 @@ export class BlogDetailsComponent implements OnInit {
   commentList: Array<Comment> = [];
 
   idNext : number = 0 ;
+  count : number = 0 ;
 
   constructor(private contSrv : ContactService,
               private blogSrv : BlogService,
@@ -35,8 +37,7 @@ export class BlogDetailsComponent implements OnInit {
   date = this.today.getDate()+ '/' + (this.today.getMonth() + 1 )+ '/' + this.today.getFullYear();
 
   commentCreate = new FormGroup({
-
-    name: new FormControl(''),
+    nameCustomer: new FormControl(''),
     content: new FormControl(''),
     date: new FormControl(this.date),
   });
@@ -47,6 +48,12 @@ export class BlogDetailsComponent implements OnInit {
 
     this.blogSrv.getOne(this.id).subscribe(data =>  {
       this.blog = data;
+      const s = data.id;
+      if(s == 10 ){
+        this.idNext = 1 ;
+      }else {
+        this.idNext = s + 1 ;
+      }
     });
 
     this.blogSrv.getblog().subscribe(data =>  {
@@ -55,16 +62,19 @@ export class BlogDetailsComponent implements OnInit {
 
     this.comSrv.getcomment().subscribe(data =>  {
       this.commentList = data;
-
+      // CART TOTAL
+      for (const datum of this.commentList) {
+        this.count += 1;
+      }
     });
 
+
   }
+
   public onLoadBlog():void{
     location.reload();
   }
   public onNext():void{
-    // alert(this.id)
-    this.idNext =  this.id;
     // alert(this.idNext)
     location.replace('../blogDetails/'+ this.idNext);
   }

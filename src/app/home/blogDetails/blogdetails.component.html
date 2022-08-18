@@ -44,7 +44,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="blog__details__btn__item blog__details__btn__item--next">
-                  <h6><a (click)="onNext()" >Next posts <i class="fa fa-angle-right"></i></a></h6>
+                  <h6><a class="next_posts" (click)="onNext()" >Next posts <i class="fa fa-angle-right"></i></a></h6>
                 </div>
               </div>
             </div>
@@ -53,61 +53,32 @@
 
             <h5>COMMENT</h5>
             <form action="" method="POST" role="form" [formGroup]="commentCreate" (ngSubmit)="onCreate()">
-              <input required class="form-control" formControlName="name"  type="text" placeholder="Name">
+              <input required class="form-control" formControlName="nameCustomer"  type="text" placeholder="Name">
               <input required class="form-control" formControlName="content"  type="text" placeholder="Content">
               <button type="submit" class="site-btn">Send Comment</button>
             </form>
 
           </div>
 
-          <div class="blog__details__comment">
-            <h5>3 Comment</h5>
+          <div class="blog__details__comment" >
+            <h5>{{count}} Comment</h5>
             <a href="#" class="leave-btn">Leave a comment</a>
-            <div class="blog__comment__item">
+
+            <div class="blog__comment__item" *ngFor="let comment of commentList">
               <div class="blog__comment__item__pic">
-                <img src="img/blog/details/comment-1.jpg" alt="">
+                <img src="../../logo.ico" alt="">
               </div>
               <div class="blog__comment__item__text">
-                <h6>Brandon Kelley</h6>
-                <p>Duis voluptatum. Id vis consequat consetetur dissentiet, ceteros commune perpetua
-                  mei et. Simul viderer facilisis egimus tractatos splendi.</p>
+                <p style="font-weight: bold">Name : {{comment.nameCustomer}}</p>
+                <p>Content : {{comment.content}}</p>
                 <ul>
-                  <li><i class="fa fa-clock-o"></i> Seb 17, 2019</li>
-                  <li><i class="fa fa-heart-o"></i> 12</li>
-                  <li><i class="fa fa-share"></i> 1</li>
+                  <li><i class="fa fa-clock-o"></i>{{comment.date}}</li>
+<!--                  <li><i class="fa fa-heart-o"></i> 12</li>-->
+<!--                  <li><i class="fa fa-share"></i> 1</li>-->
                 </ul>
               </div>
             </div>
-            <div class="blog__comment__item blog__comment__item--reply">
-              <div class="blog__comment__item__pic">
-                <img src="img/blog/details/comment-2.jpg" alt="">
-              </div>
-              <div class="blog__comment__item__text">
-                <h6>Brandon Kelley</h6>
-                <p>Consequat consetetur dissentiet, ceteros commune perpetua mei et. Simul viderer
-                  facilisis egimus ulla mcorper.</p>
-                <ul>
-                  <li><i class="fa fa-clock-o"></i> Seb 17, 2019</li>
-                  <li><i class="fa fa-heart-o"></i> 12</li>
-                  <li><i class="fa fa-share"></i> 1</li>
-                </ul>
-              </div>
-            </div>
-            <div class="blog__comment__item">
-              <div class="blog__comment__item__pic">
-                <img src="img/blog/details/comment-3.jpg" alt="">
-              </div>
-              <div class="blog__comment__item__text">
-                <h6>Brandon Kelley</h6>
-                <p>Duis voluptatum. Id vis consequat consetetur dissentiet, ceteros commune perpetua
-                  mei et. Simul viderer facilisis egimus tractatos splendi.</p>
-                <ul>
-                  <li><i class="fa fa-clock-o"></i> Seb 17, 2019</li>
-                  <li><i class="fa fa-heart-o"></i> 12</li>
-                  <li><i class="fa fa-share"></i> 1</li>
-                </ul>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

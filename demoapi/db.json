@@ -402,12 +402,42 @@
       "date": "18/08/2022"
     }
   ],
-
   "cart": [],
-  "billing": [ ],
-  "contact": [  ],
-  "comment": [  ],
-
+  "billing": [
+    {
+      "firstName": "f",
+      "lastName": "f",
+      "address": "f",
+      "postCode": "f",
+      "phone": "f",
+      "email": "f",
+      "paymentMethods": "f",
+      "accountNumber": "f",
+      "orderDate": "19/8/2022",
+      "receiptDate": "26/8/2022",
+      "totalMoney": 2470740,
+      "id": 1
+    }
+  ],
+  "contact": [
+    {
+      "name": "d",
+      "email": "d",
+      "phone": "d",
+      "topic": "d",
+      "message": "d",
+      "date": "19/8/2022",
+      "id": 1
+    }
+  ],
+  "comment": [
+    {
+      "nameCustomer": "Brandon Kelley",
+      "content": "Duis voluptatum. Id vis consequat consetetur dissentiet, ceteros commune perpetua mei et. Simul viderer facilisis egimus tractatos splendi.",
+      "date": "19/8/2022",
+      "id": 1
+    }
+  ],
   "category": [
     {
       "id": 1,
