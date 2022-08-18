@@ -320,13 +320,6 @@
       "briefDescription": " Wargame: Red Dragon account you get after purchase is 100% new and never used account\nProvide the original email you can change all information\nLifetime warranty"
     }
   ],
-  "cart": [],
-  "billing": [
-  ],
-  "contact": [
-
-  ],
-
   "blog": [
     {
       "id": 1,
@@ -409,6 +402,12 @@
       "date": "18/08/2022"
     }
   ],
+
+  "cart": [],
+  "billing": [ ],
+  "contact": [  ],
+  "comment": [  ],
+
   "category": [
     {
       "id": 1,

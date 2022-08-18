@@ -44,11 +44,22 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="blog__details__btn__item blog__details__btn__item--next">
-                  <h6><a routerLink="../blogDetails/{{idNext}}" >Next posts <i class="fa fa-angle-right"></i></a></h6>
+                  <h6><a (click)="onNext()" >Next posts <i class="fa fa-angle-right"></i></a></h6>
                 </div>
               </div>
             </div>
           </div>
+          <div class="contact__form">
+
+            <h5>COMMENT</h5>
+            <form action="" method="POST" role="form" [formGroup]="commentCreate" (ngSubmit)="onCreate()">
+              <input required class="form-control" formControlName="name"  type="text" placeholder="Name">
+              <input required class="form-control" formControlName="content"  type="text" placeholder="Content">
+              <button type="submit" class="site-btn">Send Comment</button>
+            </form>
+
+          </div>
+
           <div class="blog__details__comment">
             <h5>3 Comment</h5>
             <a href="#" class="leave-btn">Leave a comment</a>
@@ -108,7 +119,7 @@
               <h4>Feature posts</h4>
             </div>
 
-            <a *ngFor="let blog of blogList" routerLink="../blogDetails/{{blog.id}}"
+            <a *ngFor="let blog of blogList" routerLink="../{{blog.id}} " (click)="onFeature(blog.id)"
                class="blog__feature__item"  >
               <div style="width: 30%; height: 50%" class="blog__feature__item__pic">
                 <img src="{{blog.image}}" alt="">
