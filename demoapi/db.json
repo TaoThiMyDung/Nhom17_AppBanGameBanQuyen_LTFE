@@ -322,28 +322,20 @@
   ],
   "cart": [
     {
-      "id": 4,
-      "name": "Warlocks vs Shadows",
-      "image": "../../../assets/img/product/product-4.png",
-      "price": 340000,
-      "quantitySold": 1,
-      "total": 340000
-    },
-    {
       "id": 2,
       "name": "The Sim 4",
       "image": "../../../assets/img/product/product-2.png",
       "price": 350000,
-      "quantitySold": 1,
-      "total": 350000
+      "quantitySold": 2,
+      "total": 700000
     },
     {
       "id": 3,
       "name": "Dark Angels: Masquequerade of Shadows",
       "image": "../../../assets/img/product/product-3.png",
       "price": 97000,
-      "quantitySold": 1,
-      "total": 97000
+      "quantitySold": 2,
+      "total": 194000
     },
     {
       "id": 20,
@@ -352,6 +344,14 @@
       "price": 683000,
       "quantitySold": 2,
       "total": 1366000
+    },
+    {
+      "id": 12,
+      "name": "Risk of Rain",
+      "image": "../../../assets/img/trend/action_4.png",
+      "price": 230000,
+      "quantitySold": 2,
+      "total": 460000
     }
   ],
   "billing": [],
