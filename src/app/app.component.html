@@ -50,7 +50,7 @@
             </li>
             <li><a [routerLink]="['/blog']" >Blog</a>
               <ul class="dropdown">
-                <li><a [routerLink]="['/blogDetail']">Blog Details</a></li>
+                <li><a routerLink="../blogDetail/1">Blog Details</a></li>
               </ul>
             </li>
             <li><a [routerLink]="['/contact']">Contact</a></li>
@@ -196,7 +196,7 @@
       </div>
       <div class="col-lg-2 col-md-3 col-sm-4">
         <div class="footer__widget">
-          <h6>Account</h6>
+          <h6 style="margin-left: 15%">Account</h6>
           <ul>
             <li><a [routerLink]="['/login']">My Account</a></li>
             <li><a [routerLink]="['/checkout']">Orders Tracking</a></li>
@@ -207,10 +207,10 @@
       </div>
       <div class="col-lg-4 col-md-8 col-sm-8">
         <div class="footer__newslatter">
-          <h6>NEWSLETTER</h6>
+          <h6>CONTACT</h6>
           <form action="#">
             <input type="text" placeholder="Email">
-            <button type="submit" class="site-btn">Subscribe</button>
+            <button type="submit" class="site-btn">To send</button>
           </form>
           <div class="footer__social">
             <a [routerLink]="['/home']"><i class="fa fa-facebook"></i></a>

@@ -70,6 +70,7 @@ import {CheckoutModule} from "./home/checkOut/checkout.module";
 import {ContactRoutingModule} from "./home/contact/contact-routing.module";
 import {ContactModule} from "./home/contact/contact.module";
 import {BlogModule} from "./home/blog/blog.module";
+import {BlogDetailsModule} from "./home/blogDetails/blogdetails.module";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -149,6 +150,7 @@ import {BlogModule} from "./home/blog/blog.module";
     CheckoutModule,
     ContactModule,
     BlogModule,
+    BlogDetailsModule,
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService],
   bootstrap: [AppComponent],

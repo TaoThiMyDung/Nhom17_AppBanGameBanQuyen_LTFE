@@ -320,13 +320,6 @@
       "briefDescription": " Wargame: Red Dragon account you get after purchase is 100% new and never used account\nProvide the original email you can change all information\nLifetime warranty"
     }
   ],
-  "cart": [],
-  "billing": [
-  ],
-  "contact": [
-
-  ],
-
   "blog": [
     {
       "id": 1,
@@ -407,6 +400,42 @@
       "description": "Are you in need of buying cheap copyrighted games? Muaga.me is currently the cheapest copyrighted game shop in Vietnam, with a full range of distribution platforms, major platforms such as Steam, Xbox, Origin, Uplay, PlayStation, Nintendo...\n\nYou can absolutely buy goods on the Website without having an account. However, you should register an account to use the full functionality of the website.\nFor the Game you can't find because many products have not been uploaded, you can message the shop to check the status of the goods here https://www.facebook.com/muaga.meshop\n\nYou can pre-load your Wallet for faster purchases. If you want to buy goods with a scratch card, you must pre-load it into your Wallet.",
       "name": "Andrew Shouldice",
       "date": "18/08/2022"
+    }
+  ],
+  "cart": [],
+  "billing": [
+    {
+      "firstName": "f",
+      "lastName": "f",
+      "address": "f",
+      "postCode": "f",
+      "phone": "f",
+      "email": "f",
+      "paymentMethods": "f",
+      "accountNumber": "f",
+      "orderDate": "19/8/2022",
+      "receiptDate": "26/8/2022",
+      "totalMoney": 2470740,
+      "id": 1
+    }
+  ],
+  "contact": [
+    {
+      "name": "d",
+      "email": "d",
+      "phone": "d",
+      "topic": "d",
+      "message": "d",
+      "date": "19/8/2022",
+      "id": 1
+    }
+  ],
+  "comment": [
+    {
+      "nameCustomer": "Brandon Kelley",
+      "content": "Duis voluptatum. Id vis consequat consetetur dissentiet, ceteros commune perpetua mei et. Simul viderer facilisis egimus tractatos splendi.",
+      "date": "19/8/2022",
+      "id": 1
     }
   ],
   "category": [
