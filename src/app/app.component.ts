@@ -5,6 +5,7 @@ import {CartService} from "./services/cart.service";
 import {Router} from "@angular/router";
 import {Product} from "./models/product";
 import {FormControl, FormGroup} from "@angular/forms";
+import {HttpService} from "./Shared/http.service";
 
 @Component({
   selector: 'app-root',
@@ -31,9 +32,11 @@ export class AppComponent {
 
   constructor(private proSrv : ProductService,
               private cartSrv : CartService,
-              private route: Router) { }
+              private route: Router,
+              public http: HttpService) { }
 
   ngOnInit(): void {
+
     this.title = 'Hello World';
     this.data = [
       [1, 'Nguyễn Văn A', '18130000', 'DH18DT', 10],
