@@ -1,6 +1,4 @@
-/*---------------------
-  Shop
------------------------*/
+
 .shop {
   padding-top: 70px;
   padding-bottom: 80px;
@@ -223,7 +221,7 @@
 
           & ~ .checkmark {
             border-color: $primary-color;
-    
+
             &:after {
               border-color: $primary-color;
               opacity: 1;

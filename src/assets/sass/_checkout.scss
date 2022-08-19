@@ -1,6 +1,4 @@
-/*---------------------
-  Checkout
------------------------*/
+
 .checkout {
   padding-top: 80px;
   padding-bottom: 70px;
@@ -229,7 +227,7 @@
 
         & ~ .checkmark {
           border-color: $primary-color;
-  
+
           &:after {
             border-color: $primary-color;
             opacity: 1;

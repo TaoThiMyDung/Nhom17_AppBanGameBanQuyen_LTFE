@@ -40,6 +40,23 @@ GET : http://localhost:3000/product
     return this.http.get<Array<Product>> (url);
   }
 
+  getSearchName (search_key: string): Observable<Array<Product>>{ // ( _limit = 4 , search_key có hoặc không )
+    let url = 'http://localhost:3000/product/?name_like=' + search_key  ; // Tìm kiếm theo tên có xuất hiện trong tên sản phẩm
+    return this.http.get<Array<Product>> (url);
+  }
+
+  getRelatedProduct  (_limit : number = 4 , like_key: string): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
+    // http://localhost:3000/product?category_like=game
+
+    let url = 'http://localhost:3000/product/?_limit='+ _limit + '&category_like=' + like_key;
+    return this.http.get<Array<Product>> (url);
+  }
+  getRelated  (like_key: string): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
+    // http://localhost:3000/product?category_like=game
+
+    let url = 'http://localhost:3000/product/?category_like='+ like_key;
+    return this.http.get<Array<Product>> (url);
+  }
   /*
   Them moi
   POST : http://localhost:3000/product
@@ -70,14 +87,14 @@ GET : http://localhost:3000/product
   getProducts(): Observable<any[]> {
     // this.data =[
     //   [
-    //     "43836", "East", "Jones", "Pencil", 95, 1.99, 189.05],
+    //   "43836", "East", "Jones", "Pencil", 95, 1.99, 189.05],
     //   ["43853", "Central", "Kivell", "Binder", 50, 19.99, 999.5],
     //   ["43870", "Central", "Jardine", "Pencil", 36, 4.99, 179.64],
     //   ["43887", "Central", "Gill", "Pen", 27, 19.99, 539.73],
-    //    ["43905", "West", "Sorvino", "Pencil", 56, 2.99, 167.44],
+    //   ["43905", "West", "Sorvino", "Pencil", 56, 2.99, 167.44],
     //   ["43922", "East", "Jones", "Binder", 60, 4.99, 299.4],
     //   ["43939", "Central", "Andrews", "Pencil", 75, 1.99, 149.25],
-    //    ["43956", "Central", "Jardine", "Pencil", 90, 4.99, 449.1]
+    //   ["43956", "Central", "Jardine", "Pencil", 90, 4.99, 449.1]
     // ];
     return this.getData('http://localhost:4200/assets/data.json');
       // .subscribe(value => {
@@ -87,4 +104,5 @@ GET : http://localhost:3000/product
       // });
     // return of(this.data);
   }
+
 }
