@@ -402,7 +402,32 @@
       "date": "18/08/2022"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": 2,
+      "name": "The Sim 4",
+      "image": "../../../assets/img/product/product-2.png",
+      "price": 350000,
+      "quantitySold": 1,
+      "total": 350000
+    },
+    {
+      "id": 6,
+      "name": "Cities: Skylines",
+      "image": "../../../assets/img/product/product-6.png",
+      "price": 683000,
+      "quantitySold": 5,
+      "total": 3415000
+    },
+    {
+      "id": 8,
+      "name": "Iron Sea Defenders",
+      "image": "../../../assets/img/product/product-8.png",
+      "price": 119000,
+      "quantitySold": 2,
+      "total": 238000
+    }
+  ],
   "billing": [
     {
       "firstName": "f",

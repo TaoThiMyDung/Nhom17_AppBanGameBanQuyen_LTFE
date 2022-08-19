@@ -15,6 +15,11 @@ const routers: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/contact'},
   {path: '', pathMatch: 'full', redirectTo: '/blog'},
   {path: '', pathMatch: 'full', redirectTo: '/blogDetails/:id'},
+
+  {path: '', pathMatch: 'full', redirectTo: '/login'},
+  {path: '', pathMatch: 'full', redirectTo: '/cow'},
+  {path: '', pathMatch: 'full', redirectTo: '/dog'},
+  {path: '', pathMatch: 'full', redirectTo: '/cat'},
 ];
 const child: Routes = [
   // Them duong dan link toi trang ts

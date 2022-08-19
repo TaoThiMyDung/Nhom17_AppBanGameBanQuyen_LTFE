@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdbAccordionModule} from 'mdb-angular-ui-kit/accordion';
@@ -71,6 +72,14 @@ import {ContactRoutingModule} from "./home/contact/contact-routing.module";
 import {ContactModule} from "./home/contact/contact.module";
 import {BlogModule} from "./home/blog/blog.module";
 import {BlogDetailsModule} from "./home/blogDetails/blogdetails.module";
+import {CatModule} from "./dummy/cat/cat.module";
+import {CowComponent} from "./dummy/cow/cow.component";
+import {CowModule} from "./dummy/cow/cow.module";
+import {DogModule} from "./dummy/dog/dog.module";
+import {LoginModule} from "./login1/home.module";
+import {HttpService} from "./Shared/http.service";
+import {DogComponent} from "./dummy/dog/dog.component";
+import {CatComponent} from "./dummy/cat/cat.component";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -151,8 +160,13 @@ import {BlogDetailsModule} from "./home/blogDetails/blogdetails.module";
     ContactModule,
     BlogModule,
     BlogDetailsModule,
+    CatModule,
+    CowModule,
+    DogModule,
+    LoginModule,
   ],
-  providers: [MdbCookiesManagementService, MdbStorageManagementService],
+  providers: [MdbCookiesManagementService, MdbStorageManagementService,HttpService],
+  entryComponents: [DogComponent,CowComponent,CatComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {
