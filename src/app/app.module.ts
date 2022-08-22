@@ -80,6 +80,8 @@ import {LoginModule} from "./login1/login.module";
 import {HttpService} from "./Shared/http.service";
 import {DogComponent} from "./dummy/dog/dog.component";
 import {CatComponent} from "./dummy/cat/cat.component";
+import {ListProductModule} from "./home/listproduct/listproduct.module";
+import {SteamProductModule} from "./home/productSteam/steamproduct.module";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -164,6 +166,8 @@ import {CatComponent} from "./dummy/cat/cat.component";
     CowModule,
     DogModule,
     LoginModule,
+    ListProductModule,
+    SteamProductModule,
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService,HttpService],
   entryComponents: [DogComponent,CowComponent,CatComponent],

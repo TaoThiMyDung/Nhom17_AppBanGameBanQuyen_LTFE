@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ProductService} from "../../services/product.service";
-import {ListProductComponents} from "./listproduct.component";
-import {ListProductRoutingModule} from "./listproduct-routing.module";
+import {SteamProductComponents} from "./steamproduct.component";
+import {SteamProductRoutingModule} from "./steamproduct-routing.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
-    ListProductComponents
+   SteamProductComponents
   ],
   imports: [
     CommonModule,
-    ListProductRoutingModule,
+    SteamProductRoutingModule,
     ReactiveFormsModule,
     FormsModule,
 
@@ -25,4 +25,4 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
   ],
 
 })
-export class ListProductModule { }
+export class SteamProductModule { }

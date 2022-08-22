@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {ListProductComponents} from "./listproduct.component";
+import {SteamProductComponents} from "./steamproduct.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
-  {path: 'listproduct', component: ListProductComponents},
+  {path: 'steamproduct', component: SteamProductComponents},
 ];
 
 @NgModule({
@@ -19,5 +19,5 @@ const routes: Routes = [
     FormsModule,
   ]
 })
-export class ListProductRoutingModule { }
+export class SteamProductRoutingModule { }
 

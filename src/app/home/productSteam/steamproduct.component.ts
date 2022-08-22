@@ -11,10 +11,10 @@ import {CartService} from "../../services/cart.service";
 
 @Component({
   selector: 'app-test',
-  templateUrl: './listproduct.component.html',
-  styleUrls: ['./listproduct.component.scss']
+  templateUrl: './steamproduct.component.html',
+  styleUrls: ['./steamproduct.component.scss']
 })
-export class ListProductComponents implements OnInit {
+export class SteamProductComponents implements OnInit {
   submited: boolean = false;
   data: any[];
 
