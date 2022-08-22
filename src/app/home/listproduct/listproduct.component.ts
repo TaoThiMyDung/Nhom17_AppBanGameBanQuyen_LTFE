@@ -103,7 +103,7 @@ export class ListProductComponents implements OnInit {
         this.products = data ;
       })
     }else if(id == 1 ){
-      this.prodSrv.getList().subscribe(data =>{
+      this.prodSrv.getProduct().subscribe(data =>{
         this.products = data ;
       })
     }
