@@ -49,11 +49,11 @@ GET : http://localhost:3000/product
     return this.http.get<Array<Product>> (url);
   }
   getListNameLow (): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
-    let url = 'http://localhost:3000/product/?_sort=name&_order=asc';
+    let url = 'http://localhost:3000/product/?_sort=name&_start=1&_order=asc';
     return this.http.get<Array<Product>> (url);
   }
   getListNameHight (): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
-    let url = 'http://localhost:3000/product/?_sort=name&_order=desc';
+    let url = 'http://localhost:3000/product/?_sort=name&_start=1&_order=desc';
     return this.http.get<Array<Product>> (url);
   }
 

@@ -14,21 +14,19 @@
 </div>
 <!-- Breadcrumb End -->
 
-<div class="main__sort">
+<div class="main__sort" style=" margin-left: 15%">
   <h3 class="sort__title">
     Hiển thị kết quả theo
   </h3>
   <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity"  >
 <!--  <select class="sort__select">-->
 
-    <button (click)="onCreate(1)" type="submit" class="btn btn-primary" value="1">Thứ tự mặc định</button>
-    <button (click)="onCreate(3)" type="submit" class="btn btn-primary" value="3">Tên A -> Z</button>
-    <button (click)="onCreate(4)" type="submit" class="btn btn-primary" value="4">Tên Z -> A</button>
-    <button (click)="onCreate(5)" type="submit" class="btn btn-primary" value="5">Giá Cao xuống thấp</button>
-    <button (click)="onCreate(6)" type="submit" class="btn btn-primary" value="6">Giá Thấp đến cao</button>
+    <button style="margin-right: 2% ; background-color: #16181b;" (click)="onCreate(1)" type="submit" class="btn btn-primary " value="1">Thứ tự mặc định</button>
+    <button style="margin-right: 2%; background-color: #16181b;" (click)="onCreate(3)" type="submit" class="btn btn-primary" value="3">Tên A -> Z</button>
+    <button style="margin-right: 2%; background-color: #16181b;" (click)="onCreate(4)" type="submit" class="btn btn-primary" value="4">Tên Z -> A</button>
+    <button style="margin-right: 2%; background-color: #16181b;" (click)="onCreate(5)" type="submit" class="btn btn-primary" value="5">Giá Cao xuống thấp</button>
+    <button style="margin-right: 2%; background-color: #16181b;" (click)="onCreate(6)" type="submit" class="btn btn-primary" value="6">Giá Thấp đến cao</button>
 <!--  </select>-->
-
-    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
 <!-- Product Section Begin -->
