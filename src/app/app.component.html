@@ -43,6 +43,7 @@
             <li class="active"><a [routerLink]="['/home']" >Home</a></li>
             <li><a [routerLink]="['/home']" >Pages</a>
               <ul class="dropdown">
+                <li><a [routerLink]="['/listproduct']" >List Product</a> </li>
                 <li><a routerLink="../productDetail/1">Product Details</a></li>
                 <li><a [routerLink]="['/product-list']">Shop Cart</a></li>
                 <li><a [routerLink]="['/checkout']">Checkout</a></li>
@@ -53,8 +54,8 @@
                 <li><a routerLink="../blogDetail/1">Blog Details</a></li>
               </ul>
             </li>
-            <li><a [routerLink]="['/contact']">Contact</a></li>
 
+            <li><a [routerLink]="['/contact']">Contact</a></li>
             <li>
             <form action="" method="POST" class="form-inline" [formGroup]="searchForm" (ngSubmit)="onProductSearch()">
               <ul>
