@@ -21,6 +21,18 @@
       "link": "../../../assets/img/categories/category-5.jpg"
     }
   ],
+  "login": [
+    {
+      "id": 1,
+      "email": "19130075@st.hcmuaf.edu.vn",
+      "password": "12345"
+    },
+    {
+      "id": 2,
+      "email": "daudiep2003@gmail.com",
+      "password": "12345"
+    }
+  ],
   "product": [
     {
       "id": 1,
