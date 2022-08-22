@@ -1,13 +1,20 @@
 {
   "name": "mdb5-angular-ui-kit-pro-advanced",
   "version": "2.2.0",
+  "description": "sending email through node js",
+  "main": "index.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
+
+  "author": "Subrat",
+  "license": "ISC",
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.2.4",
@@ -35,7 +42,12 @@
     "mdb-angular-wysiwyg": "file:mdb-angular-wysiwyg-2.0.0.tgz",
     "rxjs": "~7.5.0",
     "tslib": "^2.4.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.2.5",

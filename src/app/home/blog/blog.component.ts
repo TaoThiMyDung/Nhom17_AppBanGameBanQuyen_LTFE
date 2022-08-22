@@ -30,7 +30,7 @@ export class BlogComponent implements OnInit {
   contactCreate = new FormGroup({
 
     name: new FormControl(''),
-    email: new FormControl(''),
+    email: new FormControl("", [ Validators.required, Validators.email ]),
     phone: new FormControl(''),
     topic: new FormControl(''),
     message: new FormControl(''),
