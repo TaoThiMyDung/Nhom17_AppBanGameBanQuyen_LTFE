@@ -1,5 +1,36 @@
 
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="breadcrumb__links">
+          <a [routerLink]="['/home']"><i class="fa fa-home"></i> Home</a>
+          <a [routerLink]="['/blog']" >Danh mục sản phẩm</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumb End -->
 
+<div class="main__sort">
+  <h3 class="sort__title">
+    Hiển thị kết quả theo
+  </h3>
+  <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity"  >
+<!--  <select class="sort__select">-->
+
+    <button (click)="onCreate(1)" type="submit" class="btn btn-primary" value="1">Thứ tự mặc định</button>
+    <button (click)="onCreate(3)" type="submit" class="btn btn-primary" value="3">Tên A -> Z</button>
+    <button (click)="onCreate(4)" type="submit" class="btn btn-primary" value="4">Tên Z -> A</button>
+    <button (click)="onCreate(5)" type="submit" class="btn btn-primary" value="5">Giá Cao xuống thấp</button>
+    <button (click)="onCreate(6)" type="submit" class="btn btn-primary" value="6">Giá Thấp đến cao</button>
+<!--  </select>-->
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 <!-- Product Section Begin -->
 <section class="product spad" >
   <div class="container">
@@ -22,8 +53,7 @@
     </div>
     <div class="row property__gallery"  >
       <div class="col-lg-3 col-md-4 col-sm-6 mix women" *ngFor="let pro of products" >
-        <div class="product__item" *ngIf="pro.id == 1 || pro.id == 2 || pro.id == 3 || pro.id == 4 ||
-                                          pro.id == 5 || pro.id == 6 || pro.id == 7 || pro.id == 8 ">
+        <div class="product__item" >
           <div class="product__item__pic set-bg"
                [style.background-image]="'url(' + pro.image + ')'">
             <div *ngIf="pro.id == 1 || pro.id == 5" class="label new">New</div>
