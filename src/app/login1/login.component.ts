@@ -16,14 +16,12 @@ export class LoginComponent implements OnInit {
   name1 = "";
   age ="";
   loading = false;
+
   buttionText = "Submit";
 
   emailFormControl = new FormControl("", [ Validators.required, Validators.email ]);
 
-  nameFormControl = new FormControl("", [
-    Validators.required,
-    Validators.minLength(4)
-  ]);
+  nameFormControl = new FormControl("", [Validators.required,  Validators.minLength(4) ]);
 
   dummyComponent = DogComponent;
 
@@ -47,12 +45,13 @@ export class LoginComponent implements OnInit {
   register() {
     this.loading = true;
     this.buttionText = "Submiting...";
+
     let user = {
       name: this.nameFormControl.value,
       email: this.emailFormControl.value
     }
+
     alert(this.nameFormControl.value + " --- " + this.emailFormControl.value)
-    // this.http.sendMailTrans();
 
     this.http.sendEmail("http://localhost:3000/sendmail", user).subscribe(
       data => {
@@ -73,4 +72,5 @@ export class LoginComponent implements OnInit {
     );
 
   }
+
 }
