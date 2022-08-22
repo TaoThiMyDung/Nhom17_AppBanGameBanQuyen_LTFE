@@ -37,10 +37,11 @@
       </div>
     </div>
 
+<!--    (click)="register()" onclick="senMailTrans()"-->
     <button class="primary"
       type="submit"
       [disabled]="emailFormControl.invalid || nameFormControl.invalid || loading"
-      (click)="register()"
+      onclick="senMailTrans()"
     >
       {{buttionText}}
     </button>
@@ -164,6 +165,7 @@
       }
     }
   </style>
+  <script src="index.js"></script>
 </head>
 <body style="background-color: #f6f6f6; font-family: sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; line-height: 1.4; margin: 0; padding: 0; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
 <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">This is preheader text. Some clients will show this text as a preview.</span>
@@ -238,5 +240,36 @@
 </html>
 
 <script>
+
+  const nodemailer = require('nodemailer');
+
+  let mailTransporter = nodemailer.createTransport({
+    service : "gmail",
+    auth:{
+      user : "19130075@st.hcmuaf.edu.vn",
+      pass: "mtxzghesacihdvqm"
+    }
+  })
+
+  let details ={
+    from: "19130075@st.hcmuaf.edu.vn",
+    to: "daudiep2003@gmail.com",
+    subject: "testing our nodemailer",
+    text: "testing out first sender"
+  }
+
+  function senMailTrans (){
+    mailTransporter.sendMail(details, (err) =>{
+      if(err){
+        console.log("it has an error" , err)
+        alert("kkkkkkkkkkkk")
+      }else {
+        console.log("email has sent !" , err)
+        alert("OK")
+      }
+    })
+    alert("kkkkkkkkkkkkkkkk")
+  }
+
 
 </script>
