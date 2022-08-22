@@ -2,7 +2,7 @@
   "name": "mdb5-angular-ui-kit-pro-advanced",
   "version": "2.2.0",
   "description": "sending email through node js",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,6 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+
   "author": "Subrat",
   "license": "ISC",
   "private": true,
