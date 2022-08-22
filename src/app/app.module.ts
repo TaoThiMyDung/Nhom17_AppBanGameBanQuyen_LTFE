@@ -76,7 +76,7 @@ import {CatModule} from "./dummy/cat/cat.module";
 import {CowComponent} from "./dummy/cow/cow.component";
 import {CowModule} from "./dummy/cow/cow.module";
 import {DogModule} from "./dummy/dog/dog.module";
-import {LoginModule} from "./login1/login.module";
+import {LoginModule} from "./login/login.module";
 import {HttpService} from "./Shared/http.service";
 import {DogComponent} from "./dummy/dog/dog.component";
 import {CatComponent} from "./dummy/cat/cat.component";

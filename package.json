@@ -12,7 +12,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-
   "author": "Subrat",
   "license": "ISC",
   "private": true,
@@ -27,7 +26,10 @@
     "@angular/platform-browser-dynamic": "~13.2.4",
     "@angular/router": "~13.2.4",
     "@fortawesome/fontawesome-free": "^6.0.0",
+    "body-parser": "^1.18.3",
     "chart.js": "^3.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
     "fast-xml-parser": "~4.0.8",
     "mdb-angular-calendar": "file:mdb-angular-calendar-2.0.0.tgz",
     "mdb-angular-cookies-management": "file:mdb-angular-cookies-management-2.0.0.tgz",
@@ -40,21 +42,17 @@
     "mdb-angular-ui-kit": "file:mdb-angular-ui-kit-2.2.0.tgz",
     "mdb-angular-vector-maps": "file:mdb-angular-vector-maps-2.0.0.tgz",
     "mdb-angular-wysiwyg": "file:mdb-angular-wysiwyg-2.0.0.tgz",
+    "nodemailer": "^5.1.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.4.0",
-    "zone.js": "~0.11.4",
-
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "nodemailer": "^5.1.1"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.2.5",
     "@angular/cli": "~13.2.5",
     "@angular/compiler-cli": "~13.2.4",
     "@types/jasmine": "~3.6.0",
-    "@types/node": "^12.11.1",
+    "@types/node": "^12.20.55",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
