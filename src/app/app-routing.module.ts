@@ -15,6 +15,7 @@ const routers: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/contact'},
   {path: '', pathMatch: 'full', redirectTo: '/blog'},
   {path: '', pathMatch: 'full', redirectTo: '/blogDetails/:id'},
+  {path: '', pathMatch: 'full', redirectTo: '/listproduct'},
 
   {path: '', pathMatch: 'full', redirectTo: '/login'},
   {path: '', pathMatch: 'full', redirectTo: '/cow'},

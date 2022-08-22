@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {ListProductComponent} from "./listproduct.component";
+import {ListProductComponents} from "./listproduct.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
-  {path: 'listproduct', component: ListProductComponent},
+  {path: 'listproduct', component: ListProductComponents},
 ];
 
 @NgModule({
