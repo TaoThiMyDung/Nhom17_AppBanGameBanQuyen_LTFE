@@ -40,6 +40,23 @@ GET : http://localhost:3000/product
     return this.http.get<Array<Product>> (url);
   }
 
+  getListPriceLow (): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
+    let url = 'http://localhost:3000/product/?_sort=price&_order=asc';
+    return this.http.get<Array<Product>> (url);
+  }
+  getListPriceHight (): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
+    let url = 'http://localhost:3000/product/?_sort=price&_order=desc';
+    return this.http.get<Array<Product>> (url);
+  }
+  getListNameLow (): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
+    let url = 'http://localhost:3000/product/?_sort=name&_order=asc';
+    return this.http.get<Array<Product>> (url);
+  }
+  getListNameHight (): Observable<Array<Product>>{ // Mặc định hiển thị 4 sản phẩm ( _limit = 4 , search_key có hoặc không )
+    let url = 'http://localhost:3000/product/?_sort=name&_order=desc';
+    return this.http.get<Array<Product>> (url);
+  }
+
   getSearchName (search_key: string): Observable<Array<Product>>{ // ( _limit = 4 , search_key có hoặc không )
     let url = 'http://localhost:3000/product/?name_like=' + search_key  ; // Tìm kiếm theo tên có xuất hiện trong tên sản phẩm
     return this.http.get<Array<Product>> (url);

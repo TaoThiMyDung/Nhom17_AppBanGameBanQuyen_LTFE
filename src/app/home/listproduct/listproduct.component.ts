@@ -29,6 +29,9 @@ export class ListProductComponents implements OnInit {
   products : Array<Product> = new Array<Product>();
   category : Array<Category> = new Array<Category>();
 
+  productsLow : Array<Product> = new Array<Product>();
+  productsHight : Array<Product> = new Array<Product>();
+
   productsList : Array<Product> = [];
 
   cartFormOneQuantity: FormGroup = new FormGroup({
@@ -48,10 +51,6 @@ export class ListProductComponents implements OnInit {
       .subscribe(res => {
         this.banners = res;
       });
-    this.productService.getProduct()
-      .subscribe(res => {
-        this.products = res;
-      });
     this.categoryService.getCategory()
       .subscribe(res => {
         this.category = res;
@@ -61,6 +60,20 @@ export class ListProductComponents implements OnInit {
     this.prodSrv.getList().subscribe(data =>{
       this.productsList = data ;
     })
+
+    this.productService.getProduct()
+      .subscribe(res => {
+        this.products = res;
+      });
+    // PHU THUOC VAO TRANG SERVE
+    this.prodSrv.getListPriceLow().subscribe(data =>{
+      this.productsLow = data ;
+    })
+    // PHU THUOC VAO TRANG SERVE
+    this.prodSrv.getListPriceHight().subscribe(data =>{
+      this.productsHight = data ;
+    })
+
   }
 
   public onClickProduct (id :number): void {
@@ -68,6 +81,35 @@ export class ListProductComponents implements OnInit {
     this.route.navigate(['/productDetail/' + id]);
     // }
   }
+
+  public onCreate (id: number): void {
+    // if (confirm(id+ 'h')) {
+   // alert(id)
+    // }
+    if(id == 5 ){
+      this.prodSrv.getListPriceHight().subscribe(data =>{
+        this.products = data ;
+      })
+    }else if(id == 6 ){
+      this.prodSrv.getListPriceLow().subscribe(data =>{
+        this.products = data ;
+      })
+    }else if(id == 3 ){
+      this.prodSrv.getListNameLow().subscribe(data =>{
+        this.products = data ;
+      })
+    }else if(id == 4 ){
+      this.prodSrv.getListNameLow().subscribe(data =>{
+        this.products = data ;
+      })
+    }else if(id == 1 ){
+      this.prodSrv.getList().subscribe(data =>{
+        this.products = data ;
+      })
+    }
+
+  }
+
 
   public onCreateOneQuantity (id :number): void {
     this.prodSrv.getOne(id).subscribe(data => {
@@ -115,4 +157,5 @@ export class ListProductComponents implements OnInit {
       }
     })
   }
+
 }

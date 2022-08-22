@@ -1,124 +1,36 @@
 
-<!--*ngIf="pr.id == 1"=======================================================================================-->
-
-
-<!--<img src="../../../assets/img/categories/category-1.jpg">-->
-<!-- Categories Section Begin -->
-<!--<link rel="stylesheet" href="home.component.scss">-->
-
-<section class="categories"  >
-  <div class="container-fluid" >
-    <div class="row" >
-      <!--      [style.background-image]="'url(' + ca.image + ')'">-->
-      <!--      style="background-image: url(../../../assets/img/categories/category-1.jpg)">-->
-      <div class="col-lg-6 p-0"   >
-        <!--        <ng-template  *ngFor="let bn of banners">-->
-        <div class="categories__item categories__large__item set-bg"
-             style="background-image: url(../../../assets/img_home/imgCategory/img.png)">
-          <!--          <img src="favicon.ico">-->
-          <div class="categories__text">
-            <h1 class="nameGame">XOXO GAME</h1>
-            <!--            <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore-->
-            <!--              edolore magna aliquapendisse ultrices gravida.</p>-->
-            <a [routerLink]="['/home']" class="shopGame">Shop now</a>
-          </div>
-        </div>
-        <!--        </ng-template>-->
-      </div>
-
-      <!--      [style.background-image]="'url(' + ca.image + ')'">-->
-      <!--      style="background-image: url(../../../assets/img/categories/category-2.jpg)">  3/4 -->
-
-      <div class="col-lg-6" >
-        <div class="row" >
-          <div class="col-lg-6 col-md-6 col-sm-6 p-0"  >
-            <div class="categories__item set-bg"
-                 style="background-image: url(../../../assets/img_home/imgCategory/steam.png)">
-              <div class="categories__text">
-                <h4 class="categories__text_name">STEAM</h4>
-                <p  class="categories__text_des">Super saving card recharge</p>
-                <a [routerLink]="['/home']"  class="categories__text_shop">Shop now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 p-0"    >
-            <div class="categories__item set-bg"
-                 style="background-image: url(../../../assets/img_home/imgCategory/canva.png)">
-              <div class="categories__text">
-                <h4 class="categories__text_name">CANVA PRO</h4>
-                <p  class="categories__text_des">Comfortable Design</p>
-                <a [routerLink]="['/home']"  class="categories__text_shop">Shop now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 p-0"  >
-            <div class="categories__item set-bg"
-                 style="background-image: url(../../../assets/img_home/imgCategory/premium.png)">
-              <div class="categories__text">
-                <h4 class="categories__text_name">PREMIUM</h4>
-                <p  class="categories__text_des">50% more savings</p>
-                <a [routerLink]="['/home']" class="categories__text_shop">Shop now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 p-0"  >
-            <div class="categories__item set-bg"
-                 style="background-image: url(../../../assets/img_home/imgCategory/discord.png)">
-              <div class="categories__text">
-                <h4 class="categories__text_name">DISCORD</h4>
-                <p class="categories__text_des">Cheap discord upgrade</p>
-                <a [routerLink]="['/home']" class="categories__text_shop">Shop now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Categories Section End -->
-
-<!-- Services Section Begin -->
-<section class="services spad">
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="services__item">
-          <!--          <i class="fa fa-car"></i>-->
-          <img class="services_image" src="../../../assets/img/account/free.png">
-          <h6>Free Shipping</h6>
-          <p>For all oder over $99</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="services__item">
-          <!--          <i class="fa fa-money"></i>-->
-          <img class="services_image" src="../../../assets/img/account/money.png">
-          <h6>Money Back Guarantee</h6>
-          <p>If good have Problems</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="services__item">
-          <!--          <i class="fa fa-support"></i>-->
-          <img class="services_image" src="../../../assets/img/account/online.png">
-          <h6>Online Support 24/7</h6>
-          <p>Dedicated support</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="services__item">
-          <!--          <i class="fa fa-headphones"></i> -->
-          <img class="services_image" src="../../../assets/img/account/payment.png">
-          <h6>Payment Secure</h6>
-          <p>100% secure payment</p>
+      <div class="col-lg-12">
+        <div class="breadcrumb__links">
+          <a [routerLink]="['/home']"><i class="fa fa-home"></i> Home</a>
+          <a [routerLink]="['/blog']" >Danh mục sản phẩm</a>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- Services Section End -->
+</div>
+<!-- Breadcrumb End -->
 
+<div class="main__sort">
+  <h3 class="sort__title">
+    Hiển thị kết quả theo
+  </h3>
+  <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity"  >
+<!--  <select class="sort__select">-->
+
+    <button (click)="onCreate(1)" type="submit" class="btn btn-primary" value="1">Thứ tự mặc định</button>
+    <button (click)="onCreate(3)" type="submit" class="btn btn-primary" value="3">Tên A -> Z</button>
+    <button (click)="onCreate(4)" type="submit" class="btn btn-primary" value="4">Tên Z -> A</button>
+    <button (click)="onCreate(5)" type="submit" class="btn btn-primary" value="5">Giá Cao xuống thấp</button>
+    <button (click)="onCreate(6)" type="submit" class="btn btn-primary" value="6">Giá Thấp đến cao</button>
+<!--  </select>-->
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
 <!-- Product Section Begin -->
 <section class="product spad" >
   <div class="container">
@@ -141,8 +53,7 @@
     </div>
     <div class="row property__gallery"  >
       <div class="col-lg-3 col-md-4 col-sm-6 mix women" *ngFor="let pro of products" >
-        <div class="product__item" *ngIf="pro.id == 1 || pro.id == 2 || pro.id == 3 || pro.id == 4 ||
-                                          pro.id == 5 || pro.id == 6 || pro.id == 7 || pro.id == 8 ">
+        <div class="product__item" >
           <div class="product__item__pic set-bg"
                [style.background-image]="'url(' + pro.image + ')'">
             <div *ngIf="pro.id == 1 || pro.id == 5" class="label new">New</div>
@@ -199,62 +110,6 @@
   </div>
 </section>
 
-<!-- Product Section Begin -->
-<section class="product spad" >
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4">
-        <div class="section-title">
-          <h4>Game Account</h4>
-        </div>
-      </div>
-      <div class="col-lg-8 col-md-8">
-        <ul class="filter__controls">
-          <li class="active" data-filter="*">All</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row property__gallery " >
-      <div class="col-lg-2 col-md-1 col-sm-1 mix women" *ngFor="let pro of products" >
-        <div class="product__item"  *ngIf="pro.id == 25 || pro.id == 26 || pro.id == 27 || pro.id == 28 || pro.id == 29  || pro.id == 30" >
-          <div class="product__item__pic set-bg product__item__pic_image"
-               [style.background-image]="'url(' + pro.image + ')'">
-            <div *ngIf="pro.id == 25 || pro.id == 27" class="label new">New</div>
-            <div *ngIf="pro.id == 26" class="label sale">Sale</div>
-            <ul class="product__hover">
-              <!--              LINK DEN PRODUCT-DETAILS-->
-              <li><a routerLink="../productDetail/{{pro.id}}"><span class="arrow_expand"></span></a></li>
-              <!--              LINK DEN PRODUCT-CART-->
-              <!--                <li><a [routerLink]="['/home']"><span class="icon_cart"></span></a></li>-->
-              <li>
-                <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity">
-                  <a type="submit" (click) ="onCreateOneQuantity(pro.id)"><span class="icon_cart"></span></a>
-                </form>
-              </li>
-
-            </ul>
-          </div>
-          <div class="product__item__text" >
-            <h6><a [routerLink]="['/home']">{{pro.name}}</a></h6>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-            <div *ngIf="pro.id != 25 && pro.id != 29"  class="product__price">$ {{pro.price}}</div>
-            <div *ngIf="pro.id == 25 || pro.id == 29" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-</section>
-<!-- Product Section End -->
 
 <!-- Trend Section Begin -->
 <section class="trend spad">
