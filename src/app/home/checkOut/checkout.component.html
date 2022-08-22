@@ -57,6 +57,13 @@
               <div class="checkout__form__input">
                 <p>Email <span>*</span></p>
                 <input required class="form-control" formControlName="email" type="email">
+                <div *ngIf="billingCreate.hasError('email')">
+                  Please enter a valid email address
+                </div>
+                <div *ngIf="billingCreate.hasError('required')">
+                  Email is <strong>required</strong>
+                </div>
+
               </div>
             </div>
 

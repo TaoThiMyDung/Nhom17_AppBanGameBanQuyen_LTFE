@@ -6,7 +6,6 @@ import { HttpClient } from "@angular/common/http";
 
 })
 
-
 export class HttpService {
   test = "How r u?";
   data : {name : any , email : any};
@@ -26,4 +25,5 @@ export class HttpService {
   sendEmail(url: string, data : {name : any , email : any} ) {
     return this.http.post(url, data);
   }
+
 }

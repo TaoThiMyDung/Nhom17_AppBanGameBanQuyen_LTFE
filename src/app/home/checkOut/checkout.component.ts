@@ -39,7 +39,7 @@ export class CheckOutComponent implements OnInit {
     address: new FormControl(''),
     postCode: new FormControl(''),
     phone: new FormControl(''),
-    email : new FormControl(''),
+    email : new FormControl("", [ Validators.required, Validators.email ]),
     paymentMethods: new FormControl(''),
     accountNumber : new FormControl(''),
     orderDate: new FormControl(this.date),
