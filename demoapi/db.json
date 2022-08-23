@@ -33,6 +33,18 @@
       "email": "daudiep2003@gmail.com",
       "password": "123",
       "id": 2
+    },
+    {
+      "name": "Mydung",
+      "email": "19130052@st.hcmuaf.edu.vn",
+      "password": "abcd",
+      "id": 3
+    },
+    {
+      "name": "Mydung",
+      "email": "19130000@st.hcmuaf.edu.vn",
+      "password": "147",
+      "id": 4
     }
   ],
   "product": [
@@ -553,6 +565,86 @@
       "category": "PUBG CS",
       "description": "CDKEY is only activated for Steam accounts in Vietnam region.\nCDKEY is valid until January 11, 2022, please enter the code before January 11, 2022 to receive the rewards below.\nThe rewards will be automatically credited to your account on the first login after 12/01/2022.",
       "briefDescription": "PUBG PLAYERUNKNOWN'S BATTLEGROUNDS "
+    },
+    {
+      "id": 53,
+      "name": "STEAM WALLET CODE 50 HKD",
+      "price": 155000,
+      "sale_price": 159000,
+      "image": "../../../assets/img/account/wallet1.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 50 HKD "
+    },
+    {
+      "id": 54,
+      "name": "STEAM WALLET CODE 200 HKD",
+      "price": 600000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/wallet2.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "\nSTEAM WALLET CODE 200 HKD "
+    },
+    {
+      "id": 55,
+      "name": "STEAM WALLET CODE 120 HKD",
+      "price": 600000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/wallet3.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 120 HKD "
+    },
+    {
+      "id": 56,
+      "name": "STEAM WALLET CODE 20€ EURO",
+      "price": 550000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/wallet4.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 20€ EURO "
+    },
+    {
+      "id": 57,
+      "name": "STEAM WALLET CODE 44.000 VND",
+      "price": 44000,
+      "sale_price": 44000,
+      "image": "../../../assets/img/account/wallet5.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 44.000 VND "
+    },
+    {
+      "id": 58,
+      "name": "STEAM WALLET CODE 22.000 VNĐ",
+      "price": 22000,
+      "sale_price": 25000,
+      "image": "../../../assets/img/account/wallet5.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 22.000 VNĐ "
+    },
+    {
+      "id": 59,
+      "name": "STEAM WALLET CODE 50$ (BEST SELLER)",
+      "price": 1030000,
+      "sale_price":1030000 ,
+      "image": "../../../assets/img/account/wallet6.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 50$ (BEST SELLER) "
+    },
+    {
+      "id": 59,
+      "name": "STEAM WALLET CODE 100$ (BEST SELLER)",
+      "price": 1030000,
+      "sale_price":1030000 ,
+      "image": "../../../assets/img/account/wallet7.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 100$ (BEST SELLER) "
     }
   ],
   "blog": [

@@ -49,13 +49,11 @@
     </div>
     <div class="row property__gallery"  >
       <div class="col-lg-3 col-md-4 col-sm-6 mix women" *ngFor="let pro of products" >
-<!--        *ngIf=" pro.id == 33 || pro.id == 34 ||-->
-<!--        pro.id == 35 || pro.id == 36 || pro.id == 37 || pro.id == 38 || pro.id == 39 || pro.id == 40 "-->
         <div class="product__item">
           <div class="product__item__pic set-bg"
                [style.background-image]="'url(' + pro.image + ')'">
-            <div *ngIf="pro.id == 33 || pro.id == 35" class="label new">New</div>
-            <div *ngIf="pro.id == 36 || pro.id == 40" class="label sale">Sale</div>
+            <div *ngIf="pro.id == 33 || pro.id == 36" class="label new">New</div>
+            <div *ngIf="pro.id == 36 || pro.id == 37" class="label sale">Sale</div>
 
             <ul class="product__hover">
 
@@ -81,8 +79,8 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
             </div>
-            <div *ngIf="pro.id != 33 && pro.id != 35"  class="product__price">$ {{pro.price}}</div>
-            <div *ngIf="pro.id == 36 || pro.id == 40" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
+            <div *ngIf="pro.id != 33 && pro.id != 36"  class="product__price">$ {{pro.price}}</div>
+            <div *ngIf="pro.id == 35 || pro.id == 37" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
           </div>
         </div>
       </div>

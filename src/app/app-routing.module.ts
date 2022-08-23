@@ -20,7 +20,7 @@ const routers: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/steamproduct'},
   {path: '', pathMatch: 'full', redirectTo: '/originproduct'},
   {path: '', pathMatch: 'full', redirectTo: '/pubgproduct'},
-
+  {path: '', pathMatch: 'full', redirectTo: '/walletproduct'},
 
   {path: '', pathMatch: 'full', redirectTo: '/products'},
   {path: '', pathMatch: 'full', redirectTo: '/test' },
