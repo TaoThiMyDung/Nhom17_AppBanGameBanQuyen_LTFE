@@ -35,7 +35,7 @@
     <div class="row">
       <div class="col-lg-4 col-md-4">
         <div class="section-title">
-          <h4>Featured game</h4>
+          <h4>Game</h4>
         </div>
       </div>
       <div class="col-lg-8 col-md-8">
@@ -83,6 +83,69 @@
             </div>
             <div *ngIf="pro.id != 6 && pro.id != 8"  class="product__price">$ {{pro.price}}</div>
             <div *ngIf="pro.id == 6 || pro.id == 8" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Product Section End -->
+
+<!-- Product Section Begin -->
+<section class="product spad" >
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <div class="section-title">
+          <h4>STEAM</h4>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-8">
+        <ul class="filter__controls">
+          <li class="active" data-filter="*">All</li>
+          <!--          <li data-filter=".women">Women’s</li>-->
+          <!--          <li data-filter=".men">Men’s</li>-->
+          <!--          <li data-filter=".kid">Kid’s</li>-->
+          <!--          <li data-filter=".accessories">Accessories</li>-->
+          <!--          <li data-filter=".cosmetic">Cosmetics</li>-->
+        </ul>
+      </div>
+    </div>
+    <div class="row property__gallery"  >
+      <div class="col-lg-3 col-md-4 col-sm-6 mix women" *ngFor="let pro of products" >
+        <div class="product__item" *ngIf="pro.id == 29 || pro.id == 30 ||pro.id == 31 || pro.id == 32 || pro.id == 33 || pro.id == 34 ||
+                                          pro.id == 35 || pro.id == 36 || pro.id == 37 || pro.id == 38 ">
+          <div class="product__item__pic set-bg"
+               [style.background-image]="'url(' + pro.image + ')'">
+            <div *ngIf="pro.id == 29 || pro.id == 32" class="label new">New</div>
+            <div *ngIf="pro.id == 35 || pro.id == 38" class="label sale">Sale</div>
+
+            <ul class="product__hover">
+
+              <!--              LINK DEN PRODUCT-DETAILS-->
+              <li> <a routerLink="../productDetail/{{pro.id}}"><span class="arrow_expand"></span></a></li>
+              <!--              LINK DEN PRODUCT-CART-->
+              <!--              <li><a [routerLink]="['/home']"><span class="icon_cart"></span></a></li>-->
+              <li>
+                <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity" >
+                  <a type="submit" (click) ="onCreateOneQuantity(pro.id)"><span class="icon_cart"></span></a>
+                </form>
+              </li>
+
+            </ul>
+
+          </div>
+          <div class="product__item__text">
+            <h6><a [routerLink]="['/home']">{{pro.name}}</a></h6>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <div *ngIf="pro.id != 31 && pro.id != 34"  class="product__price">$ {{pro.price}}</div>
+            <div *ngIf="pro.id == 36 || pro.id == 38" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
           </div>
         </div>
       </div>
