@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ProductService} from "../../services/product.service";
-import {OriginProductComponents} from "./originproduct.component";
+import {PubgProductComponents} from "./pubgproduct.component";
+import {PubgProductRoutingModule} from "./pubgproduct-routing.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {OriginProductRoutingModule} from "../productOrigin/originproduct-routing.module";
 
 @NgModule({
   declarations: [
-   OriginProductComponents
+   PubgProductComponents
   ],
   imports: [
     CommonModule,
-    OriginProductRoutingModule,
+    PubgProductRoutingModule,
     ReactiveFormsModule,
     FormsModule,
 
@@ -25,4 +25,4 @@ import {OriginProductRoutingModule} from "../productOrigin/originproduct-routing
   ],
 
 })
-export class OriginProductModule { }
+export class PubgProductModule { }

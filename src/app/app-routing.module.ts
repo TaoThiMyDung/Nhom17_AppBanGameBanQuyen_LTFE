@@ -19,6 +19,7 @@ const routers: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/listproduct'},
   {path: '', pathMatch: 'full', redirectTo: '/steamproduct'},
   {path: '', pathMatch: 'full', redirectTo: '/originproduct'},
+  {path: '', pathMatch: 'full', redirectTo: '/pubgproduct'},
 
 
   {path: '', pathMatch: 'full', redirectTo: '/products'},

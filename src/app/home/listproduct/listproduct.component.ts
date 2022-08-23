@@ -88,27 +88,27 @@ export class ListProductComponents implements OnInit {
     // if (confirm(id+ 'h')) {
    // alert(id)
     // }
-    if(id == 5 ){
-      this.prodSrv.getListPriceHight().subscribe(data =>{
-        this.products = data ;
-      })
-    }else if(id == 6 ){
-      this.prodSrv.getListPriceLow().subscribe(data =>{
-        this.products = data ;
-      })
-    }else if(id == 3 ){
-      this.prodSrv.getListNameLow().subscribe(data =>{
-        this.products = data ;
-      })
-    }else if(id == 4 ){
-      this.prodSrv.getListNameLow().subscribe(data =>{
-        this.products = data ;
-      })
-    }else if(id == 1 ){
-      this.prodSrv.getProduct().subscribe(data =>{
-        this.products = data ;
-      })
-    }
+    // if(id == 5 ){
+    //   this.prodSrv.getListPriceHight().subscribe(data =>{
+    //     this.products = data ;
+    //   })
+    // }else if(id == 6 ){
+    //   this.prodSrv.getListPriceLow().subscribe(data =>{
+    //     this.products = data ;
+    //   })
+    // }else if(id == 3 ){
+    //   this.prodSrv.getListNameLow().subscribe(data =>{
+    //     this.products = data ;
+    //   })
+    // }else if(id == 4 ){
+    //   this.prodSrv.getListNameLow().subscribe(data =>{
+    //     this.products = data ;
+    //   })
+    // }else if(id == 1 ){
+    //   this.prodSrv.getProduct().subscribe(data =>{
+    //     this.products = data ;
+    //   })
+    // }
 
   }
 

@@ -512,6 +512,47 @@
       "category": "Game Origin",
       "description": "At the Battle Royale game event of E3 2021, developer 24 Entertainment has announced the official launch date of the game Naraka: Bladepoint is on August 12. Besides, the developer also revealed that before the official launch, the super product \"PUBG swordplay\" will open the beta test again early this summer.",
       "briefDescription": "BATTLEPASS TIDAL 1360 GOLD NARAKA"
+    },
+
+    {
+      "id": 49,
+      "name": "CS:GO - OPERATION RIPTIDE",
+      "price": 420000,
+      "sale_price": 500000,
+      "image": "../../../assets/img/account/pubg1.png",
+      "category": "PUBG CS",
+      "description": "The Campaign quest system has been overhauled - complete your weekly missions and choose from a variety of rewards including new agents, weapon collections, stickers and patches.",
+      "briefDescription": "CS:GO - OPERATION RIPTIDE"
+    },
+    {
+      "id": 50,
+      "name": "SURVIVOR PASS: CRAZY NIGHT",
+      "price": 350000,
+      "sale_price": 450000,
+      "image": "../../../assets/img/account/pubg2.png",
+      "category": "PUBG CS",
+      "description": " VŨ KHÍ & GÓI CẤP ĐỘ CỦA SURVIVOR PASS: CRAZY NIGHT (3.270 G-Coin)\nSurvivor Pass: Crazy Night, SKS, 30 cấp độ\n\n- GÓI VŨ KHÍ CỦA SURVIVOR PASS: CRAZY NIGHT (990 G-Coin)\nSurvivor Pass: Crazy Night, SKS",
+      "briefDescription": "SURVIVOR PASS: CRAZY NIGHT"
+    },
+    {
+      "id": 51,
+      "name": "PILOT + JUNGLE+ GUNSLINGER SET CRATE PUBG",
+      "price": 400000,
+      "sale_price": 450000,
+      "image": "../../../assets/img/account/pubg3.png",
+      "category": "PUBG CS",
+      "description": "You go to Pubg.com -> Create a nick on this page -> Log in, link your steam account -> Login, link your Twitch account just sent to your mail -> You go to In Game Pubg -> Store ( Shop ) -> Inventory -> You will see 3 crates opened and used",
+      "briefDescription": "PILOT + JUNGLE+ GUNSLINGER SET CRATE PUBG"
+    },
+    {
+      "id": 52,
+      "name": "PUBG PLAYERUNKNOWN'S BATTLEGROUNDS ",
+      "price": 150000,
+      "sale_price": 300000,
+      "image": "../../../assets/img/account/pubg4.png",
+      "category": "PUBG CS",
+      "description": "CDKEY is only activated for Steam accounts in Vietnam region.\nCDKEY is valid until January 11, 2022, please enter the code before January 11, 2022 to receive the rewards below.\nThe rewards will be automatically credited to your account on the first login after 12/01/2022.",
+      "briefDescription": "PUBG PLAYERUNKNOWN'S BATTLEGROUNDS "
     }
   ],
   "blog": [

@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {OriginProductComponents} from "./originproduct.component";
+import {PubgProductComponents} from "./pubgproduct.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
-  {path: 'originproduct', component: OriginProductComponents},
+  {path: 'pubgproduct', component: PubgProductComponents},
 ];
 
 @NgModule({
@@ -19,5 +19,5 @@ const routes: Routes = [
     FormsModule,
   ]
 })
-export class OriginProductRoutingModule { }
+export class PubgProductRoutingModule { }
 
