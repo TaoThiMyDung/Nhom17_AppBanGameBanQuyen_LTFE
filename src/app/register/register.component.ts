@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 import {Router} from "@angular/router";
-import {RegisterService} from "../services/register.service";
+import {LoginService} from "../services/login.service";
 
 @Component({
   selector: "app-register",
@@ -13,35 +13,46 @@ import {RegisterService} from "../services/register.service";
 
 export class RegisterComponent implements OnInit {
   submited : boolean = false ;
-
-  Fromregister = new FormGroup({
+  FromRegister = new FormGroup({
+    name : new FormControl(""),
     email : new FormControl(""),
     password : new FormControl(""),
   });
 
-  constructor(private  prodSrv : RegisterService ,
+  constructor(private  prodSrv : LoginService ,
               private  route: Router) {}
 
   ngOnInit() {
   }
 
-  public onregister(): void {
-    this.submited = true ;
-    if ( this.Fromregister.invalid){
-      return;
-    }else {
-      this.prodSrv.getRegister().subscribe(data =>{
+  public onRegister(): void {
+
+    if ( this.FromRegister.invalid){
+      if (confirm("Please fill in all the information")) {
+        this.route.navigate(['/register']);
+        this.submited = false ;
+      }
+    }
+      this.prodSrv.getlogin().subscribe(data => {
         for (const datum of data) {
-          if(datum.email == this.Fromregister.controls.email.value && datum.password == this.Fromregister.controls.password.value){
-            this.route.navigate(['/home']);
-            return;
+          if (datum.email == this.FromRegister.controls.email.value) {
+            if (confirm("Email already registered with another account")) {
+              this.submited = false;
+              this.route.navigate(['/register']);
+            }
           }
         }
-        if (confirm("Email or password error")) {
-          this.route.navigate(['/register']);
+        this.submited = true;
+        if(this.submited) {
+          this.prodSrv.create(this.FromRegister.value).subscribe(data =>{
+            if (confirm("Register Success")) {
+              this.route.navigate(['/login']);
+            }
+          });
         }
+        return;
       });
+
     }
-  }
 
 }

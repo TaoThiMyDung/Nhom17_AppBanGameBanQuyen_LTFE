@@ -23,14 +23,16 @@
   ],
   "login": [
     {
-      "id": 1,
+      "name": "Đậu Hoa",
       "email": "19130075@st.hcmuaf.edu.vn",
-      "password": "12345"
+      "password": "12345",
+      "id": 1
     },
     {
-      "id": 2,
+      "name": "Đậu Hoa",
       "email": "daudiep2003@gmail.com",
-      "password": "12345"
+      "password": "1",
+      "id": 2
     }
   ],
   "product": [
