@@ -29,9 +29,9 @@
       "id": 1
     },
     {
-      "name": "Đậu Hoa",
+      "name": "Đậu Điệp",
       "email": "daudiep2003@gmail.com",
-      "password": "1",
+      "password": "123",
       "id": 2
     }
   ],
@@ -512,12 +512,12 @@
       "total": 238000
     },
     {
-      "id": 37,
-      "name": "MUTANT YEAR ZERO: ROAD TO EDEN",
-      "image": "../../../assets/img/account/steam7.png",
-      "price": 250000,
-      "quantitySold": 2,
-      "total": 500000
+      "id": 19,
+      "name": "Zomboid Steam Gift GLOBAL",
+      "image": "../../../assets/img/trend/steam_1.png",
+      "price": 1025000,
+      "quantitySold": 1,
+      "total": 1025000
     }
   ],
   "billing": [
