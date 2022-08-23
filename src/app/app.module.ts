@@ -83,6 +83,7 @@ import {CatComponent} from "./dummy/cat/cat.component";
 import {ListProductModule} from "./home/listproduct/listproduct.module";
 import {SteamProductModule} from "./home/productSteam/steamproduct.module";
 import {RegisterModule} from "./register/register.module";
+import {OriginProductModule} from "./home/productOrigin/originproduct.module";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -170,6 +171,7 @@ import {RegisterModule} from "./register/register.module";
     ListProductModule,
     SteamProductModule,
     RegisterModule,
+    OriginProductModule,
 
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService,HttpService],
