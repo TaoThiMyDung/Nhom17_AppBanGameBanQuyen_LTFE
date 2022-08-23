@@ -42,7 +42,9 @@ export class SteamProductComponents implements OnInit {
               private productService:ProductService,
               private categoryService:CategoryService,
               private prodSrv : ProductService,
-              private route: Router) { }
+              private route: Router) {
+
+  }
 
 
   ngOnInit(): void {

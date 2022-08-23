@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProductService} from "../../services/product.service";
 import {BannerService} from "../../services/banner.service";
 import {Banner} from "../../models/banner";
@@ -11,10 +11,10 @@ import {CartService} from "../../services/cart.service";
 
 @Component({
   selector: 'app-test',
-  templateUrl: './listproduct.component.html',
-  styleUrls: ['./listproduct.component.scss']
+  templateUrl: './originproduct.component.html',
+  styleUrls: ['./originproduct.component.scss']
 })
-export class ListProductComponents implements OnInit {
+export class OriginProductComponents implements OnInit {
   submited: boolean = false;
   data: any[];
 
@@ -25,25 +25,24 @@ export class ListProductComponents implements OnInit {
   //     .subscribe(value => this.data = Object.entries(value).map(v => v[1]));
   // }
 
-  banners : Array<Banner> = new Array<Banner>();
-  products : Array<Product> = new Array<Product>();
-  category : Array<Category> = new Array<Category>();
+  banners: Array<Banner> = new Array<Banner>();
+  products: Array<Product> = new Array<Product>();
+  category: Array<Category> = new Array<Category>();
 
-  productsLow : Array<Product> = new Array<Product>();
-  productsHight : Array<Product> = new Array<Product>();
+  productsLow: Array<Product> = new Array<Product>();
+  productsHight: Array<Product> = new Array<Product>();
 
-  productsList : Array<Product> = [];
+  productsList: Array<Product> = [];
 
-  cartFormOneQuantity: FormGroup = new FormGroup({
-  });
+  cartFormOneQuantity: FormGroup = new FormGroup({});
 
-  constructor(private bannerService:BannerService ,
+  constructor(private bannerService: BannerService,
               private cartSrv: CartService,
-              private productService:ProductService,
-              private categoryService:CategoryService,
-              private prodSrv : ProductService,
+              private productService: ProductService,
+              private categoryService: CategoryService,
+              private prodSrv: ProductService,
               private route: Router) {
-    console.log("vao list")
+
   }
 
 
@@ -59,8 +58,8 @@ export class ListProductComponents implements OnInit {
       });
 
     // PHU THUOC VAO TRANG SERVE
-    this.prodSrv.getList().subscribe(data =>{
-      this.productsList = data ;
+    this.prodSrv.getList().subscribe(data => {
+      this.productsList = data;
     })
 
     this.productService.getProduct()
@@ -68,52 +67,52 @@ export class ListProductComponents implements OnInit {
         this.products = res;
       });
     // PHU THUOC VAO TRANG SERVE
-    this.prodSrv.getListPriceLow().subscribe(data =>{
-      this.productsLow = data ;
+    this.prodSrv.getListPriceLow().subscribe(data => {
+      this.productsLow = data;
     })
     // PHU THUOC VAO TRANG SERVE
-    this.prodSrv.getListPriceHight().subscribe(data =>{
-      this.productsHight = data ;
+    this.prodSrv.getListPriceHight().subscribe(data => {
+      this.productsHight = data;
     })
 
   }
 
-  public onClickProduct (id :number): void {
+  public onClickProduct(id: number): void {
     // if (confirm(id+ 'h')) {
     this.route.navigate(['/productDetail/' + id]);
     // }
   }
 
-  public onCreate (id: number): void {
+  public onCreate(id: number): void {
     // if (confirm(id+ 'h')) {
-   // alert(id)
+    // alert(id)
     // }
-    if(id == 5 ){
-      this.prodSrv.getListPriceHight().subscribe(data =>{
-        this.products = data ;
+    if (id == 5) {
+      this.prodSrv.getListPriceHight().subscribe(data => {
+        this.products = data;
       })
-    }else if(id == 6 ){
-      this.prodSrv.getListPriceLow().subscribe(data =>{
-        this.products = data ;
+    } else if (id == 6) {
+      this.prodSrv.getListPriceLow().subscribe(data => {
+        this.products = data;
       })
-    }else if(id == 3 ){
-      this.prodSrv.getListNameLow().subscribe(data =>{
-        this.products = data ;
+    } else if (id == 3) {
+      this.prodSrv.getListNameLow().subscribe(data => {
+        this.products = data;
       })
-    }else if(id == 4 ){
-      this.prodSrv.getListNameLow().subscribe(data =>{
-        this.products = data ;
+    } else if (id == 4) {
+      this.prodSrv.getListNameLow().subscribe(data => {
+        this.products = data;
       })
-    }else if(id == 1 ){
-      this.prodSrv.getProduct().subscribe(data =>{
-        this.products = data ;
+    } else if (id == 1) {
+      this.prodSrv.getProduct().subscribe(data => {
+        this.products = data;
       })
     }
 
   }
 
 
-  public onCreateOneQuantity (id :number): void {
+  public onCreateOneQuantity(id: number): void {
     this.prodSrv.getOne(id).subscribe(data => {
 
       // alert(id)
@@ -123,7 +122,7 @@ export class ListProductComponents implements OnInit {
         image: new FormControl(data.image),
         price: new FormControl(data.price),
         quantitySold: new FormControl(1),
-        total : new FormControl(data.price * 1)
+        total: new FormControl(data.price * 1)
       });
 
       this.submited = true;
@@ -147,14 +146,14 @@ export class ListProductComponents implements OnInit {
           image: new FormControl(data1.image),
           price: new FormControl(data1.price),
           quantitySold: new FormControl(data1.quantitySold + 1),
-          total : new FormControl(data1.price * ( data1.quantitySold + 1 ))
+          total: new FormControl(data1.price * (data1.quantitySold + 1))
         });
-        this.cartSrv.update(id , this.cartFormOneQuantity.value).subscribe(data => {
+        this.cartSrv.update(id, this.cartFormOneQuantity.value).subscribe(data => {
           if (confirm("Add To Cart Success")) {
             this.route.navigate(['/product-list']);
           }
         });
-      }else {
+      } else {
         return;
       }
     })
