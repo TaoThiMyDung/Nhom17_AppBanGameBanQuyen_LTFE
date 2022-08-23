@@ -335,13 +335,73 @@
     },
     {
       "id": 31,
-      "name": "LEGO STAR WARS: THE COMPLETE SAGA STEAM CDKEY",
-      "price": 1000000,
-      "sale_price": 750000,
+      "name": "LEGO STAR WARS:STEAM CDKEY",
+      "price": 750000,
+      "sale_price": 1000000,
       "image": "../../../assets/img/account/steam1.png",
       "category": "Game Steam",
       "description": " LEGO STAR WARS:  THE COMPLETE SAGA STEAM CDKEY you get after purchase is 100% new and never used account\nProvide the original email you can change all information\nLifetime warranty",
       "briefDescription": " LEGO STAR WARS: THE COMPLETE SAGA STEAM CDKEY you get after purchase is 100% new and never used account\nProvide the original email you can change all information\nLifetime warranty"
+    },
+    {
+      "id": 32,
+      "name": "DESERT CHILD STEAM CDKEY",
+      "price": 550000,
+      "sale_price": 680000,
+      "image": "../../../assets/img/account/steam2.png",
+      "category": "Game Steam",
+      "description": " In Desert Child, you're a young and talented hoverbike racer who needs to figure out how you can make ends meet through races and odd jobs to win a one-way ticket to the Planet. Red to join the biggest race in the universe, Grand Opening.",
+      "briefDescription": " In Desert Child, you're a young and talented hoverbike racer who needs to figure out how you can make ends meet through races and odd jobs to win a one-way ticket to the Planet"
+    },
+    {
+      "id": 33,
+      "name": "DESERT CHILD STEAM CDKEY",
+      "price": 480000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/steam3.png",
+      "category": "Game Steam",
+      "description": " DESERT CHILD STEAM CDKEY: WARHAMMER III is the epilogue to the epic war game trilogy Total War: WARHAMMER. Gather your forces and enter chaotic skirmishes where the fate of the world will be decided by you!",
+      "briefDescription": "DESERT CHILD STEAM CDKEY "
+    },
+    {
+      "id": 34,
+      "name": "THE KING OF FIGHTERS XV STANDARD EDITION",
+      "price": 550000,
+      "sale_price": 780000,
+      "image": "../../../assets/img/account/steam4.png",
+      "category": "Game Steam",
+      "description": " The KOF fighting game series has taken the world to new heights of excitement with its engaging characters and unique game system.",
+      "briefDescription": "THE KING OF FIGHTERS XV STANDARD EDITION "
+    },
+    {
+      "id": 35,
+      "name": "KINGDOMS OF AMALUR: RE-RECKONING",
+      "price": 250000,
+      "sale_price": 400000,
+      "image": "../../../assets/img/account/steam5.png",
+      "category": "Game Steam",
+      "description": " The KOF fighting game series has taken the world to new heights of excitement with its engaging characters and unique game system.",
+      "briefDescription": "THE KING OF FIGHTERS XV STANDARD EDITION "
+    },
+    {
+      "id": 36,
+      "name": "PILLARS OF ETERNITY",
+      "price": 219000,
+      "sale_price": 310000,
+      "image": "../../../assets/img/account/steam6.png",
+      "category": "Game Steam",
+      "description": "Pillars of Eternity: Complete Edition is the most complete console version of the Pillars of Eternity role-playing game, reminiscent of classic names like Baldur's Gate or Neverwinter Nights.",
+      "briefDescription": "PILLARS OF ETERNITY on PlayStation 4 and Xbox One "
+    },
+    {
+      "id": 37,
+      "name": "MUTANT YEAR ZERO: ROAD TO EDEN",
+      "price": 250000,
+      "sale_price": 500000,
+      "image": "../../../assets/img/account/steam7.png",
+      "category": "Game Steam",
+      "description": "Mutant Year Zero: Road to Eden – Deluxe Edition là phiên bản hoàn chỉnh nhất của tựa game nhập vai chiến thuật theo lượt Mutant Year Zero:",
+      "briefDescription": "MUTANT YEAR ZERO: ROAD TO EDEN - FAN EDITION "
     }
   ],
   "blog": [
@@ -432,8 +492,8 @@
       "name": "The Sim 4",
       "image": "../../../assets/img/product/product-2.png",
       "price": 350000,
-      "quantitySold": 1,
-      "total": 350000
+      "quantitySold": 2,
+      "total": 700000
     },
     {
       "id": 6,
@@ -450,6 +510,14 @@
       "price": 119000,
       "quantitySold": 2,
       "total": 238000
+    },
+    {
+      "id": 37,
+      "name": "MUTANT YEAR ZERO: ROAD TO EDEN",
+      "image": "../../../assets/img/account/steam7.png",
+      "price": 250000,
+      "quantitySold": 2,
+      "total": 500000
     }
   ],
   "billing": [
