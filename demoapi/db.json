@@ -350,7 +350,7 @@
       "sale_price": 250000,
       "image": "../../../assets/img/account/account_8.png",
       "category": "Game Account",
-      "description": "The Walking Dead Michonne is a zombie killing game built on the idea of \u200B\u200Bthe famous movie of the same name,",
+      "description": "The Walking Dead Michonne is a zombie killing game built on the idea of ​​the famous movie of the same name,",
       "briefDescription": "THE WALKING DEAD: MICHONNE"
     },
     {
@@ -440,7 +440,7 @@
       "sale_price": 600000,
       "image": "../../../assets/img/account/origin1.png",
       "category": "Game Origin",
-      "description":"Except there's been a crazy, new, strategic conflict between the brainless and the plant warriors that has been going on! What will you do, call the trees, flowers,...?",
+      "description": "Except there's been a crazy, new, strategic conflict between the brainless and the plant warriors that has been going on! What will you do, call the trees, flowers,...?",
       "briefDescription": "PLANTS VS. ZOMBIES: BATTLE FOR NEIGHBORVILLE "
     },
     {
@@ -450,7 +450,7 @@
       "sale_price": 550000,
       "image": "../../../assets/img/account/origin3.png",
       "category": "Game Origin",
-      "description":"Crysis 2 is set in modern New York City, which in an instant becomes a fierce battleground between hostile forces inside and outside the planet. In this part, the main character Prophet sacrificed himself by the Manhattan virus infected embryo.",
+      "description": "Crysis 2 is set in modern New York City, which in an instant becomes a fierce battleground between hostile forces inside and outside the planet. In this part, the main character Prophet sacrificed himself by the Manhattan virus infected embryo.",
       "briefDescription": "CRYSIS 2 - MAXIMUM EDITION"
     },
     {
@@ -460,7 +460,7 @@
       "sale_price": 360000,
       "image": "../../../assets/img/account/origin2.png",
       "category": "Game Origin",
-      "description":"Taking advantage of this opportunity, developer Visceral Games has released the first DLC of Dead Space 3 called Awakened with content that continues the unfinished story of the official version.",
+      "description": "Taking advantage of this opportunity, developer Visceral Games has released the first DLC of Dead Space 3 called Awakened with content that continues the unfinished story of the official version.",
       "briefDescription": "DEAD SPACE™ 3"
     },
     {
@@ -470,7 +470,7 @@
       "sale_price": 72000,
       "image": "../../../assets/img/account/origin4.png",
       "category": "Game Origin",
-      "description":"Far Cry 6 is set to release on February 18, 2021. With just a few months between the release of the next Far Cry and the release of three other big upcoming games from Ubisoft, it's possible the studio is setting it up. for a true repetition of five.",
+      "description": "Far Cry 6 is set to release on February 18, 2021. With just a few months between the release of the next Far Cry and the release of three other big upcoming games from Ubisoft, it's possible the studio is setting it up. for a true repetition of five.",
       "briefDescription": "FAR CRY 6 UBI CDKEY"
     },
     {
@@ -480,7 +480,7 @@
       "sale_price": 520000,
       "image": "../../../assets/img/account/origin5.png",
       "category": "Game Origin",
-      "description":"The Battlefield series returns to its roots in a never-before-seen depiction of World War 2. Engage in physical, all-out multiplayer with your team in modes like the massive Grand Operations.",
+      "description": "The Battlefield series returns to its roots in a never-before-seen depiction of World War 2. Engage in physical, all-out multiplayer with your team in modes like the massive Grand Operations.",
       "briefDescription": "BATTLEFIELD V ORIGIN CDKEY"
     },
     {
@@ -490,7 +490,7 @@
       "sale_price": 420000,
       "image": "../../../assets/img/account/origin6.png",
       "category": "Game Origin",
-      "description":"Battlefield 1 (also known as Battlefield 1 or Flaming Battlefield 1) is a first-person shooter video game developed by EA DICE and published by Electronic Arts. Battlefield 1 is the fifteenth installment in the Battlefield series.",
+      "description": "Battlefield 1 (also known as Battlefield 1 or Flaming Battlefield 1) is a first-person shooter video game developed by EA DICE and published by Electronic Arts. Battlefield 1 is the fifteenth installment in the Battlefield series.",
       "briefDescription": "BATTLEFIELD 1 REVOLUTION ORIGIN CDKEY"
     },
     {
@@ -500,7 +500,7 @@
       "sale_price": 320000,
       "image": "../../../assets/img/account/origin7.png",
       "category": "Game Origin",
-      "description":"BATTLE PASS BUNDLE. Please leave your origin account including Email and Password so we can log in to buy Coins You will receive 3150 Apex Coins, then use 2800 Apex Coins to buy Battle Pass Bundle InGame Apex Legends.",
+      "description": "BATTLE PASS BUNDLE. Please leave your origin account including Email and Password so we can log in to buy Coins You will receive 3150 Apex Coins, then use 2800 Apex Coins to buy Battle Pass Bundle InGame Apex Legends.",
       "briefDescription": "BATTLE PASS BUNDLE APEX LEGENDS SS5"
     },
     {
@@ -510,7 +510,7 @@
       "sale_price": 500000,
       "image": "../../../assets/img/account/origin8.png",
       "category": "Game Origin",
-      "description":"At the Battle Royale game event of E3 2021, developer 24 Entertainment has announced the official launch date of the game Naraka: Bladepoint is on August 12. Besides, the developer also revealed that before the official launch, the super product \"PUBG swordplay\" will open the beta test again early this summer.",
+      "description": "At the Battle Royale game event of E3 2021, developer 24 Entertainment has announced the official launch date of the game Naraka: Bladepoint is on August 12. Besides, the developer also revealed that before the official launch, the super product \"PUBG swordplay\" will open the beta test again early this summer.",
       "briefDescription": "BATTLEPASS TIDAL 1360 GOLD NARAKA"
     }
   ],
@@ -622,14 +622,14 @@
       "total": 238000
     },
     {
-
       "id": 19,
       "name": "Zomboid Steam Gift GLOBAL",
       "image": "../../../assets/img/trend/steam_1.png",
       "price": 1025000,
       "quantitySold": 1,
       "total": 1025000
-
+    },
+    {
       "id": 37,
       "name": "MUTANT YEAR ZERO: ROAD TO EDEN",
       "image": "../../../assets/img/account/steam7.png",
@@ -644,7 +644,14 @@
       "price": 119000,
       "quantitySold": 1,
       "total": 119000
-
+    },
+    {
+      "id": 1,
+      "name": "Plants vs zombies garden warfare 2",
+      "image": "../../../assets/img/product/product-1.png",
+      "price": 300000,
+      "quantitySold": 1,
+      "total": 300000
     }
   ],
   "billing": [
