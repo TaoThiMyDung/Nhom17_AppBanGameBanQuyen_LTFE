@@ -33,6 +33,18 @@
       "email": "daudiep2003@gmail.com",
       "password": "123",
       "id": 2
+    },
+    {
+      "name": "Mydung",
+      "email": "19130052@st.hcmuaf.edu.vn",
+      "password": "abcd",
+      "id": 3
+    },
+    {
+      "name": "Mydung",
+      "email": "19130000@st.hcmuaf.edu.vn",
+      "password": "147",
+      "id": 4
     }
   ],
   "product": [
@@ -512,6 +524,127 @@
       "category": "Game Origin",
       "description": "At the Battle Royale game event of E3 2021, developer 24 Entertainment has announced the official launch date of the game Naraka: Bladepoint is on August 12. Besides, the developer also revealed that before the official launch, the super product \"PUBG swordplay\" will open the beta test again early this summer.",
       "briefDescription": "BATTLEPASS TIDAL 1360 GOLD NARAKA"
+    },
+
+    {
+      "id": 49,
+      "name": "CS:GO - OPERATION RIPTIDE",
+      "price": 420000,
+      "sale_price": 500000,
+      "image": "../../../assets/img/account/pubg1.png",
+      "category": "PUBG CS",
+      "description": "The Campaign quest system has been overhauled - complete your weekly missions and choose from a variety of rewards including new agents, weapon collections, stickers and patches.",
+      "briefDescription": "CS:GO - OPERATION RIPTIDE"
+    },
+    {
+      "id": 50,
+      "name": "SURVIVOR PASS: CRAZY NIGHT",
+      "price": 350000,
+      "sale_price": 450000,
+      "image": "../../../assets/img/account/pubg2.png",
+      "category": "PUBG CS",
+      "description": " VŨ KHÍ & GÓI CẤP ĐỘ CỦA SURVIVOR PASS: CRAZY NIGHT (3.270 G-Coin)\nSurvivor Pass: Crazy Night, SKS, 30 cấp độ\n\n- GÓI VŨ KHÍ CỦA SURVIVOR PASS: CRAZY NIGHT (990 G-Coin)\nSurvivor Pass: Crazy Night, SKS",
+      "briefDescription": "SURVIVOR PASS: CRAZY NIGHT"
+    },
+    {
+      "id": 51,
+      "name": "PILOT + JUNGLE+ GUNSLINGER SET CRATE PUBG",
+      "price": 400000,
+      "sale_price": 450000,
+      "image": "../../../assets/img/account/pubg3.png",
+      "category": "PUBG CS",
+      "description": "You go to Pubg.com -> Create a nick on this page -> Log in, link your steam account -> Login, link your Twitch account just sent to your mail -> You go to In Game Pubg -> Store ( Shop ) -> Inventory -> You will see 3 crates opened and used",
+      "briefDescription": "PILOT + JUNGLE+ GUNSLINGER SET CRATE PUBG"
+    },
+    {
+      "id": 52,
+      "name": "PUBG PLAYERUNKNOWN'S BATTLEGROUNDS ",
+      "price": 150000,
+      "sale_price": 300000,
+      "image": "../../../assets/img/account/pubg4.png",
+      "category": "PUBG CS",
+      "description": "CDKEY is only activated for Steam accounts in Vietnam region.\nCDKEY is valid until January 11, 2022, please enter the code before January 11, 2022 to receive the rewards below.\nThe rewards will be automatically credited to your account on the first login after 12/01/2022.",
+      "briefDescription": "PUBG PLAYERUNKNOWN'S BATTLEGROUNDS "
+    },
+    {
+      "id": 53,
+      "name": "STEAM WALLET CODE 50 HKD",
+      "price": 155000,
+      "sale_price": 159000,
+      "image": "../../../assets/img/account/wallet1.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 50 HKD "
+    },
+    {
+      "id": 54,
+      "name": "STEAM WALLET CODE 200 HKD",
+      "price": 600000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/wallet2.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "\nSTEAM WALLET CODE 200 HKD "
+    },
+    {
+      "id": 55,
+      "name": "STEAM WALLET CODE 120 HKD",
+      "price": 600000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/wallet3.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 120 HKD "
+    },
+    {
+      "id": 56,
+      "name": "STEAM WALLET CODE 20€ EURO",
+      "price": 550000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/wallet4.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 20€ EURO "
+    },
+    {
+      "id": 57,
+      "name": "STEAM WALLET CODE 44.000 VND",
+      "price": 44000,
+      "sale_price": 44000,
+      "image": "../../../assets/img/account/wallet5.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 44.000 VND "
+    },
+    {
+      "id": 58,
+      "name": "STEAM WALLET CODE 22.000 VNĐ",
+      "price": 22000,
+      "sale_price": 25000,
+      "image": "../../../assets/img/account/wallet5.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 22.000 VNĐ "
+    },
+    {
+      "id": 59,
+      "name": "STEAM WALLET CODE 50$ (BEST SELLER)",
+      "price": 1030000,
+      "sale_price":1030000 ,
+      "image": "../../../assets/img/account/wallet6.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 50$ (BEST SELLER) "
+    },
+    {
+      "id": 59,
+      "name": "STEAM WALLET CODE 100$ (BEST SELLER)",
+      "price": 1030000,
+      "sale_price":1030000 ,
+      "image": "../../../assets/img/account/wallet7.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 100$ (BEST SELLER) "
     }
   ],
   "blog": [

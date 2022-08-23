@@ -7,7 +7,7 @@
         <div class="breadcrumb__links">
           <a [routerLink]="['/home']"><i class="fa fa-home"></i> Home</a>
           <a [routerLink]="['/listproduct']" >Danh mục sản phẩm</a>
-          <a [routerLink]="['/steamproduct']" >Origin</a>
+          <a [routerLink]="['/pubgproduct']" >PUBG-CS</a>
         </div>
       </div>
     </div>
@@ -22,7 +22,7 @@
   <form action="" method="POST" role="form" [formGroup]="cartFormOneQuantity"  >
 <!--  <select class="sort__select">-->
 
-    <button style="margin-right: 2% ; background-color: #16181b;" (click)="onCreate(1)" type="submit" class="btn btn-primary " value="1">Thứ tự mặc định</button>
+    <button  style="margin-right: 2% ; background-color: #16181b;" (click)="onCreate(1)" type="submit" class="btn btn-primary " value="1">Thứ tự mặc định</button>
     <button style="margin-right: 2%; background-color: #16181b;" (click)="onCreate(3)" type="submit" class="btn btn-primary" value="3">Tên A -> Z</button>
     <button style="margin-right: 2%; background-color: #16181b;" (click)="onCreate(4)" type="submit" class="btn btn-primary" value="4">Tên Z -> A</button>
     <button style="margin-right: 2%; background-color: #16181b;" (click)="onCreate(5)" type="submit" class="btn btn-primary" value="5">Giá Cao xuống thấp</button>
@@ -31,13 +31,14 @@
   </form>
 </div>
 
-<!-- Product Section Begin ORIGIN-->
+
+<!-- Product Section Begin PUBG-->
 <section class="product spad" >
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-md-4">
         <div class="section-title">
-          <h4>ORIGIN</h4>
+          <h4>PUBG - CS</h4>
         </div>
       </div>
       <div class="col-lg-8 col-md-8">
@@ -48,13 +49,13 @@
     </div>
     <div class="row property__gallery"  >
       <div class="col-lg-3 col-md-4 col-sm-6 mix women" *ngFor="let pro of products" >
-<!--        *ngIf="pro.id == 41 || pro.id == 42 || pro.id == 43 ||-->
-<!--        pro.id == 44 || pro.id == 45 || pro.id == 46 || pro.id == 47  || pro.id == 48   ">-->
-        <div class="product__item">
+
+        <div class="product__item" *ngIf=" pro.id == 49 || pro.id == 50 ||
+          pro.id == 51 || pro.id == 52  ">
           <div class="product__item__pic set-bg"
                [style.background-image]="'url(' + pro.image + ')'">
-            <div *ngIf="pro.id == 41 || pro.id == 45" class="label new">New</div>
-            <div *ngIf="pro.id == 46 || pro.id == 47" class="label sale">Sale</div>
+            <div *ngIf="pro.id == 49 || pro.id == 50" class="label new">New</div>
+            <div *ngIf="pro.id == 51 || pro.id == 52" class="label sale">Sale</div>
 
             <ul class="product__hover">
 
@@ -80,8 +81,8 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
             </div>
-            <div *ngIf="pro.id != 41 && pro.id != 43"  class="product__price">$ {{pro.price}}</div>
-            <div *ngIf="pro.id == 44 || pro.id == 48" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
+            <div *ngIf="pro.id != 49 && pro.id != 50"  class="product__price">$ {{pro.price}}</div>
+            <div *ngIf="pro.id == 51 || pro.id == 52" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
           </div>
         </div>
       </div>
@@ -89,7 +90,6 @@
   </div>
 </section>
 <!-- Product Section End -->
-
 
 <section class="discount">
   <div class="container">
@@ -109,7 +109,7 @@
 </section>
 
 
-<!-- Trend Section Begin -->
+<!-- Trend Section Begin  -->
 <section class="trend spad">
   <div class="container">
     <div class="row">
