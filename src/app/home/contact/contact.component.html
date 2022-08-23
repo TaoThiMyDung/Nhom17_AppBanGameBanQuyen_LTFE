@@ -40,11 +40,11 @@
 
             <h5>SEND MESSAGE</h5>
             <form action="" method="POST" role="form" [formGroup]="contactCreate" (ngSubmit)="onCreate()">
-              <input required class="form-control" formControlName="name"  type="text" placeholder="Name">
-              <input required class="form-control" formControlName="email"  type="email" placeholder="Email">
-              <input required class="form-control" formControlName="phone"  type="phone" placeholder="Phone">
-              <input required class="form-control" formControlName="topic"  type="text" placeholder="Topic">
-              <textarea required class="form-control" formControlName="message" placeholder="Message"></textarea>
+              <input required name="name" class="form-control" formControlName="name"  type="text" placeholder="Name">
+              <input required name="email" class="form-control" formControlName="email"  type="email" placeholder="Email">
+              <input required name="phone" class="form-control" formControlName="phone"  type="phone" placeholder="Phone">
+              <input required name="topic" class="form-control" formControlName="topic"  type="text" placeholder="Topic">
+              <textarea required name="message" class="form-control" formControlName="message" placeholder="Message"></textarea>
               <button type="submit" class="site-btn">Send Message</button>
             </form>
 
