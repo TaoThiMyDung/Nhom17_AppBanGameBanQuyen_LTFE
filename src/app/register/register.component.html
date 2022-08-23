@@ -16,32 +16,36 @@
 
       <!--Horizontal Line-->
       <hr>
+
       <div class="orDiv">Or</div>
-      <form action="handling-signup" method="post">
+
+      <form action="" method="POST" role="form" [formGroup]="FromRegister" (ngSubmit)="onRegister()" >
+
         <p class="text">Sign Up with Email Address</p>
         <div class="formGroup">
           <i class="far fa-user"></i>
-          <input type="text" name="name" id="name" placeholder="Name" value="${name}" onchange="checkValidate()">
+          <input required class="form-control" formControlName="name" type="text" name="name" id="name" placeholder="Name" value="" >
         </div>
         <div class="formGroup">
           <i class="far fa-envelope"></i>
-          <input type="email" name="email" id="email" value="${email}" placeholder="Email" onchange="checkValidate()">
+          <input required class="form-control" formControlName="email" type="email" name="email" id="email" value="" placeholder="Email"  >
         </div>
         <div class="formGroup">
           <i class="fas fa-lock"></i>
-          <input type="password" name="password" id="password" value="${password}" placeholder="Password" onchange="checkValidate()">
+          <input required class="form-control" formControlName="password" type="password" name="password" id="password" value="" placeholder="Password"  >
         </div>
 
-        <a [routerLink]="['/register']">
-          <button  class="btn">SIGN UP</button>
-        </a>
+<!--        <a [routerLink]="['/register']">-->
+          <button type="submit" class="btn">SIGN UP</button>
+<!--        </a>-->
       </form>
+
     </div>
 
     <!-- Right section of responsive registration form -->
     <div class="welcomeDiv">
-      <h2>Welcome Back!</h2>
-      <p class="text">Get in touch with us for our news letter and more updates.</p>
+      <h2 style="color: white; font-weight: bold">Welcome Back!</h2>
+      <p  style="color: white; font-weight: bold" class="text">Get in touch with us for our news letter and more updates.</p>
       <a [routerLink]="['/login']">
         <button class="btn2">SIGN IN</button>
       </a>

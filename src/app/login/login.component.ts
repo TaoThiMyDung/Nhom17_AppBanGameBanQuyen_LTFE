@@ -28,6 +28,9 @@ export class LoginComponent implements OnInit {
   public onLogin(): void {
     this.submited = true ;
     if ( this.FromLogin.invalid){
+      if (confirm("Please fill in all the information")) {
+        this.route.navigate(['/login']);
+      }
       return;
     }else {
       this.prodSrv.getlogin().subscribe(data =>{
