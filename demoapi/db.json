@@ -645,6 +645,46 @@
       "category": "STEAM WALLET",
       "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
       "briefDescription": "STEAM WALLET CODE 100$ (BEST SELLER) "
+    },
+    {
+      "id": 60,
+      "name": "WINDOWS 11 PROFESSIONAL CDKEY",
+      "price": 150000,
+      "sale_price":400000 ,
+      "image": "../../../assets/img/account/con1.png",
+      "category": "Tiện ích",
+      "description": "Trước khi add code thì máy bạn phải cài Win 11 Pro và chưa Crack \n             - Chỉ sử dụng trên một máy và một tài khoản Microsoft. Các lần cài win sau tự động active theo main của máy và tài khoản này.",
+      "briefDescription": "WINDOWS 11 PROFESSIONAL CDKEY "
+    },
+    {
+      "id": 61,
+      "name": "MICROSOFT OFFICE 2021 PROFESSIONAL PLUS",
+      "price": 190000,
+      "sale_price":10000000 ,
+      "image": "../../../assets/img/account/con2.png",
+      "category": "Tiện ích",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "MICROSOFT OFFICE 2021 PROFESSIONAL PLUS "
+    },
+    {
+      "id": 62,
+      "name": "WINDOWS 10 PROFESSIONAL CD KEY",
+      "price": 190000,
+      "sale_price":450000 ,
+      "image": "../../../assets/img/account/con3.png",
+      "category": "Tiện ích",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "WINDOWS 10 PROFESSIONAL CD KEY "
+    },
+    {
+      "id": 63,
+      "name": "THẺ PSN 100$ HỆ US",
+      "price": 2100000,
+      "sale_price":3500000 ,
+      "image": "../../../assets/img/account/con4.png",
+      "category": "Tiện ích",
+      "description": "Sử dụng thẻ PSN của US này để mua game trên Store PSN và tải xuống, cũng có thể dùng để mua thêm nhiệm vụ và nhân vật mới nhất trong game hoặc để gia hạn các gói PSN Plus chơi trực tuyến với bạn bè của bạn.",
+      "briefDescription": "THẺ PSN 100$ HỆ US "
     }
   ],
   "blog": [
