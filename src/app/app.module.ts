@@ -86,6 +86,7 @@ import {RegisterModule} from "./register/register.module";
 import {OriginProductModule} from "./home/productOrigin/originproduct.module";
 import {PubgProductModule} from "./home/productPubg/pubgproduct.module";
 import {WalletProductModule} from "./home/productSteamWallet/walletproduct.module";
+import {ConProductModule} from "./home/productTLoi/conproduct.module";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -176,6 +177,7 @@ import {WalletProductModule} from "./home/productSteamWallet/walletproduct.modul
     OriginProductModule,
     PubgProductModule,
     WalletProductModule,
+    ConProductModule,
 
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService,HttpService],
