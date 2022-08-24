@@ -7,7 +7,7 @@
         <div class="breadcrumb__links">
           <a [routerLink]="['/home']"><i class="fa fa-home"></i> Home</a>
           <a [routerLink]="['/listproduct']" >Danh mục sản phẩm</a>
-          <a [routerLink]="['/steamproduct']" >STEAM</a>
+          <a [routerLink]="['/walletproduct']" >WALLET</a>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
     <div class="row">
       <div class="col-lg-4 col-md-4">
         <div class="section-title">
-          <h4>STEAM</h4>
+          <h4>WALLET</h4>
         </div>
       </div>
       <div class="col-lg-8 col-md-8">
@@ -49,11 +49,12 @@
     </div>
     <div class="row property__gallery"  >
       <div class="col-lg-3 col-md-4 col-sm-6 mix women" *ngFor="let pro of products" >
-        <div class="product__item">
+        <div class="product__item" *ngIf=" pro.id == 53 || pro.id == 54 ||
+          pro.id == 55 || pro.id == 56 || pro.id == 57 || pro.id == 58 || pro.id == 59  ">
           <div class="product__item__pic set-bg"
                [style.background-image]="'url(' + pro.image + ')'">
-            <div *ngIf="pro.id == 33 || pro.id == 36" class="label new">New</div>
-            <div *ngIf="pro.id == 36 || pro.id == 37" class="label sale">Sale</div>
+            <div *ngIf="pro.id == 53 || pro.id == 55" class="label new">New</div>
+            <div *ngIf="pro.id == 56 || pro.id == 59" class="label sale">Sale</div>
 
             <ul class="product__hover">
 
@@ -79,8 +80,8 @@
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
             </div>
-            <div *ngIf="pro.id != 33 && pro.id != 36"  class="product__price">$ {{pro.price}}</div>
-            <div *ngIf="pro.id == 35 || pro.id == 37" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
+            <div *ngIf="pro.id != 53 && pro.id != 54"  class="product__price">$ {{pro.price}}</div>
+            <div *ngIf="pro.id == 55 || pro.id == 56" class="product__price product__price_sale ">$ {{pro.price}} <span>$ {{pro.sale_price}}</span></div>
           </div>
         </div>
       </div>

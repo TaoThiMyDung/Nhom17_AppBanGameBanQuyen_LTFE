@@ -11,10 +11,10 @@ import {CartService} from "../../services/cart.service";
 
 @Component({
   selector: 'app-test',
-  templateUrl: './listproduct.component.html',
-  styleUrls: ['./listproduct.component.scss']
+  templateUrl: './originproduct.component.html',
+  styleUrls: ['./originproduct.component.scss']
 })
-export class ListProductComponents implements OnInit {
+export class OriginProductComponents implements OnInit {
   submited: boolean = false;
   data: any[];
 
@@ -42,9 +42,7 @@ export class ListProductComponents implements OnInit {
               private productService:ProductService,
               private categoryService:CategoryService,
               private prodSrv : ProductService,
-              private route: Router) {
-    console.log("vao list")
-  }
+              private route: Router) { }
 
 
   ngOnInit(): void {
@@ -88,27 +86,27 @@ export class ListProductComponents implements OnInit {
     // if (confirm(id+ 'h')) {
    // alert(id)
     // }
-    // if(id == 5 ){
-    //   this.prodSrv.getListPriceHight().subscribe(data =>{
-    //     this.products = data ;
-    //   })
-    // }else if(id == 6 ){
-    //   this.prodSrv.getListPriceLow().subscribe(data =>{
-    //     this.products = data ;
-    //   })
-    // }else if(id == 3 ){
-    //   this.prodSrv.getListNameLow().subscribe(data =>{
-    //     this.products = data ;
-    //   })
-    // }else if(id == 4 ){
-    //   this.prodSrv.getListNameLow().subscribe(data =>{
-    //     this.products = data ;
-    //   })
-    // }else if(id == 1 ){
-    //   this.prodSrv.getProduct().subscribe(data =>{
-    //     this.products = data ;
-    //   })
-    // }
+    if(id == 5 ){
+      this.prodSrv.getListPriceHight().subscribe(data =>{
+        this.products = data ;
+      })
+    }else if(id == 6 ){
+      this.prodSrv.getListPriceLow().subscribe(data =>{
+        this.products = data ;
+      })
+    }else if(id == 3 ){
+      this.prodSrv.getListNameLow().subscribe(data =>{
+        this.products = data ;
+      })
+    }else if(id == 4 ){
+      this.prodSrv.getListNameLow().subscribe(data =>{
+        this.products = data ;
+      })
+    }else if(id == 1 ){
+      this.prodSrv.getProduct().subscribe(data =>{
+        this.products = data ;
+      })
+    }
 
   }
 

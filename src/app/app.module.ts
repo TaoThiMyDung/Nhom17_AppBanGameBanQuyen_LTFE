@@ -83,6 +83,10 @@ import {CatComponent} from "./dummy/cat/cat.component";
 import {ListProductModule} from "./home/listproduct/listproduct.module";
 import {SteamProductModule} from "./home/productSteam/steamproduct.module";
 import {RegisterModule} from "./register/register.module";
+import {OriginProductModule} from "./home/productOrigin/originproduct.module";
+import {PubgProductModule} from "./home/productPubg/pubgproduct.module";
+import {WalletProductModule} from "./home/productSteamWallet/walletproduct.module";
+import {ConProductModule} from "./home/productTLoi/conproduct.module";
 
 @NgModule({
   // declarations: [AppComponent, MyTableComponent, HomeComponents],
@@ -170,6 +174,10 @@ import {RegisterModule} from "./register/register.module";
     ListProductModule,
     SteamProductModule,
     RegisterModule,
+    OriginProductModule,
+    PubgProductModule,
+    WalletProductModule,
+    ConProductModule,
 
   ],
   providers: [MdbCookiesManagementService, MdbStorageManagementService,HttpService],

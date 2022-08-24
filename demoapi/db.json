@@ -33,6 +33,18 @@
       "email": "daudiep2003@gmail.com",
       "password": "123",
       "id": 2
+    },
+    {
+      "name": "Mydung",
+      "email": "19130052@st.hcmuaf.edu.vn",
+      "password": "abcd",
+      "id": 3
+    },
+    {
+      "name": "Mydung",
+      "email": "19130000@st.hcmuaf.edu.vn",
+      "password": "147",
+      "id": 4
     }
   ],
   "product": [
@@ -335,6 +347,26 @@
     },
     {
       "id": 31,
+      "name": "A PLAGUE TALE: INNOCENCE",
+      "price": 165000,
+      "sale_price": 250000,
+      "image": "../../../assets/img/account/account_7.png",
+      "category": "Game Account",
+      "description": "The story of A Plague Tale: Innocence takes place in the year 1349 in a fictional France, where millions and millions of rats are sweeping the land day and night.",
+      "briefDescription": "A PLAGUE TALE: INNOCENCE"
+    },
+    {
+      "id": 32,
+      "name": "THE WALKING DEAD: MICHONNE",
+      "price": 150000,
+      "sale_price": 250000,
+      "image": "../../../assets/img/account/account_8.png",
+      "category": "Game Account",
+      "description": "The Walking Dead Michonne is a zombie killing game built on the idea of ​​the famous movie of the same name,",
+      "briefDescription": "THE WALKING DEAD: MICHONNE"
+    },
+    {
+      "id": 33,
       "name": "LEGO STAR WARS:STEAM CDKEY",
       "price": 750000,
       "sale_price": 1000000,
@@ -344,7 +376,7 @@
       "briefDescription": " LEGO STAR WARS: THE COMPLETE SAGA STEAM CDKEY you get after purchase is 100% new and never used account\nProvide the original email you can change all information\nLifetime warranty"
     },
     {
-      "id": 32,
+      "id": 34,
       "name": "DESERT CHILD STEAM CDKEY",
       "price": 550000,
       "sale_price": 680000,
@@ -354,7 +386,7 @@
       "briefDescription": " In Desert Child, you're a young and talented hoverbike racer who needs to figure out how you can make ends meet through races and odd jobs to win a one-way ticket to the Planet"
     },
     {
-      "id": 33,
+      "id": 35,
       "name": "DESERT CHILD STEAM CDKEY",
       "price": 480000,
       "sale_price": 600000,
@@ -364,7 +396,7 @@
       "briefDescription": "DESERT CHILD STEAM CDKEY "
     },
     {
-      "id": 34,
+      "id": 36,
       "name": "THE KING OF FIGHTERS XV STANDARD EDITION",
       "price": 550000,
       "sale_price": 780000,
@@ -374,7 +406,7 @@
       "briefDescription": "THE KING OF FIGHTERS XV STANDARD EDITION "
     },
     {
-      "id": 35,
+      "id": 37,
       "name": "KINGDOMS OF AMALUR: RE-RECKONING",
       "price": 250000,
       "sale_price": 400000,
@@ -384,7 +416,7 @@
       "briefDescription": "THE KING OF FIGHTERS XV STANDARD EDITION "
     },
     {
-      "id": 36,
+      "id": 38,
       "name": "PILLARS OF ETERNITY",
       "price": 219000,
       "sale_price": 310000,
@@ -394,7 +426,7 @@
       "briefDescription": "PILLARS OF ETERNITY on PlayStation 4 and Xbox One "
     },
     {
-      "id": 37,
+      "id": 39,
       "name": "MUTANT YEAR ZERO: ROAD TO EDEN",
       "price": 250000,
       "sale_price": 500000,
@@ -402,6 +434,217 @@
       "category": "Game Steam",
       "description": "Mutant Year Zero: Road to Eden – Deluxe Edition là phiên bản hoàn chỉnh nhất của tựa game nhập vai chiến thuật theo lượt Mutant Year Zero:",
       "briefDescription": "MUTANT YEAR ZERO: ROAD TO EDEN - FAN EDITION "
+    },
+    {
+      "id": 40,
+      "name": "FARMING SIMULATOR 22 STEAM CDKEY",
+      "price": 350000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/steam8.png",
+      "category": "Game Steam",
+      "description": "Farming Simulator 22 is the latest installment in Giants Software's popular farm game series of the same name, launching globally in November 2021.",
+      "briefDescription": "MUTANT YEAR ZERO: ROAD TO EDEN - FAN EDITION "
+    },
+    {
+      "id": 41,
+      "name": "PLANTS VS. ZOMBIES",
+      "price": 350000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/origin1.png",
+      "category": "Game Origin",
+      "description": "Except there's been a crazy, new, strategic conflict between the brainless and the plant warriors that has been going on! What will you do, call the trees, flowers,...?",
+      "briefDescription": "PLANTS VS. ZOMBIES: BATTLE FOR NEIGHBORVILLE "
+    },
+    {
+      "id": 42,
+      "name": "CRYSIS 2 - MAXIMUM EDITION",
+      "price": 250000,
+      "sale_price": 550000,
+      "image": "../../../assets/img/account/origin3.png",
+      "category": "Game Origin",
+      "description": "Crysis 2 is set in modern New York City, which in an instant becomes a fierce battleground between hostile forces inside and outside the planet. In this part, the main character Prophet sacrificed himself by the Manhattan virus infected embryo.",
+      "briefDescription": "CRYSIS 2 - MAXIMUM EDITION"
+    },
+    {
+      "id": 43,
+      "name": "DEAD SPACE™ 3",
+      "price": 210000,
+      "sale_price": 360000,
+      "image": "../../../assets/img/account/origin2.png",
+      "category": "Game Origin",
+      "description": "Taking advantage of this opportunity, developer Visceral Games has released the first DLC of Dead Space 3 called Awakened with content that continues the unfinished story of the official version.",
+      "briefDescription": "DEAD SPACE™ 3"
+    },
+    {
+      "id": 44,
+      "name": "FAR CRY 6 UBI CDKEY",
+      "price": 450000,
+      "sale_price": 72000,
+      "image": "../../../assets/img/account/origin4.png",
+      "category": "Game Origin",
+      "description": "Far Cry 6 is set to release on February 18, 2021. With just a few months between the release of the next Far Cry and the release of three other big upcoming games from Ubisoft, it's possible the studio is setting it up. for a true repetition of five.",
+      "briefDescription": "FAR CRY 6 UBI CDKEY"
+    },
+    {
+      "id": 45,
+      "name": "BATTLEFIELD V ORIGIN CDKEY",
+      "price": 360000,
+      "sale_price": 520000,
+      "image": "../../../assets/img/account/origin5.png",
+      "category": "Game Origin",
+      "description": "The Battlefield series returns to its roots in a never-before-seen depiction of World War 2. Engage in physical, all-out multiplayer with your team in modes like the massive Grand Operations.",
+      "briefDescription": "BATTLEFIELD V ORIGIN CDKEY"
+    },
+    {
+      "id": 46,
+      "name": "BATTLEFIELD 1 REVOLUTION ORIGIN CDKEY",
+      "price": 360000,
+      "sale_price": 420000,
+      "image": "../../../assets/img/account/origin6.png",
+      "category": "Game Origin",
+      "description": "Battlefield 1 (also known as Battlefield 1 or Flaming Battlefield 1) is a first-person shooter video game developed by EA DICE and published by Electronic Arts. Battlefield 1 is the fifteenth installment in the Battlefield series.",
+      "briefDescription": "BATTLEFIELD 1 REVOLUTION ORIGIN CDKEY"
+    },
+    {
+      "id": 47,
+      "name": "BATTLE PASS BUNDLE APEX LEGENDS SS5",
+      "price": 120000,
+      "sale_price": 320000,
+      "image": "../../../assets/img/account/origin7.png",
+      "category": "Game Origin",
+      "description": "BATTLE PASS BUNDLE. Please leave your origin account including Email and Password so we can log in to buy Coins You will receive 3150 Apex Coins, then use 2800 Apex Coins to buy Battle Pass Bundle InGame Apex Legends.",
+      "briefDescription": "BATTLE PASS BUNDLE APEX LEGENDS SS5"
+    },
+    {
+      "id": 48,
+      "name": "BATTLEPASS TIDAL 1360 GOLD NARAKA",
+      "price": 360000,
+      "sale_price": 500000,
+      "image": "../../../assets/img/account/origin8.png",
+      "category": "Game Origin",
+      "description": "At the Battle Royale game event of E3 2021, developer 24 Entertainment has announced the official launch date of the game Naraka: Bladepoint is on August 12. Besides, the developer also revealed that before the official launch, the super product \"PUBG swordplay\" will open the beta test again early this summer.",
+      "briefDescription": "BATTLEPASS TIDAL 1360 GOLD NARAKA"
+    },
+
+    {
+      "id": 49,
+      "name": "CS:GO - OPERATION RIPTIDE",
+      "price": 420000,
+      "sale_price": 500000,
+      "image": "../../../assets/img/account/pubg1.png",
+      "category": "PUBG CS",
+      "description": "The Campaign quest system has been overhauled - complete your weekly missions and choose from a variety of rewards including new agents, weapon collections, stickers and patches.",
+      "briefDescription": "CS:GO - OPERATION RIPTIDE"
+    },
+    {
+      "id": 50,
+      "name": "SURVIVOR PASS: CRAZY NIGHT",
+      "price": 350000,
+      "sale_price": 450000,
+      "image": "../../../assets/img/account/pubg2.png",
+      "category": "PUBG CS",
+      "description": " VŨ KHÍ & GÓI CẤP ĐỘ CỦA SURVIVOR PASS: CRAZY NIGHT (3.270 G-Coin)\nSurvivor Pass: Crazy Night, SKS, 30 cấp độ\n\n- GÓI VŨ KHÍ CỦA SURVIVOR PASS: CRAZY NIGHT (990 G-Coin)\nSurvivor Pass: Crazy Night, SKS",
+      "briefDescription": "SURVIVOR PASS: CRAZY NIGHT"
+    },
+    {
+      "id": 51,
+      "name": "PILOT + JUNGLE+ GUNSLINGER SET CRATE PUBG",
+      "price": 400000,
+      "sale_price": 450000,
+      "image": "../../../assets/img/account/pubg3.png",
+      "category": "PUBG CS",
+      "description": "You go to Pubg.com -> Create a nick on this page -> Log in, link your steam account -> Login, link your Twitch account just sent to your mail -> You go to In Game Pubg -> Store ( Shop ) -> Inventory -> You will see 3 crates opened and used",
+      "briefDescription": "PILOT + JUNGLE+ GUNSLINGER SET CRATE PUBG"
+    },
+    {
+      "id": 52,
+      "name": "PUBG PLAYERUNKNOWN'S BATTLEGROUNDS ",
+      "price": 150000,
+      "sale_price": 300000,
+      "image": "../../../assets/img/account/pubg4.png",
+      "category": "PUBG CS",
+      "description": "CDKEY is only activated for Steam accounts in Vietnam region.\nCDKEY is valid until January 11, 2022, please enter the code before January 11, 2022 to receive the rewards below.\nThe rewards will be automatically credited to your account on the first login after 12/01/2022.",
+      "briefDescription": "PUBG PLAYERUNKNOWN'S BATTLEGROUNDS "
+    },
+    {
+      "id": 53,
+      "name": "STEAM WALLET CODE 50 HKD",
+      "price": 155000,
+      "sale_price": 159000,
+      "image": "../../../assets/img/account/wallet1.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 50 HKD "
+    },
+    {
+      "id": 54,
+      "name": "STEAM WALLET CODE 200 HKD",
+      "price": 600000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/wallet2.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "\nSTEAM WALLET CODE 200 HKD "
+    },
+    {
+      "id": 55,
+      "name": "STEAM WALLET CODE 120 HKD",
+      "price": 600000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/wallet3.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 120 HKD "
+    },
+    {
+      "id": 56,
+      "name": "STEAM WALLET CODE 20€ EURO",
+      "price": 550000,
+      "sale_price": 600000,
+      "image": "../../../assets/img/account/wallet4.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 20€ EURO "
+    },
+    {
+      "id": 57,
+      "name": "STEAM WALLET CODE 44.000 VND",
+      "price": 44000,
+      "sale_price": 44000,
+      "image": "../../../assets/img/account/wallet5.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 44.000 VND "
+    },
+    {
+      "id": 58,
+      "name": "STEAM WALLET CODE 22.000 VNĐ",
+      "price": 22000,
+      "sale_price": 25000,
+      "image": "../../../assets/img/account/wallet5.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 22.000 VNĐ "
+    },
+    {
+      "id": 59,
+      "name": "STEAM WALLET CODE 50$ (BEST SELLER)",
+      "price": 1030000,
+      "sale_price":1030000 ,
+      "image": "../../../assets/img/account/wallet6.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 50$ (BEST SELLER) "
+    },
+    {
+      "id": 59,
+      "name": "STEAM WALLET CODE 100$ (BEST SELLER)",
+      "price": 1030000,
+      "sale_price":1030000 ,
+      "image": "../../../assets/img/account/wallet7.png",
+      "category": "STEAM WALLET",
+      "description": "BẮT ĐẦU KÍCH HOẠT STEAM WALLET\nBước 1: Đăng nhập vào Steam Client, sau đó bấm vào \"Games\" trên thanh Menu trên cùng.Chọn tiếp Chọn Redeem a Steam Wallet Code...\nBước 3: Nhập Code Wallet mà Trùm Xi Store gửi cho các bạn vào ô và chọn Continue.",
+      "briefDescription": "STEAM WALLET CODE 100$ (BEST SELLER) "
     }
   ],
   "blog": [
@@ -518,6 +761,30 @@
       "price": 1025000,
       "quantitySold": 1,
       "total": 1025000
+    },
+    {
+      "id": 37,
+      "name": "MUTANT YEAR ZERO: ROAD TO EDEN",
+      "image": "../../../assets/img/account/steam7.png",
+      "price": 250000,
+      "quantitySold": 2,
+      "total": 500000
+    },
+    {
+      "id": 11,
+      "name": "Hell Let Loose",
+      "image": "../../../assets/img/trend/action_3.png",
+      "price": 119000,
+      "quantitySold": 1,
+      "total": 119000
+    },
+    {
+      "id": 1,
+      "name": "Plants vs zombies garden warfare 2",
+      "image": "../../../assets/img/product/product-1.png",
+      "price": 300000,
+      "quantitySold": 1,
+      "total": 300000
     }
   ],
   "billing": [
